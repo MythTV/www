@@ -1,0 +1,3 @@
+/* IE-specific stylesheet */
+
+img.png { behavior: url("js/png.htc"); }
