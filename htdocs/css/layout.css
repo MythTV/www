@@ -107,22 +107,10 @@
     }
 
     #content {
-        margin:             6em 2em 4.75em 2em;
-        padding:            0px;
+        margin:             0px;
+        padding:            6em 2em 4.75em 2em;
         width:              964px;
     }
-    #content:after {
-        content: ".";
-        display: block;
-        height: 0;
-        clear: both;
-        visibility: hidden;
-    }
-    #content {display: inline-block;}
-    /* Hides from IE-mac \*/
-    * html #content {height: 1%;}
-    #content {display: block;}
-    /* End hide from IE-mac */
 
     #footer {
         position:           fixed;
@@ -153,64 +141,54 @@
 
 /* index.php */
 
-    #index_header {
+    #index_whatis {
         padding:            3px 10px;
         border:             2px solid transparent;
         float:              left;
         width:              68%;
     }
-    #index_header p.quote {
+    #index_whatis p.quote {
         font-style: italic;
     }
-    #index_header p.quote .signature {
+    #index_whatis p.quote .signature {
         display:            block;
         text-align:         right;
     }
-    #index_header2 {
+    #index_quicklinks {
         padding:            3px 10px;
         border:             2px solid transparent;
         float:              right;
         width:              25%;
     }
 
-    .index_news {
+    #index_news {
+        clear:              both;
+        padding-top:        .5em;
+    }
+
+/* news.php */
+
+    .news_post {
         font-size:          12px;
-        margin-top:         10px;
+        margin-top:         1em;
         border:             2px solid transparent;
         -moz-border-radius-topleft:  11px;
         -moz-border-radius-topright: 11px;
     }
 
-    .index_news h3 {
+    .news_post h3 {
         border:             2px solid transparent;
         margin:             -2px;
         padding:            3px 10px;
         -moz-border-radius-topleft:  11px;
         -moz-border-radius-topright: 11px;
     }
-    .index_news ._content {
+    .news_post .post_content {
         margin:             3px 10px;
     }
-    .index_news ._author {
+    .news_post .post_author {
         padding:            5px;
         border-top:         1px solid transparent;
         text-align:         center;
     }
-
-/* news.php */
-
-    #old_news {
-    }
-    #old_news ul {
-        padding:            0 1em;
-        margin:             0 1em;
-    }
-    #old_news li {
-        list-style-type:    none;
-    }
-    #old_news li span.date {
-        float: left;
-        width: 5.5em
-    }
-
 

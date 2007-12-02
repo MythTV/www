@@ -17,8 +17,9 @@
 
 // Load the global page header
     require_once 'pages/header.php';
+
 ?>
-<div id="index_header">
+<div id="index_whatis">
     <h3>What Is MythTV?</h3>
     <p class="quote">
     "I got tired of the rather low quality cable box that AT&amp;T Broadband
@@ -43,7 +44,7 @@
     </p>
 </div>
 
-<div id="index_header2">
+<div id="index_quicklinks">
 <h3>Quick Links:</h3>
     <ul>
         <li><a href="http://svn.mythtv.org/trac/newticket/">Report a Bug</a></li>
@@ -53,10 +54,15 @@
         <li><a href="/contact">Contact MythTV Developers</a></li>
     </ul>
     <hr />
-    Download MythTV: Current version:  0.20
+    Download MythTV:
+    <ul>
+        <li>Current version:  0.20</li>
+    </ul>
 </div>
 
-<br style="clear: both" />
+&nbsp;<!-- css glitch:  IE 7 seems to need this -->
+
+<div id="index_news">
 
 <?php
 // How many to display?
@@ -80,6 +86,8 @@
 <p>
     Continue reading in the <a href="/news">News Archive</a>.
 </p>
+
+</div>
 
 <?php
 // Load the global page footer
