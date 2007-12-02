@@ -51,8 +51,8 @@
 
     #header_text li:hover ul li {
         background-color:       #223;
+        border-color:           #023d69;
         border-right-color:     #557;
-        border-bottom-color:    #023d69;
     }
     #header_text li:hover ul li.first {
         border-left-color:      #023d69;

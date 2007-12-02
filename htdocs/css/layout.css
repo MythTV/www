@@ -16,7 +16,7 @@
         top:                0px;
         right:              0px;
         left:               0px;
-        height:             2.75em;
+        height:             38px;
         border-bottom:      4px solid transparent;
         z-index:            50;
     }
@@ -38,7 +38,7 @@
         float:              left;
         padding:            0;
         margin:             0;
-        height:             2.75em !important;
+        height:             38px;
         border-right:       1px solid transparent;
         border-left:        1px solid transparent;
         white-space:        nowrap;
@@ -61,10 +61,10 @@
         display:        block;
         position:       absolute;
         width:          784px;
-        top:            2.2em;
+        top:            30px;
         left:           190px;
         line-height:    2em;
-        padding:        10px 10px 20px 10px;
+        padding:        8px 10px 20px 10px;
     }
     #header_text li ul {
         list-style-type: none;
@@ -76,6 +76,7 @@
         height:             2em !important;
         padding:            0em 1em;
         border-left:        none;
+        border-top:         2px solid transparent;
         border-right:       1px solid transparent;
         border-bottom:      2px solid transparent;
     }
