@@ -32,10 +32,11 @@
     <span class="signature">- Isaac Richards</span>
     </p>
     <p>
-    MythTV is a Free Open Source digital video recorder (DVR) project that has
-    been under heavy development since 2002, and now contains most features one
-    would expect from a good DVR (and many new ones that you soon won't be able
-    to live without).
+    MythTV is a Free Open Source digital video recorder (DVR) project
+    distributed under the terms of the GNU GPL.  It has been under heavy
+    development since 2002, and now contains most features one would expect
+    from a good DVR (and many new ones that you soon won't be able to live
+    without).
     </p>
     <p>
     If you are interested in learning more about MythTV (or just want to check
