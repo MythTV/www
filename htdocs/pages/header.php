@@ -24,8 +24,6 @@
                 </ul>
                 </div>
                 </li>
-            <li<?php if ($Nav == 'news') echo ' class="cur"' ?>><a href="/news">News</a>
-                </li>
             <li<?php if ($Nav == 'support') echo ' class="cur"' ?>><a href="/support">Support</a>
                 <div>
                 <ul>
@@ -39,11 +37,8 @@
                 </div>
                 </li>
             <li<?php if ($Nav == 'download') echo ' class="cur"' ?>><a href="/download">Download</a>
-                <div>
-                <ul>
-                    <li class="first last">Download MythTV: Current version:  0.20</li>
-                </ul>
-                </div>
+                </li>
+            <li<?php if ($Nav == 'news') echo ' class="cur"' ?>><a href="/news">News Archive</a>
                 </li>
         </ul>
     </div>
