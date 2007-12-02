@@ -12,6 +12,12 @@
  *
 /**/
 
+// Which section are we in?
+    $Nav = 'news';
+
+// Load the global page header
+    require_once 'pages/header.php';
+
 // Requesting a specific file?
     if ($Path[1]) {
         if (file_exists('news/'.$Path[1].'.php')) {
@@ -31,24 +37,28 @@
     else {
 ?>
 <div id="old_news">
-    <h3>Old News:</h3>
-    <p>
+    <h3>News Archive:</h3>
+    <ul>
 <?php
     // Get the list of files
         foreach (array_reverse(get_sorted_files('news/')) as $file) {
-            preg_match('/^(\d+)/', $file, $link);
-            $link = $link[0];
+            if (!preg_match('/^(\d+)\.php$/', $file, $link))
+                continue;
+            $link = $link[1];
         // Load info about this news item
             ob_start();
             require "news/$file";
             ob_end_clean();
         // Print what we know
-            echo "<a href=\"/news/$link/", str_replace('/', '-', urlencode($title)), '">',
-                 date('Y-m-d', $date), ":  $title</a><br />\n";
-
+            echo "<li><a href=\"/news/$link/", str_replace('/', '-', urlencode($title)), '">',
+            '<span class="date">', date('Y-m-d', $date), ':</span>',
+            "$title</a></li>\n";
         }
 ?>
-    </p>
+    </ul>
 </div>
 <?php
     }
+
+// Load the global page footer
+    require_once 'pages/footer.php';

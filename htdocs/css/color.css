@@ -1,0 +1,127 @@
+/* Styles shared by all sections */
+
+    html, body {
+        font-size:        14px;
+        font-family:      Helvetica, sans-serif;
+        color:            black;
+        background-color: #bbc;
+    }
+
+    a, a:visited {
+        color:              #026;
+    }
+    a:hover {
+        color:              #26c;
+    }
+
+    #header {
+        background-color:       black;
+        border-bottom-color:    #023d69;
+    }
+    #header_text {
+        font-weight:        bold;
+        color:              #eef;
+    }
+    #header_text a, #header_text a:visited {
+        color:              #eef;
+    }
+    #header_text a:hover {
+        color:              #fff;
+    }
+    #header_text ul {
+        padding:            0;
+        margin:             0;
+    }
+    #header_text li {
+        border-right-color: #445;
+        border-left-color:  #889;
+    }
+    #header_text li div {
+    }
+    #header_text li:hover {
+        background-color: #2a7aad;
+    }
+    #header_text li.cur {
+        background-color: #023d69;
+    }
+    #header_text li:hover div {
+    }
+    #header_text li ul {
+    }
+
+    #header_text li:hover ul li {
+        background-color:       #223;
+        border-right-color:     #557;
+        border-bottom-color:    #023d69;
+    }
+    #header_text li:hover ul li.first {
+        border-left-color:      #023d69;
+    }
+    #header_text li:hover ul li.last {
+        border-right-color:     #023d69;
+    }
+    #header_text li:hover ul li:hover {
+        background-color:       #3786b7;
+    }
+
+    #header_logo {
+    }
+    #header_logo img {
+    }
+
+    #content {
+    }
+
+    #footer {
+        background-color:   black;
+        color:              #ccd;
+        border-top-color:   #023d69;
+    }
+
+    #copyright {
+    }
+
+    #sponsorship {
+    }
+
+    #sponsorship img {
+        border-color:       black;
+    }
+
+/* index.php */
+
+    #index_header {
+        border-color:       #069;
+        background-color:   #e6e6f0;
+        color:              #115;
+    }
+    #index_header2 {
+        border-color:       #069;
+        background-color:   #e6e6f0;
+        color:              #115;
+    }
+
+    .index_news {
+        background-color:   #e6e6f0;
+        border-color:       #069;
+    }
+
+    .index_news h3 {
+        background-color:   #223;
+        color:              #ccd;
+        border-color:       #069;
+    }
+    .index_news ._content {
+    }
+    .index_news ._author {
+        background-color:   #99a;
+        color:              black;
+        border-top-color:   #069;
+    }
+
+/* news.php */
+
+    #old_news {
+    }
+
+

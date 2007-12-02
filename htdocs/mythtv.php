@@ -44,13 +44,19 @@
             ? true
             : false;
 
+/**
+ * $Nav dictates how the header file highlights the current navigation section.
+ *
+ * @global  string  $GLOBALS['Nav']
+ * @name    $Nav
+/**/
+    global $Nav;
+    $Nav = 'about';
+
 /* ****************************************************************************/
 
 // debug mode
     error_reporting(E_ALL);
-
-// Load the header
-    require_once 'pages/header.php';
 
 // Print the requested page
     if (preg_match('/\w/', $Path[0]))
@@ -61,5 +67,3 @@
     else
         require_once 'pages/index.php';
 
-// Load the footer
-    require_once 'pages/footer.php';

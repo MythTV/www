@@ -1,6 +1,6 @@
 <?php
 /**
- * Info
+ * Screenshots of all of the coolness...
  *
  * @url         $URL$
  * @date        $Date$
@@ -20,7 +20,7 @@
 ?>
 
 
-some content goes in here
+Detail article (containing screenshots) coming soon.
 
 
 <?php

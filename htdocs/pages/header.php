@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title></title>
-    <link rel="stylesheet" type="text/css" href="/css/mythtv.css">
+    <link rel="stylesheet" type="text/css" href="/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="/css/color.css">
     <!--[if IE]><link rel="stylesheet" type="text/css" href="/css/ie.css" /><![endif]-->
 </head>
 
@@ -15,52 +16,37 @@
     </div>
     <div id="header_text">
         <ul>
-            <li><a href="/">Overview</a></li>
-            <li>::</li>
-            <li><a href="/about">About</a></li>
-            <li>::</li>
-            <li><a href="/news">News</a></li>
-            <li>::</li>
-            <li><a href="/support">Support</a></li>
-            <li>::</li>
-            <li><a href="/download">Download</a></li>
+            <li<?php if ($Nav == 'about') echo ' class="cur"' ?>><a href="/">About MythTV</a>
+                <div>
+                <ul>
+                    <li class="first"><a href="/detail">MythTV In Detail</a></li>
+                    <li class="last"><a href="/contact">Contact Us</a></li>
+                </ul>
+                </div>
+                </li>
+            <li<?php if ($Nav == 'news') echo ' class="cur"' ?>><a href="/news">News</a>
+                </li>
+            <li<?php if ($Nav == 'support') echo ' class="cur"' ?>><a href="/support">Support</a>
+                <div>
+                <ul>
+                    <li class="first"><a href="/support">Overview</a></li>
+                    <li><a href="/docs/">Documentation</a></li>
+                    <li><a href="http://wiki.mythytv.org/">Wiki</a></li>
+                    <li><a href="http://svn.mythytv.org/trac/tickets/">Bugs</a></li>
+                    <li><a href="/links">Community Links</a></li>
+                    <li class="last"><a href="http://svn.mythytv.org/trac/">Development</a></li>
+                </ul>
+                </div>
+                </li>
+            <li<?php if ($Nav == 'download') echo ' class="cur"' ?>><a href="/download">Download</a>
+                <div>
+                <ul>
+                    <li class="first last">Download MythTV: Current version:  0.20</li>
+                </ul>
+                </div>
+                </li>
         </ul>
     </div>
-</div>
-
-<!-- Menu -->
-<div id="menu">
-<ul>
-    <li><a href="">Overview</a></li>
-    <li><a href="/about">About</a>
-        <ul class="submenu">
-            <li><a href="/about">What Is MythTV?</a></li>
-            <li><a href="/screenshots">Screenshots</a></li>
-            <li><a href="/contact">Contact Us</a></li>
-        </ul>
-        </li>
-    <li><a href="/news">News</a>
-        <ul class="submenu">
-            <li><a href="/news">Latest News</a></li>
-            <li><a href="/news/archive">News Archive</a></li>
-        </ul>
-        </li>
-    <li><a href="/support">Support</a>
-        <ul class="submenu">
-            <li><a href="/docs">Documentation</a></li>
-            <li><a href="http://wiki.mythytv.org/">Wiki</a></li>
-            <li><a href="http://svn.mythytv.org/trac/tickets/">Bugs</a></li>
-            <li><a href="http://svn.mythytv.org/trac/">Development</a></li>
-        </ul>
-        </li>
-    <li class="download">
-        <a href="/download">
-            Download MythTV<br /><br /><br />
-            [[ IMAGE ]]<br /><br /><br />
-            Current version:  0.20
-        </a>
-        </li>
-</ul>
 </div>
 
 <!-- Page Content -->

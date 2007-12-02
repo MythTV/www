@@ -1,6 +1,6 @@
 <?php
 /**
- * Info
+ * Overview of MythTV Support.
  *
  * @url         $URL$
  * @date        $Date$
@@ -13,16 +13,17 @@
 /**/
 
 // Which section are we in?
-    $Nav = 'about';
+    $Nav = 'support';
 
 // Load the global page header
     require_once 'pages/header.php';
 ?>
 
 
-some content goes in here
+There are many places to go for help with your MythTV system.
 
 
 <?php
 // Load the global page footer
     require_once 'pages/footer.php';
+

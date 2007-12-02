@@ -1,6 +1,6 @@
 <?php
 /**
- * Info
+ * Feedback form to contact MythTV Developers.
  *
  * @url         $URL$
  * @date        $Date$
@@ -20,9 +20,10 @@
 ?>
 
 
-some content goes in here
+feedback form and code should go in here...
 
 
 <?php
 // Load the global page footer
     require_once 'pages/footer.php';
+
