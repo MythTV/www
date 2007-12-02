@@ -31,10 +31,10 @@
                 <ul>
                     <li class="first"><a href="/support">Overview</a></li>
                     <li><a href="/docs/">Documentation</a></li>
-                    <li><a href="http://wiki.mythytv.org/">Wiki</a></li>
-                    <li><a href="http://svn.mythytv.org/trac/tickets/">Bugs</a></li>
+                    <li><a href="http://wiki.mythtv.org/">Wiki</a></li>
+                    <li><a href="http://svn.mythtv.org/trac/report/">Bugs</a></li>
                     <li><a href="/links">Community Links</a></li>
-                    <li class="last"><a href="http://svn.mythytv.org/trac/">Development</a></li>
+                    <li class="last"><a href="http://svn.mythtv.org/trac/">Development</a></li>
                 </ul>
                 </div>
                 </li>

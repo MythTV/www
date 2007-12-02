@@ -46,8 +46,8 @@
 <div id="index_header2">
 <h3>Quick Links:</h3>
     <ul>
-        <li><a href="http://svn.mythytv.org/trac/newticket/">Report a Bug</a></li>
-        <li><a href="http://wiki.mythytv.org/">MythTV Wiki</a></li>
+        <li><a href="http://svn.mythtv.org/trac/newticket/">Report a Bug</a></li>
+        <li><a href="http://wiki.mythtv.org/">MythTV Wiki</a></li>
         <li><a href="/support">Mailing Lists</a></li>
         <li><a href="/news/">News Archive</a></li>
         <li><a href="/contact">Contact MythTV Developers</a></li>
