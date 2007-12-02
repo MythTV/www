@@ -22,6 +22,7 @@
 
 There are many places to go for help with your MythTV system.
 
+Link/info for mailing lists, IRC, wiki, community links (unofficial forums), etc.
 
 <?php
 // Load the global page footer
