@@ -26,6 +26,12 @@
         }
     }
 
+// Which section are we in?
+    $Nav = 'download';
+
+// Load the global page header
+    require_once 'pages/header.php';
+
 // Otherwise, we need to display the download list and other options
 ?>
 <p>
@@ -55,3 +61,8 @@ If you would like to grab the latest development version or just want to keep up
 with the latest fixes to the stable branch, you will find subversion checkout
 instructions at <a href="http://svn.mythtv.org/trac/">http://svn.mythtv.org/</a>
 </p>
+
+<?php
+// Load the global page footer
+    require_once 'pages/footer.php';
+
