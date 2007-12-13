@@ -182,16 +182,13 @@
     }
 
     .news_post h3 {
-        background-color:   #181f2f;
-        color:              #ccd;
-        border-color:       #069;
     }
     .news_post .post_content {
     }
     .news_post .post_author {
-        background-color:   #99a;
+        background-color:   #bcbbbb;
         color:              black;
-        border-top-color:   #069;
+        border-color:       #069;
     }
 
 /* contact.php */
