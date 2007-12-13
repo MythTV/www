@@ -4,7 +4,7 @@
         font-size:        14px;
         font-family:      Helvetica, sans-serif;
         color:            black;
-        background-color: #bbc;
+        background-color: #88a1bb;
     }
 
     a, a:visited {
@@ -16,14 +16,17 @@
 
     #header {
         background-color:       black;
-        border-bottom-color:    #023d69;
+        border-bottom-color:    #004570;
+        background-image:       url("/img/shine.png");
+        background-position:    left -4px;
+        background-repeat:      repeat-x;
     }
     #header_text {
         font-weight:        bold;
-        color:              #eef;
+        color:              #cdcccc;
     }
     #header_text a, #header_text a:visited {
-        color:              #eef;
+        color:              #cdcccc;
     }
     #header_text a:hover {
         color:              #fff;
@@ -33,16 +36,32 @@
         margin:             0;
     }
     #header_text li {
-        border-right-color: #445;
-        border-left-color:  #889;
+        border-right-color:     #445;
+        border-left-color:      #889;
+        background-color:       black;
+        background-image:       url("/img/shine.png");
+        background-position:    left -2px;
+        background-repeat:      repeat-x;
     }
     #header_text li div {
     }
     #header_text li:hover {
-        background-color: #2a7aad;
+        background-color: #3a8abc;
     }
     #header_text li.cur {
-        background-color: #023d69;
+        background-color: #004570;
+    }
+    #header_text li.cur:hover {
+        background-color: #3a8abc;
+    }
+    #header_text li.cur:hover a {
+        color:              #fff;
+    }
+    #header_text li.cur:hover li a {
+        color:              #cdcccc;
+    }
+    #header_text li.cur:hover li a:hover {
+        color:              #fff;
     }
     #header_text li:hover div {
     }
@@ -50,15 +69,16 @@
     }
 
     #header_text li:hover ul li {
-        background-color:       #223;
-        border-color:           #023d69;
+        background-color:       #181f2f;
+        border-color:           #004570;
         border-right-color:     #557;
+        background-image:       none;
     }
     #header_text li:hover ul li.first {
-        border-left-color:      #023d69;
+        border-left-color:      #004570;
     }
     #header_text li:hover ul li.last {
-        border-right-color:     #023d69;
+        border-right-color:     #004570;
     }
     #header_text li:hover ul li:hover {
         background-color:       #3786b7;
@@ -75,7 +95,10 @@
     #footer {
         background-color:   black;
         color:              #ccd;
-        border-top-color:   #023d69;
+        border-top-color:   #004570;
+        background-image:       url("/img/shine.png");
+        background-position:    left -6px;
+        background-repeat:      repeat-x;
     }
 
     #copyright {
@@ -94,11 +117,61 @@
         border-color:       #069;
         background-color:   #e6e6f0;
         color:              #115;
+        background-image:       url("/img/left_dark_bg.png");
+        background-position:    left;
+        background-repeat:      repeat-y;
+        padding: 0;
+        -moz-border-radius-topleft:    11px;
+        -moz-border-radius-bottomleft: 11px;
+    }
+    #whatis_head {
+        background-image:       url("/img/whatis.png");
+        background-repeat:      no-repeat;
+        background-position:    10px center;
+        height: 250px;
+        width:  30px;
+        float:  left;
+        margin-top: -1em;
+        margin-right:   1em;
     }
     #index_quicklinks {
         border-color:       #069;
         background-color:   #e6e6f0;
         color:              #115;
+        -moz-border-radius-topleft:    11px;
+        -moz-border-radius-bottomleft: 11px;
+        border-collapse:    collapse;
+    }
+    #index_quicklinks td {
+        padding:            .25em;
+    }
+    #index_quicklinks td.icon {
+        background-color:   #181f2f;
+        border-right:       2px solid #004570;
+        text-align:         center;
+        vertical-align:     middle;
+    }
+    #index_quicklinks li.bug {
+        background-image:       url("/img/bug.png");
+    }
+    #index_quicklinks li.wiki {
+        background-image:       url("/img/wiki.png");
+    }
+    #index_quicklinks li.lists {
+        background-image:       url("/img/lists.png");
+    }
+    #index_quicklinks li.news {
+        background-image:       url("/img/news.png");
+    }
+    #index_quicklinks li.contact {
+        background-image:       url("/img/contact.png");
+    }
+    #index_download {
+        border-color:       #069;
+        background-color:   #e6e6f0;
+        color:              #115;
+        -moz-border-radius-topleft:    11px;
+        -moz-border-radius-bottomleft: 11px;
     }
 
 /* news.php */
@@ -109,7 +182,7 @@
     }
 
     .news_post h3 {
-        background-color:   #223;
+        background-color:   #181f2f;
         color:              #ccd;
         border-color:       #069;
     }
@@ -121,4 +194,8 @@
         border-top-color:   #069;
     }
 
+/* contact.php */
 
+    .contact_err {
+        border-color:       red;
+    }

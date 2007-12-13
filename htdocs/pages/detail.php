@@ -32,3 +32,4 @@ Detail article (containing screenshots) coming soon.
 <?php
 // Load the global page footer
     require_once 'pages/footer.php';
+

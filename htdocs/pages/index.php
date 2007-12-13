@@ -19,47 +19,58 @@
     require_once 'pages/header.php';
 
 ?>
-<div id="index_whatis">
-    <h3>What Is MythTV?</h3>
-    <p class="quote">
-    "I got tired of the rather low quality cable box that AT&amp;T Broadband
-    provides with their digital cable service.  It's slow to change channels,
-    ridden with ads, and the program guide is a joke.  So, I figured it'd be
-    fun to try and build a replacement.  Yes, I could have just bought a TiVo,
-    but I wanted to have more than just a PVR &mdash; I want a web browser
-    built in, a mail client, maybe some games.  Basically, I want the mythical
-    convergence box that's been talked about for a few years now."
-    <span class="signature">- Isaac Richards</span>
-    </p>
-    <p>
-    MythTV is a Free Open Source digital video recorder (DVR) project
-    distributed under the terms of the GNU GPL.  It has been under heavy
-    development since 2002, and now contains most features one would expect
-    from a good DVR (and many new ones that you soon won't be able to live
-    without).
-    </p>
-    <p>
-    If you are interested in learning more about MythTV (or just want to check
-    out some screenshots), please take a look at
-    <a href="/detail">MythTV In Detail</a>.
-    </p>
-</div>
-
-<div id="index_quicklinks">
-<h3>Quick Links:</h3>
-    <ul>
-        <li><a href="http://svn.mythtv.org/trac/newticket/">Report a Bug</a></li>
-        <li><a href="http://wiki.mythtv.org/">MythTV Wiki</a></li>
-        <li><a href="/support">Mailing Lists</a></li>
-        <li><a href="/news/">News Archive</a></li>
-        <li><a href="/contact">Contact MythTV Developers</a></li>
-    </ul>
-    <hr />
-    Download MythTV:
-    <ul>
-        <li>Current version:  0.20</li>
-    </ul>
-</div>
+<!-- Someone tell me how I can do this without needing tables to keep things pretty! -->
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td rowspan="2" id="index_whatis">
+        <div >
+            <div id="whatis_head">
+            </div>
+            <h3>What Is MythTV?</h3>
+            <p>
+            MythTV is a Free Open Source digital video recorder (DVR) project
+            distributed under the terms of the GNU GPL.  It has been under heavy
+            development since 2002, and now contains most features one would expect
+            from a good DVR (and many new ones that you soon won't be able to live
+            without).
+            </p>
+            <p>
+            If you are interested in learning more about MythTV (or just want to check
+            out some screenshots), please take a look at
+            <a href="/detail">MythTV In Detail</a>.
+            </p>
+        </div>
+        </td>
+    <td>
+        <table id="index_quicklinks" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td class="icon"><img src="/img/bug.png"></td>
+            <td><a href="http://svn.mythtv.org/trac/newticket/">Report a Bug</a></td>
+        </tr><tr>
+            <td class="icon"><img src="/img/wiki.png"></td>
+            <td><a href="http://wiki.mythtv.org/">MythTV Wiki</a></td>
+        </tr><tr>
+            <td class="icon"><img src="/img/lists.png"></td>
+            <td><a href="/support">Mailing Lists</a></td>
+        </tr><tr>
+            <td class="icon"><img src="/img/news.png"></td>
+            <td><a href="/news/">News Archive</a></td>
+        </tr><tr>
+            <td class="icon"><img src="/img/contact.png"></td>
+            <td><a href="/contact">Contact MythTV Developers</a></td>
+            </ul>
+        </tr>
+        </table>
+        </td>
+</tr><tr>
+    <td id="index_download_cell">
+        <div id="index_download">
+            some big icon linking to:<br /><br />
+            <a href="/download">Download MythTV</a>
+        </div>
+        </td>
+</tr>
+</table>
 
 &nbsp;<!-- css glitch:  IE 7 seems to need this -->
 

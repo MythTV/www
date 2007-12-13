@@ -97,7 +97,7 @@
     #header_logo {
         position:           absolute;
         display:            inline;
-        left:               5px;
+        left:               10px;
         top:                100%;
         height:             64px;
         margin-top:         -29px;
@@ -118,20 +118,20 @@
         bottom:             0px;
         left:               0px;
         right:              0px;
-        padding:            10px;
+        padding:            .3em;
         border-top:         4px solid transparent;
-        height:             2.5em;
         z-index:            49;
     }
 
     #copyright {
-        margin-left:        20px;
+        margin-left:        1em;
         float:              left;
         vertical-align:     middle;
+        line-height:        2.25em;
     }
 
     #sponsorship {
-        margin-right:       20px;
+        margin-right:       1em;
         float:              right;
     }
 
@@ -145,7 +145,6 @@
     #index_whatis {
         padding:            3px 10px;
         border:             2px solid transparent;
-        float:              left;
         width:              68%;
     }
     #index_whatis p.quote {
@@ -158,8 +157,18 @@
     #index_quicklinks {
         padding:            3px 10px;
         border:             2px solid transparent;
-        float:              right;
-        width:              25%;
+        margin-left:        1.5em;
+        margin-bottom:      1.5em;
+    }
+
+    #index_download {
+        margin-left:        1.5em;
+        padding:            2em;
+        border:             2px solid transparent;
+        text-align:center;
+    }
+    #index_download_cell {
+        vertical-align:     bottom;
     }
 
     #index_news {

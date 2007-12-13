@@ -12,7 +12,7 @@
 <!-- Header -->
 <div id="header">
     <div id="header_logo">
-        <a href="/"><img src="/img/mythtv.png" class="png" width="182" height="64"></a>
+        <a href="/"><img src="/img/mythtv.png" class="png" width="180" height="64"></a>
     </div>
     <div id="header_text">
         <ul>
@@ -20,6 +20,7 @@
                 <div>
                 <ul>
                     <li class="first"><a href="/detail">MythTV In Detail</a></li>
+                    <li><a href="/faq">FAQ</a></li>
                     <li class="last"><a href="/contact">Contact Us</a></li>
                 </ul>
                 </div>
