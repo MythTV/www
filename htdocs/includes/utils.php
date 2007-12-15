@@ -63,8 +63,88 @@
     }
 
 /**
+ *
+ *
+ * @param
+ *
+ * @return
+/**/
+    function tv_thumb($img, $tv = 'tv_white', $side = 'l', $size = 'a', $params='') {
+    // Size settings
+        $sizes = array('l' => array(
+                            'a' => array('size'  => '170x100',
+                                         'geo1'  => '125x85+10+14',
+                                         'shear' => '0x10',
+                                         'geo2'  => '177x177-5-4'),
+                            'b' => array('size'  => '200x115',
+                                         'geo1'  => '150x102+12+18',
+                                         'shear' => '0x10',
+                                         'geo2'  => '210x210-7-4'),
+                            ),
+                       'r' => array(
+                            'a' => array('size'  => '170x100',
+                                         'geo1'  => '125x87+16+13',
+                                         'shear' => '0x350',
+                                         'geo2'  => '173x173-3-4'),
+                            'b' => array('size'  => '200x115',
+                                         'geo1'  => '150x102+18+17',
+                                         'shear' => '0x350',
+                                         'geo2'  => '205x205-4-4'),
+                            ),
+                      );
+        if (!$sizes[$side])
+            $side = 'l';
+        if (!$sizes[$side][$size])
+            $size = 'a';
+    // Check for an invalid screenshot filename
+        if (strstr($img, '/')) {
+            return "<!-- tv_thumb screenshot $img must not contain / characters -->";
+        }
+    // Make sure the path includes the img directory
+        $img = "img/screenshots/$img";
+    // Ignore images that don't exist
+        if (!file_exists($img)) {
+            echo "<!-- tv_thumb screenshot $img does not exist -->";
+            return;
+        }
+    // Build the thumbnail cache path
+        $thumb = 'cache/tv_'.preg_replace('/[\/\.]+/', '_', $img)."_{$tv}_{$side}_$size.png";
+    // Make sure the path includes the img directory
+        $tv = "img/tv/{$tv}_$side.png";
+    // Ignore images that don't exist
+        if (!file_exists($tv)) {
+            echo "<!-- tv_thumb TV image $tv does not exist -->";
+            return;
+        }
+    // Create the thumbnail if necessary
+        if (!file_exists($thumb) || filemtime($thumb) < filemtime($img)) {
+            $command = 'convert -size '.escapeshellarg($sizes[$side][$size]['size'])
+                      .' xc:none -background none '
+                      .escapeshellarg($img)
+                      .' -geometry '.escapeshellarg($sizes[$side][$size]['geo1']).'!'
+                      .' -shear '   .escapeshellarg($sizes[$side][$size]['shear'])
+                      .' -composite '
+                      .escapeshellarg($tv)
+                      .' -geometry '.escapeshellarg($sizes[$side][$size]['geo2'])
+                      .' -composite '
+                      .escapeshellarg($thumb)
+                      ;
+            #echo $command,'<hr>';return;
+            system($command);
+        }
+    // Get the image info
+        list($width, $height) = getimagesize($thumb);
+    // Return
+        echo '<a href="/', $img, '">',
+               '<img src="/', $thumb,  '"',
+               ' height="',  $height, '"',
+               ' width="',   $width,  '"',
+               ' border="0" ', $params, ' /></a>';
+    }
+
+/**
  * Create a thumbnail of the requested image, and return an image tag to
- * display it.
+ * display it.  Given the TV image size, 252x178 max res
  *
  * @param string $img
  * @param int    $width
@@ -100,3 +180,4 @@
                ' width="',   $width,  '"',
                " $params /></a>";
     }
+
