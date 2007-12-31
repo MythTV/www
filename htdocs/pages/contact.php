@@ -21,17 +21,25 @@
 // Only let certain user agent strings through to the actual form
     if (preg_match('/(?:Mozilla|Opera)\/[\d\.]+\s*\(\s*.+?;.+?\)/i', $_SERVER['HTTP_USER_AGENT'])) {
     // Handle any submission requests
-        #require_once 'includes/contact.php';
+        require_once 'includes/contact.php';
     // Success?
         if ($Contact_Success) {
+            echo 'Thank you! <a href="/contact">Send another</a>.';
         }
     // On to the contact form itself
         else {
         // Errors?
             if ($Contact_Err) {
+                echo '<div class="error">', $Contact_Err['subject'], '</div>';
             }
 ?>
-<form method="post" action="feedback.php">
+
+<p>
+Please do not use this form while we are developing the site.
+Submissions will be ignored.
+</p>
+
+<form method="post" action="/contact">
 
 <table border="0" cellspacing="4" cellpadding="0">
 <tr>
@@ -40,7 +48,7 @@
         if ($Contact_Err['name'])
             echo ' class="contact_err"';
         ?>/></td>
-    <td nowrap rowspan="3">
+    <td nowrap rowspan="4">
         <input type="reset" value="Clear" class="submit" />
         <img src="/img/spacer.gif" width="35" height="1" />
         <input type="submit" disabled name="send" value="Send" class="submit" style="display: none" />
@@ -53,14 +61,25 @@
             echo ' class="contact_err"';
         ?>/></td>
 </tr><tr>
+    <td align="right">Reason for Contact:&nbsp;</td>
+    <td colspan="3"><select name="reason" tabindex="3"><?php
+        global $Contact;
+        foreach (array_keys($Contact) as $reason) {
+            echo '<option';
+            if ($reason == $_POST['reason'])
+                echo ' selected="selected"';
+            echo '>', html_entities($reason), '</option>';
+        }
+        ?></select></td>
+</tr><tr>
     <td align="right">Subject:&nbsp;</td>
-    <td colspan="3"><input type="text" name="subject" tabindex="3" size="40" value="<?php echo htmlentities($_POST['subject']) ?>"<?php
+    <td colspan="3"><input type="text" name="subject" tabindex="4" size="40" value="<?php echo htmlentities($_POST['subject']) ?>"<?php
         if ($Contact_Err['subject'])
             echo ' class="contact_err"';
         ?>/></td>
 </tr><tr>
     <td align="right" valign="top">Message:&nbsp;</td>
-    <td colspan="3"><textarea name="text" rows="10" cols="70" tabindex="4" wrap="hard"<?php
+    <td colspan="3"><textarea name="text" rows="10" cols="70" tabindex="5" wrap="hard"<?php
         if ($Contact_Err['text'])
             echo ' class="contact_err"';
         ?>><?php echo htmlentities($_POST['text']) ?></textarea></td>
