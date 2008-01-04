@@ -67,7 +67,7 @@
                              'X-User-Agent: '.$_SERVER['HTTP_USER_AGENT']);
         // Get a list of extra POST variables
             foreach ($_POST as $var => $val) {
-                if (in_array($var, array('email', 'name', 'subject', 'text', 'realsend')))
+                if (in_array($var, array('email', 'name', 'subject', 'text', 'realsend', 'reason')))
                     continue;
                 $var = preg_replace('/\W+/', '-', $var);
                 if (strlen($val) > 50) {
