@@ -118,7 +118,6 @@
         }
     // Create the thumbnail if necessary
         if (!file_exists($thumb) || filemtime($thumb) < filemtime($img)) {
-            #$color = ;
             $command = 'convert -quality 60 -size '.escapeshellarg($sizes[$side][$size]['size'])
                       .' '.escapeshellarg("xc:$color")
                       .' -background '.escapeshellarg($color)
