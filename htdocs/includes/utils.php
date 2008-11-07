@@ -69,11 +69,11 @@
  *
  * @return
 /**/
-    function tv_thumb($img, $tv = 'tv_white', $side = 'l', $size = 'a', $params='') {
+    function tv_thumb($img, $tv = 'tv_white', $side = 'l', $size = 'a', $color='none',  $params='') {
     // Size settings
         $sizes = array('l' => array(
                             'a' => array('size'  => '170x100',
-                                         'geo1'  => '125x85+10+14',
+                                         'geo1'  => '128x94+8+10',
                                          'shear' => '0x10',
                                          'geo2'  => '177x177-5-4'),
                             'b' => array('size'  => '200x115',
@@ -83,7 +83,7 @@
                             ),
                        'r' => array(
                             'a' => array('size'  => '170x100',
-                                         'geo1'  => '125x87+16+13',
+                                         'geo1'  => '128x94+12+10',
                                          'shear' => '0x350',
                                          'geo2'  => '173x173-3-4'),
                             'b' => array('size'  => '200x115',
@@ -108,7 +108,7 @@
             return;
         }
     // Build the thumbnail cache path
-        $thumb = 'cache/tv_'.preg_replace('/[\/\.]+/', '_', $img)."_{$tv}_{$side}_$size.png";
+        $thumb = 'cache/tv_'.preg_replace('/[\/\.]+/', '_', $img)."_{$tv}_{$side}_$size.jpg";
     // Make sure the path includes the img directory
         $tv = "img/tv/{$tv}_$side.png";
     // Ignore images that don't exist
@@ -118,9 +118,13 @@
         }
     // Create the thumbnail if necessary
         if (!file_exists($thumb) || filemtime($thumb) < filemtime($img)) {
-            $command = 'convert -size '.escapeshellarg($sizes[$side][$size]['size'])
-                      .' xc:none -background none '
-                      .escapeshellarg($img)
+            #$color = ;
+            $command = 'convert -quality 60 -size '.escapeshellarg($sizes[$side][$size]['size'])
+                      .' '.escapeshellarg("xc:$color")
+                      .' -background '.escapeshellarg($color)
+                      .' -composite '
+                      .' '.escapeshellarg($img)
+                      .' -background '.escapeshellarg($color)
                       .' -geometry '.escapeshellarg($sizes[$side][$size]['geo1']).'!'
                       .' -shear '   .escapeshellarg($sizes[$side][$size]['shear'])
                       .' -composite '
