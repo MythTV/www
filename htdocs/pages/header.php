@@ -43,6 +43,8 @@
                 </li>
         </ul>
     </div>
+    <div id="header_close">
+    </div>
 </div>
 
 <!-- Page Content -->

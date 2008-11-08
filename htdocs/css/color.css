@@ -89,13 +89,18 @@
     #header_logo img {
     }
 
+    #header_close {
+        background-image:   url("/img/blue_fade.png");
+        background-repeat:  repeat-x;
+    }
+
     #content {
     }
 
     #footer {
-        background-color:   black;
-        color:              #ccd;
-        border-top-color:   #004570;
+        background-color:       black;
+        color:                  #ccd;
+        border-top-color:       #004570;
         background-image:       url("/img/shine.png");
         background-position:    left -6px;
         background-repeat:      repeat-x;
