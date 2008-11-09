@@ -150,30 +150,76 @@
     #index_whatis {
         padding:            3px 10px;
         border:             2px solid transparent;
-        width:              68%;
+        width:              70%;
+        height:             250px;
+        float:              left;
+        -moz-border-radius-topleft:    11px;
+        -moz-border-radius-bottomleft: 11px;
     }
     #index_whatis p.quote {
-        font-style: italic;
+        font-style:         italic;
     }
     #index_whatis p.quote .signature {
         display:            block;
         text-align:         right;
     }
+    #whatis_head {
+        height:                 250px;
+        width:                  30px;
+        float:                  left;
+        margin-top:             -1em;
+        margin-right:           1em;
+        -moz-border-radius-topleft:    11px;
+        -moz-border-radius-bottomleft: 11px;
+    }
     #index_quicklinks {
+        float:              right;
+        width:              25%;
+        height:             130px;
         padding:            3px 10px;
         border:             2px solid transparent;
-        margin-left:        1.5em;
-        margin-bottom:      1.5em;
+        margin-bottom:      1em;
+        -moz-border-radius-topleft:    11px;
+        -moz-border-radius-bottomleft: 11px;
+        border-collapse:    collapse;
+    }
+    #index_quicklinks ul {
+        list-style-type:    none;
+        margin:             -3px 0;
+        padding:            0;
+        margin-left:        -10px !important;
+    }
+    #index_quicklinks li {
+        padding:            0;
+        margin:             0;
+        clear:              none;
+        line-height:        50%;
+        text-align:         middle;
+        clear:              left;
+    }
+    #index_quicklinks li a {
+        text-decoration:    none;
+    }
+    #index_quicklinks li a img {
+        float:              left;
+        margin:             0;
+        padding:            .25em 5px .25em 4px;
+    }
+    #index_quicklinks li a .text {
+        display:            block;
+        text-decoration:    underline !important;
+        padding:            .5em ;
+        margin-left:        28px;
     }
 
     #index_download {
-        margin-left:        1.5em;
-        padding:            2em;
+        float:              right;
+        clear:              right;
+        width:              25%;
+        height:             90px;
+        padding:            3px 10px;
         border:             2px solid transparent;
-        text-align:center;
-    }
-    #index_download_cell {
-        vertical-align:     bottom;
+        text-align:         center;
     }
 
     #index_news {

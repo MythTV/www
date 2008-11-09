@@ -119,57 +119,29 @@
 /* index.php */
 
     #index_whatis {
+        border-color:           #069;
+        background-color:       #e6e6f0;
+        color:                  #115;
+        background-image:       url("/img/left_dark_bg.png");
+        background-position:    left;
+        background-repeat:      repeat-y;
+        padding:                0;
+    }
+    #whatis_head {
+        background-image:       url("/img/whatis.png");
+        background-repeat:      no-repeat;
+        background-position:    10px center;
+    }
+    #index_quicklinks {
         border-color:       #069;
         background-color:   #e6e6f0;
         color:              #115;
         background-image:       url("/img/left_dark_bg.png");
         background-position:    left;
         background-repeat:      repeat-y;
-        padding: 0;
-        -moz-border-radius-topleft:    11px;
-        -moz-border-radius-bottomleft: 11px;
     }
-    #whatis_head {
-        background-image:       url("/img/whatis.png");
-        background-repeat:      no-repeat;
-        background-position:    10px center;
-        height: 250px;
-        width:  30px;
-        float:  left;
-        margin-top: -1em;
-        margin-right:   1em;
-    }
-    #index_quicklinks {
-        border-color:       #069;
-        background-color:   #e6e6f0;
-        color:              #115;
-        -moz-border-radius-topleft:    11px;
-        -moz-border-radius-bottomleft: 11px;
-        border-collapse:    collapse;
-    }
-    #index_quicklinks td {
-        padding:            .25em;
-    }
-    #index_quicklinks td.icon {
-        background-color:   #181f2f;
+    #index_quicklinks li a img {
         border-right:       2px solid #004570;
-        text-align:         center;
-        vertical-align:     middle;
-    }
-    #index_quicklinks li.bug {
-        background-image:       url("/img/bug.png");
-    }
-    #index_quicklinks li.wiki {
-        background-image:       url("/img/wiki.png");
-    }
-    #index_quicklinks li.lists {
-        background-image:       url("/img/lists.png");
-    }
-    #index_quicklinks li.news {
-        background-image:       url("/img/news.png");
-    }
-    #index_quicklinks li.contact {
-        background-image:       url("/img/contact.png");
     }
     #index_download {
         border-color:       #069;

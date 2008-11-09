@@ -20,59 +20,63 @@
 
 ?>
 <!-- Someone tell me how I can do this without needing tables to keep things pretty! -->
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-    <td rowspan="2" id="index_whatis">
-        <div >
-            <div id="whatis_head">
-            </div>
-            <h3>What Is MythTV?</h3>
-            <p>
-            MythTV is a Free Open Source digital video recorder (DVR) project
-            distributed under the terms of the GNU GPL.  It has been under heavy
-            development since 2002, and now contains most features one would expect
-            from a good DVR (and many new ones that you soon won't be able to live
-            without).
-            </p>
-            <p>
-            If you are interested in learning more about MythTV (or just want to check
-            out some screenshots), please take a look at
-            <a href="/detail">MythTV In Detail</a>.
-            </p>
+<div id="index_whatis">
+    <div>
+        <div id="whatis_head">
         </div>
-        </td>
-    <td>
-        <table id="index_quicklinks" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-            <td class="icon"><img src="/img/bug.png"></td>
-            <td><a href="http://svn.mythtv.org/trac/newticket/">Report a Bug</a></td>
-        </tr><tr>
-            <td class="icon"><img src="/img/wiki.png"></td>
-            <td><a href="http://wiki.mythtv.org/">MythTV Wiki</a></td>
-        </tr><tr>
-            <td class="icon"><img src="/img/lists.png"></td>
-            <td><a href="/support">Mailing Lists</a></td>
-        </tr><tr>
-            <td class="icon"><img src="/img/news.png"></td>
-            <td><a href="/news/">News Archive</a></td>
-        </tr><tr>
-            <td class="icon"><img src="/img/contact.png"></td>
-            <td><a href="/contact">Contact MythTV Developers</a></td>
-            </ul>
-        </tr>
-        </table>
-        </td>
-</tr><tr>
-    <td id="index_download_cell">
-        <div id="index_download">
-            some big icon linking to:<br /><br />
-            <a href="/download">Download MythTV</a>
-        </div>
-        </td>
-</tr>
-</table>
+        <h3>What Is MythTV?</h3>
+        <p>
+        MythTV is a Free Open Source digital video recorder (DVR) project
+        distributed under the terms of the GNU GPL.  It has been under heavy
+        development since 2002, and now contains most features one would expect
+        from a good DVR (and many new ones that you soon won't be able to live
+        without).
+        </p>
+        <p>
+        If you are interested in learning more about MythTV (or just want to check
+        out some screenshots), please take a look at
+        <a href="/detail">MythTV In Detail</a>.
+        </p>
+    </div>
+</div>
 
-&nbsp;<!-- css glitch:  IE 7 seems to need this -->
+<div id="index_quicklinks">
+    <div>
+        <div id="quicklinks_head">
+        </div>
+        <ul>
+            <li><a href="http://svn.mythtv.org/trac/newticket/">
+                <img src="/img/bug.png" border="0">
+                <span class="text">Report a Bug</span></a>
+                </li>
+            <li><a href="http://wiki.mythtv.org/">
+                <img src="/img/wiki.png" border="0">
+                <span class="text">MythTV Wiki</span></a>
+                </li>
+            <li><a href="/support/">
+                <img src="/img/lists.png" border="0">
+                <span class="text">Mailing Lists</span></a>
+                </li>
+            <li><a href="/news/">
+                <img src="/img/news.png" border="0">
+                <span class="text">News Archive</span></a>
+                </li>
+            <li><a href="/contact/">
+                <img src="/img/contact.png" border="0">
+                <span class="text">Contact MythTV Developers</span></a>
+                </li>
+        </ul>
+    </div>
+</div>
+
+<div id="index_download">
+    <div>
+        <a href="/download">
+        <img src="/img/download.gif" height="37" width="37" border="0" style="float: left">
+        Download MythTV
+        </a>
+    </div>
+</div>
 
 <div id="index_news">
 
