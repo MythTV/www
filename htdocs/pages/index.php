@@ -46,23 +46,23 @@
         </div>
         <ul>
             <li><a href="http://svn.mythtv.org/trac/newticket/">
-                <img src="/img/bug.png" border="0">
+                <img src="/img/bug_icon.png" border="0">
                 <span class="text">Report a Bug</span></a>
                 </li>
             <li><a href="http://wiki.mythtv.org/">
-                <img src="/img/wiki.png" border="0">
+                <img src="/img/wiki_icon.png" border="0">
                 <span class="text">MythTV Wiki</span></a>
                 </li>
             <li><a href="/support/">
-                <img src="/img/lists.png" border="0">
+                <img src="/img/lists_icon.png" border="0">
                 <span class="text">Mailing Lists</span></a>
                 </li>
             <li><a href="/news/">
-                <img src="/img/news.png" border="0">
+                <img src="/img/news_icon.png" border="0">
                 <span class="text">News Archive</span></a>
                 </li>
             <li><a href="/contact/">
-                <img src="/img/contact.png" border="0">
+                <img src="/img/contact_icon.png" border="0">
                 <span class="text">Contact MythTV Developers</span></a>
                 </li>
         </ul>
