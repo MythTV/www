@@ -13,9 +13,9 @@
 
 // Current version of MythTV
     global $Version;
-    $Version['tv']      = '0.20.2';
-    $Version['plugins'] = '0.20.2';
-    $Version['themes']  = '0.20.2';
+    $Version['tv']      = '0.21';
+    $Version['plugins'] = '0.21';
+    $Version['themes']  = '0.21';
 
 // Contact Recipients
     global $Contact;

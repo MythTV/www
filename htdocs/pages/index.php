@@ -19,11 +19,17 @@
     require_once 'pages/header.php';
 
 ?>
+
+<div id="index">
+
 <!-- Someone tell me how I can do this without needing tables to keep things pretty! -->
 <div id="index_whatis">
-    <div>
-        <div id="whatis_head">
-        </div>
+    <div class="topleft"></div>
+    <div class="middleleft">
+        <div class="title"></div>
+    </div>
+    <div class="bottomleft"></div>
+    <div class="content">
         <h3>What Is MythTV?</h3>
         <p>
         MythTV is a Free Open Source digital video recorder (DVR) project
@@ -41,9 +47,14 @@
 </div>
 
 <div id="index_quicklinks">
-    <div>
-        <div id="quicklinks_head">
+    <div class="left">
+        <div class="topleft"></div>
+        <div class="middleleft">
+            <div class="title"></div>
         </div>
+        <div class="bottomleft"></div>
+    </div>
+    <div class="content">
         <ul>
             <li><a href="http://svn.mythtv.org/trac/newticket/">
                 <img src="/img/bug_icon.png" border="0">
@@ -70,10 +81,18 @@
 </div>
 
 <div id="index_download">
-    <div>
-        <a href="/download">
-        <img src="/img/download.gif" height="37" width="37" border="0" style="float: left">
-        Download MythTV
+    <div class="topleft"></div>
+    <div class="middleleft">
+        <div class="title"></div>
+    </div>
+    <div class="bottomleft"></div>
+    <div class="content">
+        <div class="release">
+            <a href="/download">Current Release:  <?php echo $Version['tv'] ?></a>
+        </div>
+        <div class="download">
+            <a href="/download">Download Now</a>
+        </div>
         </a>
     </div>
 </div>
@@ -103,7 +122,9 @@
     Continue reading in the <a href="/news">News Archive</a>.
 </p>
 
-</div>
+</div><!-- index_news -->
+
+</div><!-- index -->
 
 <?php
 // Load the global page footer

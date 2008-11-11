@@ -148,13 +148,14 @@
 /* index.php */
 
     #index_whatis {
-        padding:            3px 10px;
-        border:             2px solid transparent;
-        width:              70%;
-        height:             250px;
-        float:              left;
-        -moz-border-radius-topleft:    11px;
-        -moz-border-radius-bottomleft: 11px;
+        float:                  left;
+        width:                  68%;
+        height:                 250px;
+        margin:                 0;
+        margin-left:            25px;
+    }
+    #index_whatis .content {
+        padding:                3px 10px;
     }
     #index_whatis p.quote {
         font-style:         italic;
@@ -163,38 +164,27 @@
         display:            block;
         text-align:         right;
     }
-    #whatis_head {
-        height:                 250px;
-        width:                  30px;
-        float:                  left;
-        margin-top:             -1em;
-        margin-right:           1em;
-        -moz-border-radius-topleft:    11px;
-        -moz-border-radius-bottomleft: 11px;
-    }
     #index_quicklinks {
         float:              right;
+        margin-left:        25px;
+        margin-bottom:      19px;
         width:              25%;
-        height:             129px;
+        height:             140px;
+    }
+    #index_quicklinks .content {
         padding:            3px 10px;
-        border:             2px solid transparent;
-        margin-bottom:      1em;
-        -moz-border-radius-topleft:    11px;
-        -moz-border-radius-bottomleft: 11px;
-        border-collapse:    collapse;
+        position:           relative;
+        top:                -137px;
     }
     #index_quicklinks ul {
         list-style-type:    none;
-        margin:             -3px 0;
         padding:            0;
-        margin-left:        -10px !important;
+        margin-left:        -35px !important;
     }
     #index_quicklinks li {
         padding:            0;
         margin:             0;
-        clear:              none;
         line-height:        50%;
-        text-align:         middle;
         clear:              left;
     }
     #index_quicklinks li a {
@@ -208,18 +198,25 @@
     #index_quicklinks li a .text {
         display:            block;
         text-decoration:    underline !important;
-        padding:            .5em ;
+        padding:            .5em;
         margin-left:        28px;
     }
 
     #index_download {
         float:              right;
         clear:              right;
+        margin-left:        25px;
         width:              25%;
         height:             91px;
-        padding:            3px 10px;
-        border:             2px solid transparent;
+    }
+    #index_download .content {
+        padding:            20px 10px 3px 10px;
         text-align:         center;
+        width:              90%;
+    }
+    #index_download .content .release {
+    }
+    #index_download .content .download {
     }
 
     #index_news {

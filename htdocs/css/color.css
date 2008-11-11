@@ -119,36 +119,141 @@
 /* index.php */
 
     #index_whatis {
-        border-color:           #069;
         background-color:       #e6e6f0;
         color:                  #115;
-        background-image:       url("/img/left_dark_bg.png");
-        background-position:    left;
-        background-repeat:      repeat-y;
-        padding:                0;
+        background-image:       url("/img/inset_top.png");
+        background-position:    top;
+        background-repeat:      repeat-x;
     }
-    #whatis_head {
+    #index_whatis .topleft {
+        background-image:       url("/img/top_corner_w_shadow.png");
+        background-repeat:      no-repeat;
+        background-position:    top left;
+        margin-left:            -25px;
+        height:                 12px;
+        width:                  30px;
+        float:                  left;
+    }
+    #index_whatis .middleleft {
+        background-image:       url("/img/middle_w_shadow.png");
+        background-repeat:      repeat-y;
+        background-position:    left;
+        margin-left:            -25px;
+        width:                  30px;
+        height:                 226px;
+        float:                  left;
+        clear:                  left;
+    }
+    #index_whatis .middleleft .title {
         background-image:       url("/img/whatis.png");
         background-repeat:      no-repeat;
-        background-position:    10px center;
+        background-position:    8px center;
+        width:                  30px;
+        height:                 226px;
     }
+    #index_whatis .bottomleft {
+        background-image:       url("/img/bottom_corner_w_shadow.png");
+        background-repeat:      no-repeat;
+        background-position:    bottom left;
+        margin-left:            -25px;
+        height:                 12px;
+        width:                  30px;
+        float:                  left;
+        clear:                  left;
+    }
+
     #index_quicklinks {
-        border-color:       #069;
-        background-color:   #e6e6f0;
-        color:              #115;
-        background-image:       url("/img/left_dark_bg.png");
-        background-position:    left;
+        background-color:       #e6e6f0;
+        color:                  #115;
+        background-image:       url("/img/inset_top.png");
+        background-position:    top;
+        background-repeat:      repeat-x;
+    }
+    #index_quicklinks .topleft {
+        background-image:       url("/img/top_corner_w_shadow.png");
+        background-repeat:      no-repeat;
+        background-position:    top left;
+        margin-left:            -25px;
+        height:                 12px;
+        width:                  30px;
+        float:                  left;
+    }
+    #index_quicklinks .middleleft {
+        background-image:       url("/img/middle_w_shadow.png");
         background-repeat:      repeat-y;
+        background-position:    left;
+        margin-left:            -25px;
+        width:                  30px;
+        height:                 116px;
+        float:                  left;
+        clear:                  left;
     }
-    #index_quicklinks li a img {
-        border-right:       2px solid #004570;
+    #index_quicklinks .middleleft .title {
+        display: none;
     }
+    #index_quicklinks .bottomleft {
+        background-image:       url("/img/bottom_corner_w_shadow.png");
+        background-repeat:      no-repeat;
+        background-position:    bottom left;
+        margin-left:            -25px;
+        height:                 12px;
+        width:                  30px;
+        float:                  left;
+        clear:                  left;
+    }
+
+
     #index_download {
-        border-color:       #069;
-        background-color:   #e6e6f0;
-        color:              #115;
-        -moz-border-radius-topleft:    11px;
-        -moz-border-radius-bottomleft: 11px;
+        background-color:       #e6e6f0;
+        color:                  #115;
+        background-image:       url("/img/inset_top.png");
+        background-position:    top;
+        background-repeat:      repeat-x;
+    }
+    #index_download .topleft {
+        background-image:       url("/img/top_corner_w_shadow.png");
+        background-repeat:      no-repeat;
+        background-position:    top left;
+        margin-left:            -25px;
+        height:                 12px;
+        width:                  30px;
+        float:                  left;
+    }
+    #index_download .middleleft {
+        background-image:       url("/img/middle_w_shadow.png");
+        background-repeat:      repeat-y;
+        background-position:    left;
+        margin-left:            -25px;
+        width:                  30px;
+        height:                 67px;
+        float:                  left;
+        clear:                  left;
+    }
+    #index_download .middleleft .title {
+        background-image:       url("/img/release.png");
+        background-repeat:      no-repeat;
+        background-position:    8px center;
+        width:                  30px;
+        height:                 67px;
+    }
+    #index_download .bottomleft {
+        background-image:       url("/img/bottom_corner_w_shadow.png");
+        background-repeat:      no-repeat;
+        background-position:    bottom left;
+        margin-left:            -25px;
+        height:                 12px;
+        width:                  30px;
+        float:                  left;
+        clear:                  left;
+    }
+    #index_download .content .release a {
+        font-size:          120%;
+    }
+    #index_download .content .download a {
+        font-size:          180%;
+        color:              black;
+        text-decoration:    none;
+        font-weight:        bold;
     }
 
 /* news.php */
