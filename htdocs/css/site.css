@@ -412,13 +412,15 @@
         position:           absolute;
         top:                0;
         right:              0;
-        height:             13px;
-        background-color:   #223;
+        height:             20px;
         color:              #e6e6f0;
-        padding:            5px 25px;
+        padding:            3px 25px;
         text-align:         center;
         float:              right;
         font-size:          90%;
+        background-image:       url("/img/byline_middle.png");
+        background-position:    top;
+        background-repeat:      repeat-x;
     }
     .news_post .content .author a {
         color:              #bcf;
@@ -429,13 +431,13 @@
     }
     .news_post .content .author .aleft {
         position:               absolute;
-        bottom:                 0;
+        top:                    0;
         left:                   0;
-        height:                 23px;
-        width:                  23px;
+        height:                 26px;
+        width:                  18px;
         background-color:       #e6e6f0;
-        background-image:       url("/img/corner_bottomleft.png");
-        background-position:    bottom left;
+        background-image:       url("/img/byline_left.png");
+        background-position:    top left;
         background-repeat:      no-repeat;
     }
     .news_post .content .author .aright {
@@ -443,9 +445,9 @@
         top:                    0;
         right:                  0;
         height:                 23px;
-        width:                  23px;
+        width:                  18px;
         background-color:       #88a1bb;
-        background-image:       url("/img/corner_topright.png");
+        background-image:       url("/img/byline_right.png");
         background-position:    top right;
         background-repeat:      no-repeat;
     }

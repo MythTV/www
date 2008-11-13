@@ -16,7 +16,7 @@
 <!-- Header -->
 <div id="header">
     <div id="header_logo">
-        <a href="/"><img src="/img/mythtv.png" class="png" width="180" height="64"></a>
+        <a href="/"><img src="/img/mythtv.png" class="png" width="180" height="64" border="0"></a>
     </div>
     <div id="header_text">
         <ul>
