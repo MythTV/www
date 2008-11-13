@@ -48,14 +48,14 @@
         margin:             0;
     }
     #header_text li {
-        list-style-type:    none;
-        float:              left;
-        padding:            0;
-        margin:             0;
-        height:             38px;
-        border-right:       1px solid #445;
-        border-left:        1px solid #889;
-        white-space:        nowrap;
+        list-style-type:        none;
+        float:                  left;
+        padding:                0;
+        margin:                 0;
+        height:                 38px;
+        border-right:           1px solid #445;
+        border-left:            1px solid #889;
+        white-space:            nowrap;
         background-color:       black;
         background-image:       url("/img/shine.png");
         background-position:    left -2px;
@@ -69,16 +69,16 @@
         text-decoration:    underline;
     }
     #header_text li div {
-        display: none;
+        display:            none;
     }
     #header_text li:hover {
-        background-color: #3a8abc;
+        background-color:   #3a8abc;
     }
     #header_text li.cur {
-        background-color: #004570;
+        background-color:   #004570;
     }
     #header_text li.cur:hover {
-        background-color: #3a8abc;
+        background-color:   #3a8abc;
     }
     #header_text li.cur:hover a {
         color:              #fff;
@@ -103,8 +103,8 @@
     }
 
     #header_text li:hover ul li {
-        background-color:       #181f2f;
-        background-image:       none;
+        background-color:   #181f2f;
+        background-image:   none;
         margin:             0;
         float:              left;
         height:             2em !important;
@@ -112,16 +112,14 @@
         border-left:        none;
         border-top:         2px solid #004570;
         border-right:       1px solid #557;
-        border-bottom:      2px solid #004570;
+        border-bottom:      1px solid #445;
     }
     #header_text li:hover ul li.first {
-        border-left-color:      #004570;
-        border-left:        2px solid transparent;
+        border-left:        1px solid #445;
         -moz-border-radius-bottomleft:  11px;
     }
     #header_text li:hover ul li.last {
-        border-right-color:     #004570;
-        border-right:       2px solid transparent;
+        border-right:       1px solid #445;
         -moz-border-radius-bottomright:  11px;
     }
     #header_text li:hover ul li:hover {
