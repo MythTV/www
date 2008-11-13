@@ -1,4 +1,5 @@
 <?php
+    $topic  = 'news';
     $title  = 'Good News / Bad News';
     $author = '<a href="http://www.mythtv.org/">Isaac</a>';
     $date   = strtotime('2004-03-09 01:33:42 UTC');

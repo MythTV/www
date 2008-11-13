@@ -1,4 +1,5 @@
 <?php
+    $topic  = 'news';
     $title  = 'Yet more hardware decoder support...';
     $author = '<a href="http://www.mythtv.org/">Isaac</a>';
     $date   = strtotime('2003-09-26 19:29:19 UTC');

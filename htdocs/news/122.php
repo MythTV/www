@@ -1,4 +1,5 @@
 <?php
+    $topic  = 'news';
     $title  = 'Calling All Graphic Designers and SWF Developers';
     $author = '<a href="http://www.mythtv.org/">Isaac</a>';
     $date   = strtotime('2007-03-29 17:08:28 UTC');

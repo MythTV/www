@@ -1,4 +1,5 @@
 <?php
+    $topic  = 'software_news';
     $title  = 'MythWeb Flash Player';
     $author = '<a href="http://www.mythtv.org/">Isaac</a>';
     $date   = strtotime('2007-07-12 18:57:48 UTC');

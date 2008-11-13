@@ -1,4 +1,5 @@
 <?php
+    $topic  = 'news';
     $title  = '0.13 Release Followup';
     $author = '<a href="http://www.mythtv.org/">Isaac</a>';
     $date   = strtotime('2003-12-13 22:39:39 UTC');
