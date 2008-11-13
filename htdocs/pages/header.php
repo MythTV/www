@@ -6,7 +6,7 @@
     <!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/css/ie6.css"><![endif]-->
 <?php
     /* disabled until we need it
-    <!--[if IE]><link rel="stylesheet" type="text/css" href="/css/ie.css" /><![endif]--> 
+    <!--[if IE]><link rel="stylesheet" type="text/css" href="/css/ie.css" /><![endif]-->
     */
  ?>
 </head>
@@ -47,8 +47,7 @@
                 </li>
         </ul>
     </div>
-    <div id="header_close">
-    </div>
+    <div id="header-end"></div>
 </div>
 
 <!-- Page Content -->
