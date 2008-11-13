@@ -13,8 +13,10 @@
         </div>
         <div class="author">
             <div class="aleft"></div>
-            Posted by <?php echo $author ?>
-            on <?php echo date('F jS Y', $date); ?>
+            <div class="byline">
+                Posted by <?php echo $author ?>
+                on <?php echo date('F jS Y', $date); ?>
+            </div>
             <div class="aright"></div>
         </div>
     </div>
