@@ -2,9 +2,13 @@
 <html>
 <head>
 	<title></title>
-    <link rel="stylesheet" type="text/css" href="/css/layout.css">
-    <link rel="stylesheet" type="text/css" href="/css/color.css">
-    <!--[if IE]><link rel="stylesheet" type="text/css" href="/css/ie.css" /><![endif]-->
+    <link rel="stylesheet" type="text/css" href="/css/site.css">
+    <!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/css/ie6.css"><![endif]-->
+<?php
+    /* disabled until we need it
+    <!--[if IE]><link rel="stylesheet" type="text/css" href="/css/ie.css" /><![endif]--> 
+    */
+ ?>
 </head>
 
 <body>

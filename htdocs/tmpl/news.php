@@ -1,10 +1,21 @@
-<div class="news_post">
-    <div class="post_author">
-        Posted by <?php echo $author ?>
-        on <?php echo date('l, F j @ G:i T', $date); ?>
+<div class="news_post inset">
+    <div class="left">
+        <div class="top"></div>
+        <div class="middle">
+            <div class="title <?php echo $topic ?>"></div>
+        </div>
+        <div class="bottom"></div>
     </div>
-    <h3><?php echo $title ?></h3>
-    <div class="post_content">
-        <?php echo $news ?>
+    <div class="content">
+        <div class="author">
+            <div class="aleft"></div>
+            Posted by <?php echo $author ?>
+            on <?php echo date('F jS Y', $date); ?>
+            <div class="aright"></div>
+        </div>
+        <h3><?php echo $title ?></h3>
+        <div class="post">
+            <?php echo $news ?>
+        </div>
     </div>
 </div>

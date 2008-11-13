@@ -1,0 +1,4 @@
+/* Special stylesheet just for IE 6 */
+
+img.png { behavior: url("/js/png.htc"); }
+

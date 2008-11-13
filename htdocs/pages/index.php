@@ -22,15 +22,18 @@
 
 <div id="index">
 
-<!-- Someone tell me how I can do this without needing tables to keep things pretty! -->
-<div id="index_whatis">
-    <div class="topleft"></div>
-    <div class="middleleft">
-        <div class="title"></div>
+<div id="index-top">
+
+<div id="index-whatis" class="inset">
+    <div class="left">
+        <div class="top"></div>
+        <div class="middle">
+            <div class="title"></div>
+        </div>
+        <div class="bottom"></div>
     </div>
-    <div class="bottomleft"></div>
     <div class="content">
-        <h3>What Is MythTV?</h3>
+        <h1>MythTV, Open Source DVR</h1>
         <p>
         MythTV is a Free Open Source digital video recorder (DVR) project
         distributed under the terms of the GNU GPL.  It has been under heavy
@@ -46,47 +49,46 @@
     </div>
 </div>
 
-<div id="index_quicklinks">
+<div id="index-quicklinks" class="inset">
     <div class="left">
-        <div class="topleft"></div>
-        <div class="middleleft">
+        <div class="top"></div>
+        <div class="middle">
             <div class="title"></div>
         </div>
-        <div class="bottomleft"></div>
+        <div class="bottom"></div>
     </div>
     <div class="content">
+        <h3>Quick Links:</h3>
         <ul>
-            <li><a href="http://svn.mythtv.org/trac/newticket/">
-                <img src="/img/bug_icon.png" border="0">
-                <span class="text">Report a Bug</span></a>
+            <li class="bug">
+                <a href="http://svn.mythtv.org/trac/newticket/">Report a Bug</a>
                 </li>
-            <li><a href="http://wiki.mythtv.org/">
-                <img src="/img/wiki_icon.png" border="0">
-                <span class="text">MythTV Wiki</span></a>
+            <li class="wiki">
+                <a href="http://wiki.mythtv.org/">MythTV Wiki</a>
                 </li>
-            <li><a href="/support/">
-                <img src="/img/lists_icon.png" border="0">
-                <span class="text">Mailing Lists</span></a>
+            <li class="support">
+                <a href="/support/">Mailing Lists</a>
                 </li>
-            <li><a href="/news/">
-                <img src="/img/news_icon.png" border="0">
-                <span class="text">News Archive</span></a>
+            <li class="news">
+                <a href="/news/">News Archive</a>
                 </li>
-            <li><a href="/contact/">
-                <img src="/img/contact_icon.png" border="0">
-                <span class="text">Contact MythTV Developers</span></a>
+            <li class="contact">
+                <a href="/contact/">Contact MythTV Developers</a>
                 </li>
         </ul>
     </div>
 </div>
 
-<div id="index_download">
-    <div class="topleft"></div>
-    <div class="middleleft">
-        <div class="title"></div>
+<div id="index-download" class="inset">
+    <div class="left">
+        <div class="top"></div>
+        <div class="middle">
+            <div class="title"></div>
+        </div>
+        <div class="bottom"></div>
     </div>
-    <div class="bottomleft"></div>
     <div class="content">
+        <h3>Release:</h3>
         <div class="release">
             <a href="/download">Current Release:  <?php echo $Version['tv'] ?></a>
         </div>
@@ -97,7 +99,9 @@
     </div>
 </div>
 
-<div id="index_news">
+</div><!-- index-top -->
+
+<div id="index-news">
 
 <?php
 // How many to display?
@@ -122,7 +126,7 @@
     Continue reading in the <a href="/news">News Archive</a>.
 </p>
 
-</div><!-- index_news -->
+</div><!-- index-news -->
 
 </div><!-- index -->
 
