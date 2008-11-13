@@ -7,15 +7,15 @@
         <div class="bottom"></div>
     </div>
     <div class="content">
+        <h3><?php echo $title ?></h3>
+        <div class="post">
+            <?php echo $news ?>
+        </div>
         <div class="author">
             <div class="aleft"></div>
             Posted by <?php echo $author ?>
             on <?php echo date('F jS Y', $date); ?>
             <div class="aright"></div>
-        </div>
-        <h3><?php echo $title ?></h3>
-        <div class="post">
-            <?php echo $news ?>
         </div>
     </div>
 </div>

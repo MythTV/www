@@ -372,6 +372,9 @@
         clear:              both;
         padding-top:        .5em;
     }
+    #index-news h2 {
+        display: none;
+    }
 
 /* news.php and shared news formatting */
 

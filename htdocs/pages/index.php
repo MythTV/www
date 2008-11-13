@@ -103,6 +103,8 @@
 
 <div id="index-news">
 
+<h2>Latest MythTV News</h2>
+
 <?php
 // How many to display?
     $num_to_display = 3;
