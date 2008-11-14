@@ -13,29 +13,42 @@
 
 // Current version of MythTV
     global $Version;
-    $Version['tv']      = '0.21';
-    $Version['plugins'] = '0.21';
-    $Version['themes']  = '0.21';
+    $Version = array(
+        'tv'      => '0.21',
+        'plugins' => '0.21',
+        'themes'  => '0.21',
+        );
 
 // Contact Recipients
     global $Contact;
     $Contact = array(
-                     'General Inquiry' => array(
-                            #'email' => 'developers@mythtv.org',
-                            'email' => 'xris@forevermore.net',
-                            'pre'   => 'MYTHTV -> ',
-                            'info'  => ''
-                           ),
-                     'Corporate Sponsorship' => array(
-                            'email' => 'xris@forevermore.net',
-                            'pre'   => 'MYTHTV SPONSOR -> ',
-                            'info'  => ''
-                           ),
-                     'Contract Coding' => array(
-                            #'email' => 'developers@mythtv.org',
-                            'email' => 'xris@forevermore.net',
-                            'pre'   => 'MYTHTV CODE -> ',
-                            'info'  => ''
-                           ),
-                    );
+        'General Inquiry' => array(
+            #'email' => 'developers@mythtv.org',
+            'email' => 'xris@forevermore.net',
+            'pre'   => 'MYTHTV -> ',
+            'info'  => ''
+            ),
+        'Corporate Sponsorship' => array(
+            'email' => 'xris@forevermore.net',
+            'pre'   => 'MYTHTV SPONSOR -> ',
+            'info'  => ''
+            ),
+        'Contract Coding' => array(
+            #'email' => 'developers@mythtv.org',
+            'email' => 'xris@forevermore.net',
+            'pre'   => 'MYTHTV CODE -> ',
+            'info'  => ''
+            ),
+        );
+
+// Default values for Meta variables used to influence header/footer files
+    global $Meta;
+    $Meta = array(
+        'title'       => 'MythTV, Open Source DVR',
+        'keywords'    =>
+             'MythTV,MythWeb,MythMusic,MythVideo,Convergence,Free,DVR,'
+            .'Video Recorder,Digital Video Recorder,VCR,Open Source,GPL,'
+            .'Linux,Mac,Mac OS,MacOS,Device',
+        'description' => '',
+        );
 

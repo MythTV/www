@@ -2,7 +2,7 @@
 
 <!-- Footer region and sponsorship text -->
 <div id="footer">
-    <div id="footer-start"></div>
+    <div id="footer-start"><hr></div>
     <span id="copyright">
         &copy; 2002-<?php echo date('Y') ?> by Isaac Richards and the MythTV Developers
     </span>

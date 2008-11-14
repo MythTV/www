@@ -29,40 +29,72 @@
 // Which section are we in?
     $Nav = 'download';
 
+// Meta Info
+    $Meta['title'] = 'Download MythTV';
+    $Meta['description']
+        = 'Download MythTV, a free digital video recorder application'
+         .' for Linux and MacOS.';
+    $Meta['keywords'] = 'Download,'.$Meta['keywords'];
+
 // Load the global page header
-    require_once 'pages/header.php';
+    require_once 'tmpl/header.php';
 
 // Otherwise, we need to display the download list and other options
 ?>
-<p>
-If you want to compile from source, you may download the latest versions here:
-</p>
-<ul>
-    <li>MythTV:     <a href="/download/mythtv/<?php  echo $Version['tv']      ?>">source</a>
-    <li>Plugins:    <a href="/download/plugins/<?php echo $Version['plugins'] ?>">source</a>
-    <li>Themes:     <a href="/download/themes/<?php  echo $Version['themes']  ?>">source</a>
-</ul>
 
-<p>
-If you are looking for older versions, you can find them in the
-<a href="ftp://ftp.osuosl.org/pub/mythtv/">OSU OSL archives</a>.
-</p>
+<div id="download">
 
-<p>
-If you would like to forgo compiling MythTV from source, there are packages
-available for a variety of linux distrubutions.  You can find a
-<a href="http://www.mythtv.org/wiki/index.php/Packages">list of available third
-party packages</a> in the wiki, along with a handful of howto's for getting
-MythTV installed in your favorite distro.
-</p>
+<div id="download-source" class="inset">
+    <div class="left">
+        <div class="top"></div>
+        <div class="middle">
+            <div class="title"></div>
+        </div>
+        <div class="bottom"></div>
+    </div>
+    <div class="content">
+        <p>
+        If you want to compile from source, you may download the latest versions here:
+        </p>
+        <ul>
+            <li>MythTV:     <a href="/download/mythtv/<?php  echo $Version['tv']      ?>">source</a>
+            <li>Plugins:    <a href="/download/plugins/<?php echo $Version['plugins'] ?>">source</a>
+            <li>Themes:     <a href="/download/themes/<?php  echo $Version['themes']  ?>">source</a>
+        </ul>
+        <p>
+        If you are looking for older versions, you can find them in the
+        <a href="ftp://ftp.osuosl.org/pub/mythtv/">OSU OSL archives</a>.
+        </p>
+    </div>
+</div>
 
-<p>
-If you would like to grab the latest development version or just want to keep up
-with the latest fixes to the stable branch, you will find subversion checkout
-instructions at <a href="http://svn.mythtv.org/trac/">http://svn.mythtv.org/</a>
-</p>
+<div id="download-other" class="inset">
+    <div class="left">
+        <div class="top"></div>
+        <div class="middle">
+            <div class="title"></div>
+        </div>
+        <div class="bottom"></div>
+    </div>
+    <div class="content">
+        <p>
+        If you would like to forgo compiling MythTV from source, there are packages
+        available for a variety of linux distrubutions.  You can find a
+        <a href="http://www.mythtv.org/wiki/index.php/Packages">list of available third
+        party packages</a> in the wiki, along with a handful of howtos for getting
+        MythTV installed in your favorite distro.
+        </p>
+        <p>
+        If you would like to grab the latest development version or just want to keep up
+        with the latest fixes to the stable branch, you will find subversion checkout
+        instructions at <a href="http://svn.mythtv.org/trac/">http://svn.mythtv.org/</a>
+        </p>
+    </div>
+</div>
+
+</div><!-- download -->
 
 <?php
 // Load the global page footer
-    require_once 'pages/footer.php';
+    require_once 'tmpl/footer.php';
 

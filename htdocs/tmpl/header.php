@@ -1,14 +1,29 @@
+<?php
+/**
+ * MythTV.org main page header.
+ *
+ * Please set $Meta variables appropriately before including this file.
+ *
+ * @url         $URL$
+ * @date        $Date$
+ * @version     $Revision$
+ * @author      $Author$
+/**/
+
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-	<title></title>
+	<title><?php echo $Meta['title'] ?></title>
     <link rel="stylesheet" type="text/css" href="/css/site.css">
     <!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/css/ie6.css"><![endif]-->
-<?php
-    /* disabled until we need it
     <!--[if IE]><link rel="stylesheet" type="text/css" href="/css/ie.css" /><![endif]-->
-    */
- ?>
+<?php
+    if ($Meta['description'])
+        echo '    <meta name="description" content="', htmlentities($Meta['description']), "\">\n";
+    if ($Meta['keywords'])
+        echo '    <meta name="keywords" content="', htmlentities($Meta['keywords']), "\">\n";
+?>
 </head>
 
 <body>

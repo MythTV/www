@@ -15,8 +15,14 @@
 // Which section are we in?
     $Nav = 'about';
 
+// Meta Info
+    $Meta['title'] = 'MythTV, Open Source DVR';
+    $Meta['description']
+        = 'MythTV is a Free Open Source digital video recorder'
+         .' project distributed under the terms of the GNU GPL.',
+
 // Load the global page header
-    require_once 'pages/header.php';
+    require_once 'tmpl/header.php';
 
 ?>
 
@@ -134,5 +140,5 @@
 
 <?php
 // Load the global page footer
-    require_once 'pages/footer.php';
+    require_once 'tmpl/footer.php';
 

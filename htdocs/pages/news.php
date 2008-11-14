@@ -16,7 +16,7 @@
     $Nav = 'news';
 
 // Load the global page header
-    require_once 'pages/header.php';
+    require_once 'tmpl/header.php';
 
 // Requesting a specific file?
     if ($Path[1]) {
@@ -61,4 +61,4 @@
     }
 
 // Load the global page footer
-    require_once 'pages/footer.php';
+    require_once 'tmpl/footer.php';

@@ -26,6 +26,8 @@
     global $Contact_Err;
     $Contact_Err = array();
 
+    $Contact_Err['subject'] = "Testing.  Emails will not be sent!";
+
 // Load some utilities
     require_once 'includes/EmailVerify.php';
 

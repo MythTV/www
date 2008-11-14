@@ -16,7 +16,7 @@
     $Nav = 'support';
 
 // Load the global page header
-    require_once 'pages/header.php';
+    require_once 'tmpl/header.php';
 ?>
 
 
@@ -26,5 +26,5 @@ Link/info for mailing lists, IRC, wiki, community links (unofficial forums), etc
 
 <?php
 // Load the global page footer
-    require_once 'pages/footer.php';
+    require_once 'tmpl/footer.php';
 
