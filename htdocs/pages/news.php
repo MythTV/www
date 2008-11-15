@@ -23,14 +23,12 @@
         $post = load_news($Path[1]);
     // Unknown news post?
         if (!$post) {
-            header("HTTP/1.0 404 Not Found");
-            redirect_browser('/news/');
+            redirect_browser('/news/', 404);
             exit;
         }
     // Make sure the URL is correct (for SEO)
         if ($post['url'] != $_SERVER['REQUEST_URI']) {
-            header("HTTP/1.0 301 Moved Permanently");
-            redirect_browser($post['url']);
+            redirect_browser($post['url'], 301);
         }
     // Now that we've passed the redirect point, we can load the global page header
         require_once 'tmpl/header.php';
