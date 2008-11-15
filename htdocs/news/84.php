@@ -1,6 +1,6 @@
 <?php
     $topic  = 'bug';
-    $title  = 'Don't use XMLTV 0.5.11';
+    $title  = 'Don\'t use XMLTV 0.5.11';
     $author = '<a href="http://www.mythtv.org/">Isaac</a>';
     $date   = strtotime('2003-06-28 08:44:13 UTC');
 ?>

@@ -1,6 +1,6 @@
 <?php
     $topic  = 'news';
-    $title  = 'What's been happening since 0.8';
+    $title  = 'What\'s been happening since 0.8';
     $author = '<a href="http://www.mythtv.org/">Isaac</a>';
     $date   = strtotime('2003-04-04 15:48:56 UTC');
 ?>
