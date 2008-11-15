@@ -29,6 +29,7 @@
 # Build the list
     while (my $row = $sh->fetchrow_hashref) {
         print "$row->{sid}\n";
+	$row->{title} =~ s/'/\\'/sg;
         open(DATA, ">news/$row->{sid}.php") or die "can't write news/$row->{sid}.php:  $!\n";
         print DATA <<EOF;
 <?php
