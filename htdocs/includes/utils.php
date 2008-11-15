@@ -15,7 +15,14 @@
 /**
  * Print a redirect header and exit
 /**/
-    function redirect_browser($url) {
+    function redirect_browser($url, $code=301) {
+        if ($code) {
+            switch ($code) {
+                case 301:   header("HTTP/1.0 301 Moved Permanently");   break;
+                case 404:   header("HTTP/1.0 404 Not Found");           break;
+                default:    header("HTTP/1.0 $code");
+            }
+        }
         header("Location: $url");
         echo "\n";
         exit;
@@ -182,5 +189,44 @@
                ' height="',  $height, '"',
                ' width="',   $width,  '"',
                " $params /></a>";
+    }
+
+/**
+ * Prints out a piece of data to the firebug console.
+/**/
+    function debug($data, $file = false) {
+    // Put our data into a string
+        if (is_array($data) || is_object($data))
+            $str = print_r($data, TRUE);
+        elseif (isset($data))
+            $str = $data;
+        $search = array("\n", '"');
+        $replace = array("\\n", '\"');
+        $back_trace = debug_backtrace();
+    // If this is a string, int or float
+        if (is_string($str) || is_int($str) || is_float($str)) {
+        // Allow XML/HTML to be treated as normal text
+            $str = htmlspecialchars($str, ENT_NOQUOTES);
+        }
+    // If this is a boolean
+        elseif (is_bool($str))
+            $str = $str ? '<i>**TRUE**</i>' : '<i>**FALSE**</i>';
+    // If this is null
+        elseif (is_null($str))
+            $str = '<i>**NULL**</i>';
+    // If it is not a string, we return a get_type, because it would be hard to generically come up with a way
+    // to display anything
+        else
+            $str = '<i>Type : '.gettype($str).'</i>';
+    // Show which line caused the debug message
+        $str = $str."\n<hr>\n".'Line #'.$back_trace[0]['line'].' in file '.$back_trace[0]['file']."\n";
+    // Print the message
+        echo '<pre>'.$str.'</pre>';
+    // Print to a file?
+        if ($file) {
+            $out = fopen('/tmp/debug.txt', 'a');
+            fwrite($out, "$str\n");
+            fclose($out);
+        }
     }
 

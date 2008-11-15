@@ -386,34 +386,45 @@
 
 /* news.php and shared news formatting */
 
-    .news_post {
+    .news-post {
         margin-top:             1em;
         font-size:              12px;
     }
-    .news_post .left .middle .title.news {
+    .news-post.news {
+        min-height:         81px;
+    }
+    .news-post.news .left .middle .title {
         background-image:   url("/img/topics/news.png");
     }
-    .news_post .left .middle .title.software_news {
+    .news-post.software-news {
+        min-height:         157px;
+    }
+    .news-post.software-news .left .middle .title {
         background-image:   url("/img/topics/software_news.png");
     }
-    .news_post .left .middle .title.announcement {
+    .news-post.announcement {
+        min-height:         159px;
+    }
+    .news-post.announcement .left .middle .title {
         background-image:   url("/img/topics/announcement.png");
     }
-    .news_post .left .middle .title.theme_news {
+    .news-post.theme-news {
+        min-height:         140px;
+    }
+    .news-post.theme-news .left .middle .title {
         background-image:   url("/img/topics/theme_news.png");
     }
-    .news_post .content {
+    .news-post .content {
         padding:            15px 10px 3px 10px;
         width:              90%;
     }
-    .news_post .content h3 {
+    .news-post .content h1, .news-post .content h3 {
         font-size:          140%;
-        margin:             0;
-        margin-bottom:      .25em;
+        margin:             0 0 .25em 0;
         padding:            3px 10px;
         float:              left;
     }
-    .news_post .content .author {
+    .news-post .content .author {
         position:               absolute;
         top:                    0;
         right:                  0;
@@ -428,14 +439,14 @@
         background-position:    top;
         background-repeat:      repeat-x;
     }
-    .news_post .content .author a {
+    .news-post .content .author a {
         color:              #bcf;
         text-decoration:    none;
     }
-    .news_post .content .author a:hover {
+    .news-post .content .author a:hover {
         text-decoration:    underline;
     }
-    .news_post .content .author .aleft {
+    .news-post .content .author .aleft {
         position:               absolute;
         top:                    0;
         left:                   0;
@@ -446,7 +457,7 @@
         background-position:    top left;
         background-repeat:      no-repeat;
     }
-    .news_post .content .author .aright {
+    .news-post .content .author .aright {
         position:               absolute;
         top:                    0;
         right:                  0;
@@ -457,13 +468,18 @@
         background-position:    top right;
         background-repeat:      no-repeat;
     }
-    .news_post .content .post {
+    .news-post .content .post {
         clear:              both;
         margin:             .5em 1em .5em 2.5em;
     }
-    .news_post .content .post ul {
-        margin-left: 0;
-        padding-left: 1.5em;
+    .news-post .content .post ul {
+        margin-left:        0;
+        padding-left:       1.5em;
+    }
+    .news-post .content .archive-link {
+        position:           absolute;
+        bottom:             .5em;
+        right:              .5em;
     }
 
 /* contact.php */
@@ -529,6 +545,21 @@
     }
     #support-developers .left .middle .title {
         background-image:   url("/img/developers.png");
+    }
+
+/* news.php */
+
+    #news-archive {
+    }
+    #news-archive h1 {
+        font-size:  150%;
+    }
+    #news-archive .left .middle .title {
+        background-image:   url("/img/news_archive.png");
+    }
+    #news-archive li .topic {
+        font-size:  80%;
+        font-style: italic;
     }
 
 /* detail.php */

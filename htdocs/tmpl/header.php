@@ -62,7 +62,7 @@
         </ul>
     </div>
     <div id="header-end"></div>
-</div>
+</div><!-- header -->
 
 <!-- Page Content -->
 <div id="content">

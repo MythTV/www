@@ -15,6 +15,9 @@
 // Which section are we in?
     $Nav = 'about';
 
+// Load the news display engine
+    require_once 'includes/news.php';
+
 // Meta Info
     $Meta['title'] = 'MythTV, Open Source DVR';
     $Meta['description']
@@ -112,22 +115,8 @@
 <h2>Latest MythTV News</h2>
 
 <?php
-// How many to display?
-    $num_to_display = 3;
-
-// Display the news items
-    foreach (array_reverse(get_sorted_files('news/')) as $file) {
-    // Load the news file into a buffer
-        ob_start();
-        require "news/$file";
-        $news = ob_get_contents();
-        ob_end_clean();
-    // Print
-        require 'tmpl/news.php';
-    // Displayed our max?
-        if (--$num_to_display < 1)
-            break;
-    }
+// Display recent news
+    print_recent_news(3);
 ?>
 
 <p>

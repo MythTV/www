@@ -15,6 +15,13 @@
 // Which section are we in?
     $Nav = 'support';
 
+// Meta Info
+    $Meta['title'] = 'MythTV Support Options';
+    $Meta['description']
+        = 'MythTV has a variety of options available for both user and'
+         .' developer support, including mailing lists, IRC channels, and'
+         .' extensive documentation.';
+
 // Load the global page header
     require_once 'tmpl/header.php';
 ?>
@@ -42,8 +49,8 @@
         you through whatever troubles you are having with your Mythbox.
         </p>
         <p>
-        The first place to look for answers to basic questions, is to check our
-        list of
+        The first place to look for answers to basic questions should be to
+        check our list of
         <a href="http://www.mythtv.org/wiki/index.php/Frequently_Asked_Questions">frequently asked questions</a>.
         </p>
 

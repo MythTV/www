@@ -1,4 +1,4 @@
-</div>
+</div><!-- content -->
 
 <!-- Footer region and sponsorship text -->
 <div id="footer">
@@ -11,7 +11,7 @@
     <a href="http://www.osuosl.org/"><img src="/img/osl.gif" alt="OSU OSL"></a>
     <a href="http://www.siliconmechanics.com/"><img src="/img/simech.gif" alt="Silicon Mechanics"></a>
     </span>
-</div>
+</div><!-- footer -->
 
 <!-- End of the page -->
 </body>
