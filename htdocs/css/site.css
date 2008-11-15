@@ -509,7 +509,8 @@
 
 /* support.php */
 
-    #support {
+    #support h1 {
+        display:            none;
     }
     #support div.inset {
         margin-bottom:      1em;
@@ -519,6 +520,9 @@
     }
     #support-community dt {
         font-weight:        bold;
+    }
+    #support-documentation .left .middle .title {
+        background-image:   url("/img/documentation.png");
     }
     #support-bugs .left .middle .title {
         background-image:   url("/img/bug_advisory.png");

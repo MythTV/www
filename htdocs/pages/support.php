@@ -21,6 +21,8 @@
 
 <div id="support">
 
+<h1>MythTV Support</h1>
+
 <div id="support-community" class="inset">
     <div class="left">
         <div class="top"></div>
@@ -34,8 +36,17 @@
         <p>
         MythTV has a thriving community of developers and users who are happy
         to answer questions and help out those who are interested in using the
-        software that we've all put so much effort into producing.
+        software that we've all put so much effort into producing.  In fact,
+        we pride ourselves on having one of the friendliest community of both
+        developers and users who are willing to answer your questions and help
+        you through whatever troubles you are having with your Mythbox.
         </p>
+        <p>
+        The first place to look for answers to basic questions, is to check our
+        list of
+        <a href="http://www.mythtv.org/wiki/index.php/Frequently_Asked_Questions">frequently asked questions</a>.
+        </p>
+
         <h3>Mailing Lists</h3>
         <p>
         One of the best ways to get help is through one of our official mailing
@@ -101,6 +112,49 @@
         forums are generally considered to be one of the better forums for
         discussions about MythTV.
         </p>
+    </div>
+</div>
+
+<div id="support-documentation" class="inset">
+    <div class="left">
+        <div class="top"></div>
+        <div class="middle">
+            <div class="title"></div>
+        </div>
+        <div class="bottom"></div>
+    </div>
+    <div class="content">
+        <h2>MythTV Documentation</h2>
+        <p>
+        There are three forms of documentation
+        </p>
+        <dl>
+        <dt><a href="http://wiki.mythtv.org/">MythTV Wiki</a></dt>
+            <dd>The wiki is maintained by users like you, as well as by the
+                developers.  It is the most up to date piece of documentation
+                about MythTV, and contains a variety of pieces of general
+                information from screenshots and our
+                <a href="http://www.mythtv.org/wiki/index.php/Frequently_Asked_Questions">FAQ</a>
+                to detailed explanations about of rare configurations set up by
+                some of our more adventurous users.
+                </dd>
+            <dt><a href="/docs/">Official User Documentation</a></dt>
+            <dd>We do our best to maintain a detailed document that attempts to
+                describe the installation process for MythTV from source code.
+                If you are experiencing difficulty during your installation
+                and/or configuration, this is the first place you should check
+                for information about common roadblocks and installation
+                hangups.
+                </dd>
+            <dt><a href="http://www.cuymedia.com/mythtv-trunk/">Developer Documentation</a></dt>
+            <dd>For the technically inclined, we have started to build
+                developer documentation to explain the complex structure of
+                MythTV's code base.  If you think that you would like to help
+                improve MythTV by fixing bugs or adding some of your own
+                features, we recommend that you take a look here in order to
+                gain a better understanding of our project.
+                </dd>
+        </dl>
     </div>
 </div>
 
