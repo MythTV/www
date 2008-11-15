@@ -241,7 +241,7 @@
         bottom:                 0;
         width:                  100%;
         background-repeat:      no-repeat;
-        background-position:    8px center;
+        background-position:    8px .5em;
     }
     .inset .left .bottom {
         position:               absolute;
@@ -251,6 +251,9 @@
         background-image:       url("/img/bottom_corner_w_shadow.png");
         background-repeat:      no-repeat;
         background-position:    bottom left;
+    }
+    .inset .content {
+        padding:        .25em 1em;
     }
 
 /* index.php */
@@ -264,7 +267,8 @@
         height:             250px;
     }
     #index-whatis .left .middle .title {
-        background-image:   url("/img/whatis.png");
+        background-image:       url("/img/whatis.png");
+        background-position:    8px center;
     }
     #index-whatis .content {
         padding:            .5em 1em;
@@ -347,6 +351,7 @@
     }
     #index-download .left .middle .title {
         background-image:   url("/img/release.png");
+        background-position:    8px center;
     }
     #index-download .content {
         padding:            15px 10px 3px 10px;
@@ -384,9 +389,6 @@
     .news_post {
         margin-top:             1em;
         font-size:              12px;
-    }
-    .news_post .left .middle .title {
-        background-position:    8px .5em;
     }
     .news_post .left .middle .title.news {
         background-image:   url("/img/topics/news.png");
@@ -470,6 +472,9 @@
         width:          50em;
     }
 
+    #contact .left .middle .title {
+        background-image:   url("/img/contact_us.png");
+    }
     #contact .content {
         padding:        .25em 1em;
     }
@@ -494,6 +499,32 @@
     }
     #download div.inset .content {
         padding:        .25em 1em;
+    }
+    #download-source .left .middle .title {
+        background-image:   url("/img/source_code.png");
+    }
+    #download-other .left .middle .title {
+        background-image:   url("/img/other.png");
+    }
+
+/* support.php */
+
+    #support {
+    }
+    #support div.inset {
+        margin-bottom:      1em;
+    }
+    #support-community .left .middle .title {
+        background-image:   url("/img/community.png");
+    }
+    #support-community dt {
+        font-weight:        bold;
+    }
+    #support-bugs .left .middle .title {
+        background-image:   url("/img/bug_advisory.png");
+    }
+    #support-developers .left .middle .title {
+        background-image:   url("/img/developers.png");
     }
 
 /* detail.php */

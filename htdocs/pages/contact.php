@@ -49,16 +49,18 @@
         <p>
         <strong>Do</strong> use this form to contact the MythTV
         developers about topics listed below which cannot be answered
-        through normal community support channels.
+        through normal <a href="/support">community support channels</a>.
         </p>
 
         <p>
         <strong>Do not</strong> use this form for
         <a href="http://svn.mythtv.org/trac/newticket">bug reports</a>,
         <a href="http://www.mythtv.org/wiki/index.php/Feature_Wishlist">feature requests</a>,
-        <a href="/support">support inquiries</a>, or other similar
-        queries that are more appropriately answered by using the
-        correct community tools.
+        <a href="/support">support inquiries</a>, or other similar queries that
+        are easily answered by using the appropriate community tools.
+        </p>
+
+        <p>
         </p>
 
         <hr>
