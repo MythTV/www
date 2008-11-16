@@ -115,7 +115,8 @@
             return;
         }
     // Build the thumbnail cache path
-        $thumb = 'cache/tv_'.preg_replace('/[\/\.]+/', '_', $img)."_{$tv}_{$side}_$size.jpg";
+        $clean_color = preg_replace('/\W+/', '', $color);
+        $thumb = 'cache/tv_'.preg_replace('/[\/\.]+/', '_', $img)."_{$tv}_{$side}_{$size}_$clean_color.jpg";
     // Make sure the path includes the img directory
         $tv = "img/tv/{$tv}_$side.png";
     // Ignore images that don't exist
