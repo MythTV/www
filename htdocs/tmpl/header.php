@@ -35,7 +35,7 @@
     </div>
     <div id="header_text">
         <ul>
-            <li<?php if ($Nav == 'about') echo ' class="cur"' ?>><a href="/">About MythTV</a>
+            <li<?php if ($Nav == 'about') echo ' class="cur"' ?>><a href="/detail">About MythTV</a>
                 <div>
                 <ul>
                     <li class="first"><a href="/detail">MythTV In Detail</a></li>
