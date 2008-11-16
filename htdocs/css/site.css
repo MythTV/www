@@ -267,7 +267,7 @@
         height:             250px;
     }
     #index-whatis .left .middle .title {
-        background-image:       url("/img/whatis.png");
+        background-image:       url("/img/titles/whatis.png");
         background-position:    8px center;
     }
     #index-whatis .content {
@@ -350,7 +350,7 @@
         height:             91px;
     }
     #index-download .left .middle .title {
-        background-image:   url("/img/release.png");
+        background-image:   url("/img/titles/release.png");
         background-position:    8px center;
     }
     #index-download .content {
@@ -489,7 +489,7 @@
     }
 
     #contact .left .middle .title {
-        background-image:   url("/img/contact_us.png");
+        background-image:   url("/img/titles/contact_us.png");
     }
     #contact .content {
         padding:        .25em 1em;
@@ -517,10 +517,10 @@
         padding:        .25em 1em;
     }
     #download-source .left .middle .title {
-        background-image:   url("/img/source_code.png");
+        background-image:   url("/img/titles/source_code.png");
     }
     #download-other .left .middle .title {
-        background-image:   url("/img/other.png");
+        background-image:   url("/img/titles/other.png");
     }
 
 /* support.php */
@@ -532,19 +532,19 @@
         margin-bottom:      1em;
     }
     #support-community .left .middle .title {
-        background-image:   url("/img/community.png");
+        background-image:   url("/img/titles/community.png");
     }
     #support-community dt {
         font-weight:        bold;
     }
     #support-documentation .left .middle .title {
-        background-image:   url("/img/documentation.png");
+        background-image:   url("/img/titles/documentation.png");
     }
     #support-bugs .left .middle .title {
-        background-image:   url("/img/bug_advisory.png");
+        background-image:   url("/img/titles/bug_advisory.png");
     }
     #support-developers .left .middle .title {
-        background-image:   url("/img/developers.png");
+        background-image:   url("/img/titles/developers.png");
     }
 
 /* news.php */
@@ -555,7 +555,7 @@
         font-size:  150%;
     }
     #news-archive .left .middle .title {
-        background-image:   url("/img/news_archive.png");
+        background-image:   url("/img/titles/news_archive.png");
     }
     #news-archive li .topic {
         font-size:  80%;
@@ -565,14 +565,45 @@
 /* detail.php */
 
     #detail {
+        position:           relative;
+    }
+    #detail .left .middle .title {
+        background-image:   url("/img/titles/whatis.png");
     }
 
-    #detail_toc {
+    #detail-toc h1 {
+        font-size:  175%;
+        margin:     .25em 0;
+    }
+    #detail-toc ul {
+        position:           fixed;
+        top:                132px;
+        left:               65px;
+        border:1px solid red;
+        padding:            .25em .5em;
+        margin:             0;
+        list-style-type:    none;
+        width:              8em;
     }
 
-    #detail_content {
+    #detail-content {
+        border:         1px solid black;
+        margin-left:    10em;
+        padding:        0;
+        width:          54em;
+    }
+    #detail-content .wrapper {
     }
 
-    #detail_content .content {
+    #detail-content .detail {
+        vertical-align: top;
+        padding:        .5em;
+        white-space:    normal;
+    }
+    #detail-content .detail a {
+        float: right;
+    }
+    #detail-content .detail h2 {
+        margin:     0 0 .5em 0;
     }
 
