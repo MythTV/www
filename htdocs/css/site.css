@@ -571,32 +571,31 @@
         background-image:   url("/img/titles/whatis.png");
     }
 
+    #detail-toc {
+        position:           fixed;
+        top:                90px;
+        left:               65px;
+    }
     #detail-toc h1 {
         font-size:  175%;
-        margin:     .25em 0;
+        width:      4.5em;
+        margin:     .25em;
     }
     #detail-toc ul {
-        position:           fixed;
-        top:                132px;
-        left:               65px;
-        border:1px solid red;
-        padding:            .25em .5em;
+        padding:            0 .5em;
         margin:             0;
         list-style-type:    none;
         width:              8em;
     }
 
     #detail-content {
-        border:         1px solid black;
-        margin-left:    10em;
-        padding:        0;
+        border-left:    1px solid #223;
+        margin:         .5em 0 0 10em;
+        padding:        .5em;
         width:          54em;
-    }
-    #detail-content .wrapper {
     }
 
     #detail-content .detail {
-        vertical-align: top;
         padding:        .5em;
         white-space:    normal;
     }
