@@ -1,3 +1,9 @@
-/* Special stylesheet just for IE 7 */
+/* Special stylesheet just for IE */
 
 
+#index-quicklinks ul {
+margin-top:  14px;
+}
+#index-quicklinks li {
+    margin-left: -40px;
+}
