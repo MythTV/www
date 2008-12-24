@@ -1,7 +1,7 @@
 <?php
     $topic  = 'software_news';
     $title  = 'Update on the WinTV PVR-250';
-    $author = '<a href="http://www.mythtv.org/">Isaac</a>';
+    $author = 'isaac';
     $date   = strtotime('2003-04-15 08:27:42 UTC');
 ?>
 <ul>

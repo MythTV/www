@@ -30,6 +30,7 @@
         ob_start();
         require "news/$id.php";
         $post = array(
+            'id'     => $id,
             'title'  => $title,
             'date'   => $date,
             'topic'  => $topic,

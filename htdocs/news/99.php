@@ -1,7 +1,7 @@
 <?php
     $topic  = 'theme_news';
     $title  = 'New Themes Section';
-    $author = '<a href="http://www.mythtv.org/">Isaac</a>';
+    $author = 'isaac';
     $date   = strtotime('2003-12-19 23:06:26 UTC');
 ?>
 <ul>

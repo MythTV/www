@@ -1,7 +1,7 @@
 <?php
     $topic  = 'software_news';
     $title  = 'MythWeb Flash Player';
-    $author = '<a href="http://www.mythtv.org/">Isaac</a>';
+    $author = 'isaac';
     $date   = strtotime('2007-07-12 18:57:48 UTC');
 ?>
 Chris Petersen asked me to put up a update to his previous requests for help on

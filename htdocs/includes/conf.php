@@ -11,6 +11,22 @@
     global $Allowed_IP;
     $Allowed_IP = array('10.0.0.13');
 
+// Authors
+    global $Authors;
+    $Authors = array(
+        'isaac' => '<a href="http://www.mythtv.org/">Isaac</a>',
+        'xris'  => '<a href="http://www.mythtv.org/wiki/index.php/User:Xris">xris</a>',
+        );
+
+// Topics
+    global $Topics;
+    $Topics = array(
+        'news'          => 'News',
+        'announcement'  => 'Announcement',
+        'software_news' => 'Software News',
+        'theme_news'    => 'Theme News',
+        );
+
 // Current version of MythTV
     global $Version;
     $Version = array(
@@ -50,5 +66,60 @@
             .'Video Recorder,Digital Video Recorder,VCR,Open Source,GPL,'
             .'Linux,Mac,Mac OS,MacOS,Device',
         'description' => '',
+        );
+
+// Digg topics
+    global $Digg_Topics;
+    $Digg_Topics = array(
+        'apple',
+        //'arts_culture',
+        //'autos',
+        //'baseball',
+        //'basketball',
+        //'business_finance',
+        //'celebrity',
+        //'comedy',
+        //'comics_animation',
+        //'design',
+        'educational',
+        //'environment',
+        //'extreme_sports',
+        //'food_drink',
+        //'football',
+        'gadgets',
+        //'gaming_news',
+        //'general_sciences',
+        //'golf',
+        'hardware',
+        //'health',
+        //'hockey',
+        'linux_unix',
+        'microsoft',
+        'mods',
+        //'motorsport',
+        'movies',
+        'music',
+        //'nintendo',
+        //'odd_stuff',
+        //'olympics',
+        //'other_sports',
+        //'pc_games',
+        //'people',
+        //'pets_animals',
+        //'playable_web_games',
+        //'playstation',
+        //'political_opinion',
+        //'politics',
+        'programming',
+        //'security',
+        //'soccer',
+        'software',
+        //'space',
+        'tech_news',
+        'television',
+        //'tennis',
+        //'travel_places',
+        //'world_news',
+        'xbox',
         );
 

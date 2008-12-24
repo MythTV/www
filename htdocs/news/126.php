@@ -1,7 +1,7 @@
 <?php
     $topic  = 'news';
     $title  = 'Schedules Direct now open for membership.';
-    $author = '<a href="http://www.mythtv.org/">Isaac</a>';
+    $author = 'isaac';
     $date   = strtotime('2007-08-27 16:06:25 UTC');
 ?>
 <ul>

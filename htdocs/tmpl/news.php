@@ -16,6 +16,9 @@
  *
 /**/
 
+// Make sure the author hash is loaded
+    global $Authors;
+
 // Which type of header tag to use?
     $htag = $post['solo'] ? 'h1' : 'h3';
 
@@ -32,10 +35,22 @@
         <<?php echo $htag ?>><?php echo $post['title'] ?></<?php echo $htag ?>>
         <div class="post">
             <?php echo $post['content'] ?>
+            <div class="digg">
+                <script type="text/javascript">
+                digg_url = '<?php echo addslashes($_SERVER['HTTP_HOST'].$post['url']) ?>';
+                digg_title = '<?php echo addslashes($post['title']) ?>';
+                digg_media = 'news';
+                digg_topic = '<?php echo _or($post['digg_topic'], 'tech_news') ?>';
+                digg_bgcolor = '#e6e6f0';
+                digg_skin = 'icon'; // or:  compact, or comment out completely for standard
+                digg_window = 'new';
+                </script>
+                <script src="http://digg.com/tools/diggthis.js" type="text/javascript"></script>
+            </div>
         </div>
         <div class="author">
             <div class="aleft"></div>
-            <i>Posted by <?php echo $post['author'] ?>
+            <i>Posted by <?php echo $Authors[$post['author']] ?>
             on <?php echo date('F jS Y', $post['date']); ?></i>
             <div class="aright"></div>
         </div>

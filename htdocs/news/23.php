@@ -1,7 +1,7 @@
 <?php
     $topic  = 'news';
     $title  = 'July 27, 2002';
-    $author = '<a href="http://www.mythtv.org/">Isaac</a>';
+    $author = 'isaac';
     $date   = strtotime('2002-07-27 21:19:13 UTC');
 ?>
 <ul>                                                                              <li>Worked more on the music playback UI.  Still kinda rough, and missing a few features (random play, repeat, etc), but check it out <a href="mc/musicplayback.png">here</a>.

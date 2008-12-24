@@ -53,7 +53,7 @@
         <p>
         If you are interested in learning more about MythTV (or just want to check
         out some screenshots), please take a look at
-        <a href="/detail">MythTV In Detail</a>.
+        <a href="/detail/mythtv">MythTV In Detail</a>.
         </p>
     </div>
 </div>

@@ -1,7 +1,7 @@
 <?php
     $topic  = 'news';
     $title  = 'Almost to 0.9...';
-    $author = '<a href="http://www.mythtv.org/">Isaac</a>';
+    $author = 'isaac';
     $date   = strtotime('2003-06-01 15:09:20 UTC');
 ?>
 Oops, been a month since my last update.  I've been busy with other things.  Anyway, here's what's been going on in MythTV-land:

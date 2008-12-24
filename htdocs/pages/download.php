@@ -54,12 +54,17 @@
     </div>
     <div class="content">
         <p>
-        If you want to compile from source, you may download the latest versions here:
+        For various reasons, we have chosen not distribute pre-compiled binary
+        versions of MythTV.  However, if you would like to compile from source,
+        you may download the latest versions here:
         </p>
         <ul>
-            <li>MythTV:     <a href="/download/mythtv/<?php  echo $Version['tv']      ?>">source</a>
-            <li>Plugins:    <a href="/download/plugins/<?php echo $Version['plugins'] ?>">source</a>
-            <li>Themes:     <a href="/download/themes/<?php  echo $Version['themes']  ?>">source</a>
+            <li><a href="/download/mythtv/<?php echo $Version['tv'] ?>">
+                MythTV <?php echo $Version['tv'] ?></a>
+            <li><a href="/download/plugins/<?php echo $Version['plugins'] ?>">
+                MythTV Plugins <?php echo $Version['plugins'] ?></a>
+            <li><a href="/download/themes/<?php echo $Version['themes'] ?>">
+                MythTV Themes <?php echo $Version['themes'] ?></a>
         </ul>
         <p>
         If you are looking for older versions, you can find them in the
@@ -83,6 +88,13 @@
         <a href="http://www.mythtv.org/wiki/index.php/Packages">list of available third
         party packages</a> in the wiki, along with a handful of howtos for getting
         MythTV installed in your favorite distro.
+        </p>
+        <p>
+        In the wiki, you will also find a list of full-blown
+        <a href="http://www.mythtv.org/wiki/index.php/External_Links#MythTV_Install_Guides_.2F_Distros">linux distributions</a>
+        that come pre-installed with MythTV, along with howtos for getting
+        MythTV running on most other major linux distributions (as well as
+        FreeBSD).
         </p>
         <p>
         If you would like to grab the latest development version or just want to keep up
