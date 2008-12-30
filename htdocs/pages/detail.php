@@ -45,6 +45,14 @@
         redirect_browser('/detail/mythtv', 404);
     }
 
+// Title, meta escription, etc.
+    $Meta['title'] = $sections[$Path[1]].' in Detail';
+    $Meta['description'] = 'Detailed description and screenshots of '.$sections[$Path[1]];
+    $Meta['keywords'] = implode(',',array_unique(array(
+        $sections[$Path[1]], 'MythTV',
+        'detail', 'overview', 'description', 'screenshot', 'screenshots'
+        )));
+
 // Load the global page header
     require_once 'tmpl/header.php';
 ?>
