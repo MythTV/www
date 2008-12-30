@@ -264,11 +264,11 @@
 
     #index-whatis {
         width:              68%;
-        height:             250px;
+        height:             18em;
     }
     #index-whatis .left .middle .title {
         background-image:       url("/img/titles/whatis.png");
-        background-position:    8px center;
+        background-position:    8px top;
     }
     #index-whatis .content {
         padding:            .5em 1em;
@@ -289,7 +289,7 @@
         top:                0;
         right:              0;
         width:              25%;
-        height:             140px;
+        height:             10em;
     }
     #index-quicklinks .left .middle .title {
         display: none;
@@ -320,7 +320,7 @@
         padding:                .5em .5em .5em 28px;
         margin-left:            5px;
         background-repeat:      no-repeat;
-        background-position:    left 5px;
+        background-position:    left .4em;
     }
     #index-quicklinks li a:hover {
         text-decoration:        underline;
@@ -347,11 +347,11 @@
         bottom:             0;
         right:              0;
         width:              25%;
-        height:             91px;
+        height:             6.5em;
     }
     #index-download .left .middle .title {
-        background-image:   url("/img/titles/release.png");
-        background-position:    8px center;
+        background-image:       url("/img/titles/release.png");
+        background-position:    8px top;
     }
     #index-download .content {
         padding:            15px 10px 3px 10px;
