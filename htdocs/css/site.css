@@ -588,13 +588,14 @@
         margin:     .25em;
     }
     #detail-toc ul {
-        padding:            0 .5em;
-        margin:             0;
+        padding:            0;
+        margin:             0 0 0 1.5em;
         list-style-type:    none;
         width:              8em;
     }
     #detail-toc li.selected {
         font-weight:        bold;
+        list-style-type:    square;
     }
 
     #detail-content {
@@ -603,6 +604,7 @@
         padding:        0 .5em .5em .5em;
         width:          54em;
         min-height:     30em;
+        overflow:       auto;
     }
 
     #detail-content .detail {
@@ -610,7 +612,6 @@
         white-space:    normal;
     }
     #detail-content .detail a {
-        float: right;
     }
     #detail-content .detail h1 {
         margin:     -.25em 0 .5em 0;
