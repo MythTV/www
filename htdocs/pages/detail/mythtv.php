@@ -97,9 +97,9 @@
     <h3>Credits</h3>
 
     <p>
-    MythTV is maintained by Isaac Richards, who maintains loose leadership over
-    the dozens of developers who each work on one or more pieces that make up
-    the software suite.
+    MythTV is maintained by Isaac Richards, who maintains loose leadership
+    and guidance over the dozens of other developers who each work on one or
+    more pieces that make up the software suite.
     </p>
 
 
