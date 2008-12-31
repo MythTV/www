@@ -18,4 +18,9 @@
 
     Integration with MAME, xNES and other emulators to let you play video
     games from with MythTV
+
+    <p>
+    Read more about MythGame in the <a href="http://www.mythtv.org/wiki/index.php/MythGame" title="MythTV Wiki:  MythGame">MythTV Wiki</a>
+    </p>
+
 </div>

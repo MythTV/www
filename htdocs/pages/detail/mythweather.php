@@ -17,4 +17,9 @@
     <h1>MythWeather</h1>
 
     Local weather updates.  Does this still have bugs in the US?
+
+    <p>
+    Read more about MythWeather in the <a href="http://www.mythtv.org/wiki/index.php/MythWeather" title="MythTV Wiki:  MythWeather">MythTV Wiki</a>
+    </p>
+
 </div>

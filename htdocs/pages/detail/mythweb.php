@@ -82,7 +82,10 @@
     <a href="http://www.mythtv.org/wiki/index.php/User:Xris">Chris Petersen</a> (a.k.a. xris)
     and
     <a href="http://www.mythtv.org/wiki/index.php/User:Kormoc">Rob Smith</a> (a.k.a. kormoc).
-    </dd>
+    </p>
+
+    <p>
+    Read more about MythWeb in the <a href="http://www.mythtv.org/wiki/index.php/Mythweb" title="MythTV Wiki:  MythWeb">MythTV Wiki</a>
     </p>
 
 </div>

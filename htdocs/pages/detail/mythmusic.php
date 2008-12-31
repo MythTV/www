@@ -20,4 +20,8 @@
     complete with visualizers.  It will also play music from your iTunes
     shared library.
 
+    <p>
+    Read more about MythMusic in the <a href="http://www.mythtv.org/wiki/index.php/MythMusic" title="MythTV Wiki:  MythMusic">MythTV Wiki</a>
+    </p>
+
 </div>

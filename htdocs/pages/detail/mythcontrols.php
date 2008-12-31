@@ -17,4 +17,9 @@
     <h1>MythControls</h1>
 
     What does this do?  Configurable key control editor?
+
+    <p>
+    Read more about MythControls in the <a href="http://www.mythtv.org/wiki/index.php/MythControls" title="MythTV Wiki:  MythControls">MythTV Wiki</a>
+    </p>
+
 </div>

@@ -102,5 +102,8 @@
     more pieces that make up the software suite.
     </p>
 
+    <p>
+    Read more about MythTV in the <a href="http://www.mythtv.org/wiki/" title="MythTV Wiki">MythTV Wiki</a>
+    </p>
 
 </div>

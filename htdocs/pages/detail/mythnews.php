@@ -17,4 +17,9 @@
     <h1>MythNews</h1>
 
     RSS News feed plugin.  Requires MythBrowser?
+
+    <p>
+    Read more about MythNews in the <a href="http://www.mythtv.org/wiki/index.php/MythNews" title="MythTV Wiki:  MythNews">MythTV Wiki</a>
+    </p>
+
 </div>

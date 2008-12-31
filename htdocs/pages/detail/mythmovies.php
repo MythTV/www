@@ -17,4 +17,9 @@
     <h1>MythMovies</h1>
 
     Local Movie times?
+
+    <p>
+    Read more about MythMovies in the <a href="http://www.mythtv.org/wiki/index.php/MythMovies" title="MythTV Wiki:  MythMovies">MythTV Wiki</a>
+    </p>
+
 </div>

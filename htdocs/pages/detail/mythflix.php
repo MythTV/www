@@ -17,4 +17,9 @@
     <h1>MythFlix</h1>
 
     Browse your netflix account and order movies.
+
+    <p>
+    Read more about MythFlix in the <a href="http://www.mythtv.org/wiki/index.php/MythFlix" title="MythTV Wiki:  MythFlix">MythTV Wiki</a>
+    </p>
+
 </div>
