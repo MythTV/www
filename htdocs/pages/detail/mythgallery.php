@@ -14,7 +14,7 @@
 ?>
 <div id="detail-mythgallery" class="detail">
     <a name="mythgallery"></a>
-    <h1>MythGallery</h2>
+    <h1>MythGallery</h1>
 
     Browse through and show off your photo collection.
 </div>

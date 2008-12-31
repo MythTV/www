@@ -14,7 +14,7 @@
 ?>
 <div id="detail-mythmusic" class="detail">
     <a name="mythmusic"></a>
-    <h1>MythMusic</h2>
+    <h1>MythMusic</h1>
 
     This plugin lets you play audio files or CDs from your music collection,
     complete with visualizers.  It will also play music from your iTunes

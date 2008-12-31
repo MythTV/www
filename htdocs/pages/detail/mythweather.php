@@ -14,7 +14,7 @@
 ?>
 <div id="detail-mythweather" class="detail">
     <a name="mythweather"></a>
-    <h1>MythWeather</h2>
+    <h1>MythWeather</h1>
 
     Local weather updates.  Does this still have bugs in the US?
 </div>

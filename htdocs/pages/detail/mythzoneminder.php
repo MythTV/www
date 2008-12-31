@@ -14,7 +14,7 @@
 ?>
 <div id="detail-mythzoneminder" class="detail">
     <a name="mythzoneminder"></a>
-    <h1>MythZoneMinder</h2>
+    <h1>MythZoneMinder</h1>
 
     Link up to your ZoneMinder video surveilance system and browse all of
     your cameras from the comfort of your couch.

@@ -14,7 +14,7 @@
 ?>
 <div id="detail-mythvideo" class="detail">
     <a name="mythvideo"></a>
-    <h1>MythVideo</h2>
+    <h1>MythVideo</h1>
 
     Video/DVD playback....
 </div>

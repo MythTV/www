@@ -14,7 +14,7 @@
 ?>
 <div id="detail-mythmovies" class="detail">
     <a name="mythmovies"></a>
-    <h1>MythMovies</h2>
+    <h1>MythMovies</h1>
 
     Local Movie times?
 </div>

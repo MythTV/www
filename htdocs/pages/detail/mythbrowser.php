@@ -14,7 +14,7 @@
 ?>
 <div id="detail-mythbrowser" class="detail">
     <a name="mythbrowser"></a>
-    <h1>MythBrowser</h2>
+    <h1>MythBrowser</h1>
 
     Web browser based on the KHTML rendering engine.
 </div>

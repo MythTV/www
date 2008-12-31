@@ -14,7 +14,7 @@
 ?>
 <div id="detail-mythcontrols" class="detail">
     <a name="mythcontrols"></a>
-    <h1>MythControls</h2>
+    <h1>MythControls</h1>
 
     What does this do?  Configurable key control editor?
 </div>

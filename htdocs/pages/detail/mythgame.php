@@ -14,7 +14,7 @@
 ?>
 <div id="detail-mythgame" class="detail">
     <a name="mythgame"></a>
-    <h1>MythGame</h2>
+    <h1>MythGame</h1>
 
     Integration with MAME, xNES and other emulators to let you play video
     games from with MythTV

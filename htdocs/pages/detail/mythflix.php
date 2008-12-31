@@ -14,7 +14,7 @@
 ?>
 <div id="detail-mythflix" class="detail">
     <a name="mythflix"></a>
-    <h1>MythFlix</h2>
+    <h1>MythFlix</h1>
 
     Browse your netflix account and order movies.
 </div>

@@ -14,7 +14,7 @@
 ?>
 <div id="detail-mytharchive" class="detail">
     <a name="mytharchive"></a>
-    <h1>MythArchive</h2>
+    <h1>MythArchive</h1>
 
     Archive your recorded programs to DVD...
 </div>

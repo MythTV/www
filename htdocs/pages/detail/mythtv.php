@@ -14,7 +14,7 @@
 ?>
 <div id="detail-mythtv" class="detail">
     <a name="mythtv"></a>
-    <h1>MythTV</h2>
+    <h1>MythTV</h1>
 
     Something about MythTV itself -- backend/frontend, distributed, etc
 

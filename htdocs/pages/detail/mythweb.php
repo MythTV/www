@@ -14,7 +14,7 @@
 ?>
 <div id="detail-mythweb" class="detail">
     <a name="mythweb"></a>
-    <h1>MythWeb</h2>
+    <h1>MythWeb</h1>
 
     <p>
     <div style="float: right; margin-left: 2em">

@@ -14,7 +14,7 @@
 ?>
 <div id="detail-mythnews" class="detail">
     <a name="mythnews"></a>
-    <h1>MythNews</h2>
+    <h1>MythNews</h1>
 
     RSS News feed plugin.  Requires MythBrowser?
 </div>

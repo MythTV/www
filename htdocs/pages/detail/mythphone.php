@@ -14,7 +14,7 @@
 ?>
 <div id="detail-mythphone" class="detail">
     <a name="mythphone"></a>
-    <h1>MythPhone</h2>
+    <h1>MythPhone</h1>
 
     Integrate with Asterix
 </div>
