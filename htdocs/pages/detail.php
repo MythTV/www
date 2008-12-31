@@ -47,7 +47,8 @@
 
 // Title, meta escription, etc.
     $Meta['title'] = $sections[$Path[1]].' in Detail';
-    $Meta['description'] = 'Detailed description and screenshots of '.$sections[$Path[1]];
+    $Meta['description'] = 'Detailed description and screenshots of '
+        .implode(':  ', array_unique(array('MythTV', $sections[$Path[1]])));
     $Meta['keywords'] = implode(',',array_unique(array(
         $sections[$Path[1]], 'MythTV',
         'detail', 'overview', 'description', 'screenshot', 'screenshots'
