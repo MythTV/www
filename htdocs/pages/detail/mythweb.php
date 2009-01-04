@@ -13,7 +13,7 @@
 /**/
 ?>
 <div id="detail-mythweb" class="detail">
-    <a name="mythweb"></a>
+
     <h1>MythWeb</h1>
 
     <p>
@@ -85,7 +85,8 @@
     </p>
 
     <p>
-    Read more about MythWeb in the <a href="http://www.mythtv.org/wiki/index.php/Mythweb" title="MythTV Wiki:  MythWeb">MythTV Wiki</a>
+    Read more in the
+    <a href="http://www.mythtv.org/wiki/index.php/MythWeb" title="MythTV Wiki:  MythWeb">MythTV Wiki entry for MythWeb</a>
     </p>
 
 </div>

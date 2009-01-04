@@ -17,7 +17,7 @@
 
 // We need something to get details about
     if (empty($Path[1])) {
-        redirect_browser('/detail/mythtv');
+        redirect_browser('/detail/mythtv', 301);
     }
 
 // Sections we'll be interfacing with
@@ -25,11 +25,11 @@
         'mythtv'         => 'MythTV',
         'mytharchive'    => 'MythArchive',
         'mythbrowser'    => 'MythBrowser',
-        'mythcontrols'   => 'MythControls',
-        'mythflix'       => 'MythFlix',
+        #'mythcontrols'   => 'MythControls',
+        #'mythflix'       => 'MythFlix',
         'mythgallery'    => 'MythGallery',
         'mythgame'       => 'MythGame',
-        'mythmovies'     => 'MythMovies',
+        #'mythmovies'     => 'MythMovies',
         'mythmusic'      => 'MythMusic',
         'mythnews'       => 'MythNews',
         'mythphone'      => 'MythPhone',
@@ -37,11 +37,18 @@
         'mythweather'    => 'MythWeather',
         'mythweb'        => 'MythWeb',
         'mythzoneminder' => 'MythZoneMinder',
+        '-' => null,
+        'other-plugins'  => 'Other Plugins',
+        'mythtv-themes'  => 'MythTV Themes',
+        'mythtv-extras'  => 'MythTV Extras',
         );
 
 
 // Check that the file exists, and 404 if it doesn't
     if (!file_exists('pages/detail/'.$Path[1].'.php')) {
+        redirect_browser('/detail/mythtv', 404);
+    }
+    elseif (!$sections[$Path[1]]) {
         redirect_browser('/detail/mythtv', 404);
     }
 
@@ -70,14 +77,21 @@
         <div id="detail-toc">
             <h3>In Detail:</h3>
             <ul>
-<?php       foreach ($sections as $url => $name) { ?>
+<?php
+        foreach ($sections as $url => $name) { ?>
                 <li<?php
                     if ($url == $Path[1]) {
                         echo ' class="selected"';
                     }
+                    if ($name) {
                     ?>><a href="/detail/<?php echo $url ?>" title="<?php echo $name ?> in detail"><?php
-                        echo $name ?></a></li>
-<?php       } ?>
+                        echo $name ?></a><?php
+                    }
+                    else {
+                        echo '<br>';
+                    }
+                    ?></li>
+<?php   } ?>
             </ul>
         </div><!-- #detail-toc -->
         <div id="detail-content">

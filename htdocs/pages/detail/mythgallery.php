@@ -13,13 +13,14 @@
 /**/
 ?>
 <div id="detail-mythgallery" class="detail">
-    <a name="mythgallery"></a>
+
     <h1>MythGallery</h1>
 
     Browse through and show off your photo collection.
 
     <p>
-    Read more about MythGallery in the <a href="http://www.mythtv.org/wiki/index.php/MythGallery" title="MythTV Wiki:  MythGallery">MythTV Wiki</a>
+    Read more in the
+    <a href="http://www.mythtv.org/wiki/index.php/MythGallery" title="MythTV Wiki:  MythGallery">MythTV Wiki entry for MythGallery</a>
     </p>
 
 </div>

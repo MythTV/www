@@ -13,7 +13,7 @@
 /**/
 ?>
 <div id="detail-mythmusic" class="detail">
-    <a name="mythmusic"></a>
+
     <h1>MythMusic</h1>
 
     This plugin lets you play audio files or CDs from your music collection,
@@ -21,7 +21,8 @@
     shared library.
 
     <p>
-    Read more about MythMusic in the <a href="http://www.mythtv.org/wiki/index.php/MythMusic" title="MythTV Wiki:  MythMusic">MythTV Wiki</a>
+    Read more in the
+    <a href="http://www.mythtv.org/wiki/index.php/MythMusic" title="MythTV Wiki:  MythMusic">MythTV Wiki entry for MythMusic</a>
     </p>
 
 </div>

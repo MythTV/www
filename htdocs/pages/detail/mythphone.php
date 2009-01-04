@@ -13,13 +13,14 @@
 /**/
 ?>
 <div id="detail-mythphone" class="detail">
-    <a name="mythphone"></a>
+
     <h1>MythPhone</h1>
 
     Integrate with Asterix
 
     <p>
-    Read more about MythPhone in the <a href="http://www.mythtv.org/wiki/index.php/MythPhone" title="MythTV Wiki:  MythPhone">MythTV Wiki</a>
+    Read more in the
+    <a href="http://www.mythtv.org/wiki/index.php/MythPhone" title="MythTV Wiki:  MythPhone">MythTV Wiki entry for MythPhone</a>
     </p>
 
 </div>

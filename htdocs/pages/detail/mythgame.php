@@ -13,14 +13,15 @@
 /**/
 ?>
 <div id="detail-mythgame" class="detail">
-    <a name="mythgame"></a>
+
     <h1>MythGame</h1>
 
     Integration with MAME, xNES and other emulators to let you play video
     games from with MythTV
 
     <p>
-    Read more about MythGame in the <a href="http://www.mythtv.org/wiki/index.php/MythGame" title="MythTV Wiki:  MythGame">MythTV Wiki</a>
+    Read more in the
+    <a href="http://www.mythtv.org/wiki/index.php/MythGame" title="MythTV Wiki:  MythGame">MythTV Wiki entry for MythGame</a>
     </p>
 
 </div>

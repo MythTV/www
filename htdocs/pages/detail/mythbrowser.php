@@ -13,13 +13,14 @@
 /**/
 ?>
 <div id="detail-mythbrowser" class="detail">
-    <a name="mythbrowser"></a>
+
     <h1>MythBrowser</h1>
 
     Web browser based on the KHTML rendering engine.
 
     <p>
-    Read more about MythBrowser in the <a href="http://www.mythtv.org/wiki/index.php/MythBrowser" title="MythTV Wiki:  MythBrowser">MythTV Wiki</a>
+    Read more in the
+    <a href="http://www.mythtv.org/wiki/index.php/MythBrowser" title="MythTV Wiki:  MythBrowser">MythTV Wiki entry for MythBrowser</a>
     </p>
 
 </div>

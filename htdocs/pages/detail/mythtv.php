@@ -13,7 +13,6 @@
 /**/
 ?>
 <div id="detail-mythtv" class="detail">
-    <a name="mythtv"></a>
     <h1>MythTV</h1>
 
     <p>

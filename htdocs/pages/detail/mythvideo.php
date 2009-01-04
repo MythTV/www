@@ -13,13 +13,14 @@
 /**/
 ?>
 <div id="detail-mythvideo" class="detail">
-    <a name="mythvideo"></a>
+
     <h1>MythVideo</h1>
 
     Video/DVD playback....
 
     <p>
-    Read more about MythVideo in the <a href="http://www.mythtv.org/wiki/index.php/MythVideo" title="MythTV Wiki:  MythVideo">MythTV Wiki</a>
+    Read more in the
+    <a href="http://www.mythtv.org/wiki/index.php/MythVideo" title="MythTV Wiki:  MythVideo">MythTV Wiki entry for MythVideo</a>
     </p>
 
 </div>
