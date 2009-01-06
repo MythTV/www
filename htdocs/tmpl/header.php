@@ -20,6 +20,8 @@
     <!--[if IE]><link rel="stylesheet" type="text/css" href="/css/ie.css" /><![endif]-->
     <link rel="alternate" type="application/atom+xml" title="MythTV News - Atom" href="http://<?php echo $_SERVER['http_host'] ?>/feed" />
     <link rel="alternate" type="application/rss+xml" title="MythTV News - RSS" href="http://<?php echo $_SERVER['http_host'] ?>/feed?rss" />
+    <link rel="icon"          href="/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 <?php
     if ($Meta['description'])
         echo '    <meta name="description" content="', htmlentities($Meta['description']), "\">\n";
