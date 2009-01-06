@@ -44,6 +44,9 @@
     <div class="content">
         <h1>MythTV, Open Source DVR</h1>
         <p>
+        <div style="float: right; margin-left: 2em">
+        <?php tv_thumb('mythtv_retro_theme.jpg', 'tv_black', 'l', 'a', '#e6e6f0', 'title="MythTV In Detail"', '/detail/mythtv') ?>
+        </div>
         MythTV is a Free Open Source digital video recorder (DVR) project
         distributed under the terms of the GNU GPL.  It has been under heavy
         development since 2002, and now contains most features one would expect
@@ -53,7 +56,7 @@
         <p>
         If you are interested in learning more about MythTV (or just want to check
         out some screenshots), please take a look at
-        <a href="/detail/mythtv">MythTV In Detail</a>.
+        <a href="/detail/mythtv" title="MythTV Features and Screenshots">MythTV In Detail</a>.
         </p>
     </div>
 </div>

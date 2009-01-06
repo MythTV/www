@@ -70,13 +70,17 @@
     }
 
 /**
+ * Print a TV thumbnail image
  *
- *
- * @param
- *
- * @return
+ * @param string $img
+ * @param string $tv
+ * @param string $side
+ * @param string $size
+ * @param string $color
+ * @param string $params
+ * @param string $href
 /**/
-    function tv_thumb($img, $tv = 'tv_white', $side = 'l', $size = 'a', $color='none',  $params='') {
+    function tv_thumb($img, $tv = 'tv_white', $side = 'l', $size = 'a', $color='none',  $params='', $href='') {
     // Size settings
         $sizes = array('l' => array(
                             'a' => array('size'  => '170x100',
@@ -146,10 +150,10 @@
     // Get the image info
         list($width, $height) = getimagesize($thumb);
     // Return
-        echo '<a href="/', $img, '">',
+        echo '<a href="', _or($href, '/'.$img), '">',
                '<img src="/', $thumb,  '"',
-               ' height="',  $height, '"',
-               ' width="',   $width,  '"',
+               ' height="',   $height, '"',
+               ' width="',    $width,  '"',
                ' border="0" ', $params, ' /></a>';
     }
 
