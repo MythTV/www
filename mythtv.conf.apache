@@ -4,20 +4,16 @@
 
 <VirtualHost *>
 
-    ServerName newmyth.forevermore.net
-    #ServerAlias mythtv.org
-    #ServerAlias alcor-2.osuosl.org
-    #ServerAlias mythtv.com
-    #ServerAlias mythtv.info
-    #ServerAlias mythtv.snowman.net
-    #ServerAlias wiki.mythtv.org
-    #ServerAlias www.mythtv.com
-    #ServerAlias www.mythtv.info
-    #ServerAlias www.mythtv.org
+    ServerName mythtv.org
+    ServerAlias www.mythtv.org
+    ServerAlias wiki.mythtv.org
+    ServerAlias mythtv.com   www.mythtv.com
+    ServerAlias mythtv.info  www.mythtv.info
+    ServerAlias alcor-2.osuosl.org
+    ServerAlias mythtv.snowman.net
+    ServerAlias newmyth.forevermore.net
 
     ServerAdmin webmaster@mythtv.org
-
-    #ServerSignature On
 
 ## Enable these for the live site
 #    #DocumentRoot /data/www/mythtv.org/htdocs
