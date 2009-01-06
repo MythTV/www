@@ -13,6 +13,7 @@
 /**/
 ?>
 <div id="detail-mythtv" class="detail">
+
     <h1>MythTV</h1>
 
     <p>
@@ -50,9 +51,10 @@
 
     <p>
     Though MythTV was initially written to run only on the Linux operating
-    system, great strides have been made recently to get it running on MacOS X,
-    and an ongoing upgrade to the Qt 4.x framework will eventually make it
-    possible to build a version that can run on Microsoft Windows.
+    system, BSD and MacOS X are also well supported, and it has recently become
+    possible to build a version that can run on Microsoft Windows.  We are
+    constantly working to bring MythTV to as many users as possible, regardless
+    of your preferred operating system.
     </p>
 
     <h3>MythBackend</h3>
