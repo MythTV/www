@@ -1,0 +1,115 @@
+#
+# Apache config for mythtv.org
+#
+
+<VirtualHost *>
+
+    ServerName newmyth.forevermore.net
+    #ServerAlias mythtv.org
+    #ServerAlias alcor-2.osuosl.org
+    #ServerAlias mythtv.com
+    #ServerAlias mythtv.info
+    #ServerAlias mythtv.snowman.net
+    #ServerAlias wiki.mythtv.org
+    #ServerAlias www.mythtv.com
+    #ServerAlias www.mythtv.info
+    #ServerAlias www.mythtv.org
+
+    ServerAdmin webmaster@mythtv.org
+
+    #ServerSignature On
+
+## Enable these for the live site
+#    #DocumentRoot /data/www/mythtv.org/htdocs
+#    #ErrorLog /data/www/mythtv.org/logs/error.log
+#    #CustomLog /data/www/mythtv.org/logs/access.log full
+
+# Enable these for newmyth.forevermore.net development
+    DocumentRoot /var/www/forevermore.net/newmyth/htdocs
+    ErrorLog logs/forevermore.net/newmyth-error_log
+    CustomLog logs/forevermore.net/newmyth-access_log combined
+
+# Aliases and links to other programs that live on the site, too
+    ScriptAlias /cgi-bin/   /usr/lib/cgi-bin/
+    ScriptAlias /mailman/   /usr/lib/cgi-bin/mailman/
+
+    Alias /wiki/            /data/www/mythtv.org/wiki/
+    Alias /pipermail/       /var/lib/mailman/archives/public/
+
+    #Alias /awstats-icon/    /usr/share/awstats/icon/
+
+# The following rewrite conditions need to live within a <Directory> tag.  Make
+# sure that it matches the DocumentRoot defined above.
+    <Directory /var/www/forevermore.net/newmyth/htdocs>
+
+    # Turn on the rewrite engine
+        RewriteEngine  on
+
+    # Rewrites for alternate hostnames
+        RewriteCond %{HTTP_HOST}    ^wiki\.mythtv\.org$             [NC]
+        RewriteRule (.*)            http://www.mythtv.org/wiki$1    [R=permanent,L]
+
+        RewriteCond %{HTTP_HOST}    ^mythtv\.com$                   [NC]
+        RewriteRule (.*)            http://www.mythtv.org/$1        [R=permanent,L]
+
+        RewriteCond %{HTTP_HOST}    ^([^.]+)\.mythtv\.com$          [NC]
+        RewriteRule (.*)            http://www.mythtv.org/$1        [R=permanent,L]
+
+        RewriteCond %{HTTP_HOST}    ^mythtv\.info$                  [NC]
+        RewriteRule (.*)            http://www.mythtv.org/wiki$1    [R=permanent,L]
+
+        RewriteCond %{HTTP_HOST}    ^([^.]+)\.mythtv\.info$         [NC]
+        RewriteRule (.*)            http://www.mythtv.org/wiki$1    [R=permanent,L]
+
+    # Make sure we have www.name.tld instead of just name.tld
+        RewriteCond %{HTTP_HOST}    ^([^\.]\.[^\.])$
+        RewriteRule (.*)            http://www.%1$1                 [R=permanent,L,QSA,NC]
+
+    # Redirect some old pages so we don't lose SEO
+        RewriteCond %{REQUEST_URI}      ^/index\.php
+        RewriteRule (.*)                /               [R=permanent,L]
+
+        RewriteCond %{REQUEST_URI}      ^/modules\.php
+        RewriteCond %{QUERY_STRING}     name=Downloads
+        RewriteRule (.*)                /download       [R=permanent,L]
+
+        RewriteCond %{REQUEST_URI}      ^/modules\.php
+        RewriteCond %{QUERY_STRING}     name=MythFeatures
+        RewriteRule (.*)                /detail         [R=permanent,L]
+
+        RewriteCond %{REQUEST_URI}      ^/modules\.php
+        RewriteCond %{QUERY_STRING}     name=MythInstall
+        RewriteRule (.*)                /docs           [R=permanent,L]
+
+        RewriteCond %{REQUEST_URI}      ^/modules\.php
+        RewriteCond %{QUERY_STRING}     name=MythInfo
+        RewriteRule (.*)                /support        [R=permanent,L]
+
+        RewriteCond %{REQUEST_URI}      ^/modules\.php
+        RewriteCond %{QUERY_STRING}     name=Stories_Archive
+        RewriteRule (.*)                /news           [R=permanent,L]
+
+        RewriteCond %{REQUEST_URI}      ^/modules\.php
+        RewriteCond %{QUERY_STRING}     name=Web_Links
+        RewriteRule (.*)                /support        [R=permanent,L]
+
+    # Skip out early if we've already been through rewrites,
+    # or if this is a /css/, /js/ or /cache/ directory request.
+        RewriteRule     ^(css|img|cache|js|[a-z_]+\.(php))(/|$) -      [L]
+
+    # Redirect most of the remaining URL requests to the main mythweb script.
+    # It will then handle any requests given to it.
+        RewriteRule     ^(.+)$                  mythtv.php/$1       [QSA,L]
+
+    # Catch anything else that comes through and send it to mythweb.php with no parameters.
+        RewriteRule     ^(.*)$                  mythtv.php          [QSA,L]
+
+    </Directory>
+
+# Specify the MIME type for favicon.ico in case the server configuration
+# doesn't or in case the server configuration uses the IANA-approved MIME type
+# (image/vnd.microsoft.icon)--which most browsers won't recognize.
+    AddType image/x-icon        .ico
+
+</VirtualHost>
+
