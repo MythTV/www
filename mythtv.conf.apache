@@ -29,18 +29,62 @@
     ErrorLog logs/forevermore.net/newmyth-error_log
     CustomLog logs/forevermore.net/newmyth-access_log combined
 
+#
 # Aliases and links to other programs that live on the site, too
+#
+
+# Mailman
     ScriptAlias /cgi-bin/   /usr/lib/cgi-bin/
     ScriptAlias /mailman/   /usr/lib/cgi-bin/mailman/
+    <Directory "/usr/lib/cgi-bin">
+        AllowOverride None
+        Options ExecCGI -MultiViews +SymLinksIfOwnerMatch
+        Order allow,deny
+        Allow from all
+    </Directory>
 
-    Alias /wiki/            /data/www/mythtv.org/wiki/
+# Pipermail Mailman Archives
     Alias /pipermail/       /var/lib/mailman/archives/public/
 
+# Mediawiki
+    Alias /wiki/            /data/www/mythtv.org/wiki/
+    <Directory /data/www/mythtv.org/wiki/images/>
+        AllowOverride None
+        php_admin_flag engine off
+        AddType text/plain .html .htm .shtml
+    </Directory>
+
+# Not sure if this is still used, so it's disabled
     #Alias /awstats-icon/    /usr/share/awstats/icon/
 
 # The following rewrite conditions need to live within a <Directory> tag.  Make
 # sure that it matches the DocumentRoot defined above.
     <Directory /var/www/forevermore.net/newmyth/htdocs>
+
+    # PHP Configuration
+     	<Files *.php>
+
+        #  These settings are intended for apache 2.x.  If your version of apache
+        #  doesn't support php_value, or things like memory_limit aren't working
+        #  as expected, then use these settings as examples for your own php.ini
+        #  files.
+            php_value safe_mode                     0
+            php_value register_globals              0
+            php_value magic_quotes_gpc              0
+            php_value file_uploads                  0
+            php_value allow_url_fopen               On
+
+            php_value zlib.output_handler           Off
+            php_value output_handler                NULL
+
+        # If you have a large number of channels, you may need to increase this
+        # value to prevent PHP from running out of memory.
+            php_value memory_limit                  16M
+
+        # Note: php_flag does not work in older versions of php
+            php_flag output_handler                 "NULL"
+
+       	</Files>
 
     # Turn on the rewrite engine
         RewriteEngine  on
@@ -103,6 +147,26 @@
 
     # Catch anything else that comes through and send it to mythweb.php with no parameters.
         RewriteRule     ^(.*)$                  mythtv.php          [QSA,L]
+
+    # Enable mod_deflate.  This works MUCH more reliably than PHP's built-in
+    # gzip/Zlib compressors.  It is disabled here because many distros seem not
+    # to enable mod_deflate by default, but I strongly recommend that you
+    # enable this section.
+
+        BrowserMatch ^Mozilla/4 gzip-only-text/html
+        BrowserMatch ^Mozilla/4\.0[678] no-gzip
+        BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+
+        AddOutputFilterByType DEFLATE text/html
+        AddOutputFilterByType DEFLATE text/css
+        AddOutputFilterByType DEFLATE application/x-javascript
+
+	# This is helpful for mod_deflate -- it prevents proxies from changing
+    # the user agent to/from this server, which can prevent compression from
+    # being enabled.  It is disabled here because many distros seem not to
+    # enable mod_headers by default, but I recommend that you enable it.
+
+        Header append Vary User-Agent env=!dont-vary
 
     </Directory>
 
