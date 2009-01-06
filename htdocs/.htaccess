@@ -7,32 +7,37 @@
 # Turn on the rewrite engine
     RewriteEngine  on
 
+# Make sure we have a WWW
+    RewriteCond %{HTTP_HOST} ^([^\.]\.[^\.])$
+    RewriteRule (.*)                http://www.%1$1 [R=permanent,L,QSA,NC]
+
 # Redirect some old pages so we don't lose SEO
-    Redirect permanent /index.php   http://newmyth.forevermore.net/
+    RewriteCond %{REQUEST_URI}      ^/index\.php
+    RewriteRule (.*)                /               [R=permanent,L]
 
     RewriteCond %{REQUEST_URI}      ^/modules\.php
     RewriteCond %{QUERY_STRING}     name=Downloads
-    RewriteRule (.*)                /download?      [R=permanent,L]
+    RewriteRule (.*)                /download       [R=permanent,L]
 
     RewriteCond %{REQUEST_URI}      ^/modules\.php
     RewriteCond %{QUERY_STRING}     name=MythFeatures
-    RewriteRule (.*)                /detail?        [R=permanent,L]
+    RewriteRule (.*)                /detail         [R=permanent,L]
 
     RewriteCond %{REQUEST_URI}      ^/modules\.php
     RewriteCond %{QUERY_STRING}     name=MythInstall
-    RewriteRule (.*)                /docs?          [R=permanent,L]
+    RewriteRule (.*)                /docs           [R=permanent,L]
 
     RewriteCond %{REQUEST_URI}      ^/modules\.php
     RewriteCond %{QUERY_STRING}     name=MythInfo
-    RewriteRule (.*)                /support?       [R=permanent,L]
+    RewriteRule (.*)                /support        [R=permanent,L]
 
     RewriteCond %{REQUEST_URI}      ^/modules\.php
     RewriteCond %{QUERY_STRING}     name=Stories_Archive
-    RewriteRule (.*)                /news?          [R=permanent,L]
+    RewriteRule (.*)                /news           [R=permanent,L]
 
     RewriteCond %{REQUEST_URI}      ^/modules\.php
     RewriteCond %{QUERY_STRING}     name=Web_Links
-    RewriteRule (.*)                /links?         [R=permanent,L]
+    RewriteRule (.*)                /support        [R=permanent,L]
 
 # Skip out early if we've already been through rewrites,
 # or if this is a /css/, /js/ or /cache/ directory request.
