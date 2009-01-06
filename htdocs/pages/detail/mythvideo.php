@@ -2,10 +2,10 @@
 /**
  * MythVideo in detail...
  *
- * @url         $URL: svn+ssh://svn.mythtv.org/var/lib/svn-www/www.mythtv.org/htdocs/pages/detail.php $
- * @date        $Date: 2008-11-15 21:02:20 -0800 (Sat, 15 Nov 2008) $
- * @version     $Revision: 125 $
- * @author      $Author: xris $
+ * @url         $URL$
+ * @date        $Date$
+ * @version     $Revision$
+ * @author      $Author$
  * @copyright   MythTV
  *
  * @package     mythtv.org

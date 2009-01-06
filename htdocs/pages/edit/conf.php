@@ -5,7 +5,7 @@
  * @url         $URL$
  * @date        $Date$
  * @version     $Revision$
- * @author      $Author: xris $
+ * @author      $Author$
  * @copyright   MythTV
  *
  * @package     mythtv.org
