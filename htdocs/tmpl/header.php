@@ -18,6 +18,8 @@
     <link rel="stylesheet" type="text/css" href="/css/site.css">
     <!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/css/ie6.css"><![endif]-->
     <!--[if IE]><link rel="stylesheet" type="text/css" href="/css/ie.css" /><![endif]-->
+    <link rel="alternate" type="application/atom+xml" title="MythTV News - Atom" href="http://<?php echo $_SERVER['http_host'] ?>/feed" />
+    <link rel="alternate" type="application/rss+xml" title="MythTV News - RSS" href="http://<?php echo $_SERVER['http_host'] ?>/feed?rss" />
 <?php
     if ($Meta['description'])
         echo '    <meta name="description" content="', htmlentities($Meta['description']), "\">\n";

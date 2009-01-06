@@ -48,7 +48,7 @@
 /**
  * Scan through the news archives and load
  *
- * @return array Array of the data in the news post files
+ * @return array Array of the meta data in all news post files
 /**/
     function load_news_headers() {
         $news = array();
@@ -65,7 +65,6 @@
         return $news;
     }
 
-
 /**
  * Load and display $qty recent news posts
  *
@@ -74,11 +73,11 @@
     function print_recent_news($qty) {
     // Display the news items
         foreach (array_reverse(get_sorted_files('news/')) as $file) {
-            if (!preg_match('/^(\d+)\.php$/', $file, $link))
+            if (!preg_match('/^(\d+)\.php$/', $file, $id))
                 continue;
-            $link = $link[1];
+            $id = $id[1];
         // Load info about this news item
-            $post = load_news($link, true);
+            $post = load_news($id, true);
         // Print
             require 'tmpl/news.php';
         // Displayed our max?
@@ -86,3 +85,29 @@
                 break;
         }
     }
+
+/**
+ * Load $qty recent news posts, including content
+ *
+ * @param int $qty Quantity of recent news entries to print
+ *
+ * @return array Array of full data data in the requested news posts
+/**/
+    function load_recent_news($qty) {
+        $news = array();
+    // Display the news items
+        foreach (array_reverse(get_sorted_files('news/')) as $file) {
+            if (!preg_match('/^(\d+)\.php$/', $file, $id))
+                continue;
+            $id = $id[1];
+        // Load info about this news item
+            $post = load_news($id, true);
+        // Add this to the list
+            $news[$id] = $post;
+        // Displayed our max?
+            if (--$qty < 1)
+                break;
+        }
+        return $news;
+    }
+
