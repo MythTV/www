@@ -14,5 +14,21 @@
 </div><!-- footer -->
 
 <!-- End of the page -->
+
+<!-- Google Analytics -->
+<?php if ($_SERVER['HTTP_HOST'] == 'www.mythtv.org') { ?>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+        var pageTracker = _gat._getTracker("UA-6891668-1");
+        pageTracker._trackPageview();
+        } catch(err) {}
+    </script>
+<?php } ?>
+<!-- End of Google Analytics -->
+
 </body>
 </html>
