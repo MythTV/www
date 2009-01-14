@@ -16,9 +16,26 @@
 
     <h1>MythMusic</h1>
 
-    This plugin lets you play audio files or CDs from your music collection,
-    complete with visualizers.  It will also play music from your iTunes
-    shared library.
+    <p>
+    Play audio CDs, MP3 files, and many downloaded music file formats.
+    Allows different named playlists, imported playlists from iTunes,
+    several ways to play music in different orders, can display album art
+    (usually covers), et c.
+    </p>
+    <p>
+    Has a good CD music extraction (ripping) utility, that uses the FreeDB CD
+    database to look up and then store all the album and track details with
+    your music files.
+    </p>
+    <p>
+    Supports several different &quot;visualisers&quot; - screen animations that
+    move in time with the music.
+    </p>
+    <p>
+    Can be set to play music in the background after exiting (e.g. for
+    background music during a MythGallery slideshow). Does not currently
+    support music videos.
+    </p>
 
     <p>
     Read more in the

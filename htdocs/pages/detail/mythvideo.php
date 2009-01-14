@@ -16,7 +16,18 @@
 
     <h1>MythVideo</h1>
 
-    Video/DVD playback....
+    <p>
+    A place to store, organise and play all those random video clips.
+    Supports the MythTV internal player as well as several different
+    external player utilities, so YouTube, Flash, archived DVDs, recorded
+    TV or video camera clips should all be no problem.
+    </p>
+    <p>
+    Also used to play DVD-Videos and VCDs from your frontend's CD/DVD
+    drives, and when used with the MythTV internal player, allows
+    bookmarks to be saved so you can continue watching from where you went
+    to dinner, bed, the pub, etc.
+    </p>
 
     <p>
     Read more in the

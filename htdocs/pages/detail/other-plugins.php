@@ -47,6 +47,16 @@
     <a href="http://www.mythtv.org/wiki/index.php/MythFlix" title="MythTV Wiki:  MythFlix">MythTV Wiki entry for MythFlix</a>
     </p>
 
+    <h2>MythGame</h2>
+    <p>
+    Integration with MAME, xNES and other emulators to let you play video
+    games from with MythTV
+    </p>
+    <p>
+    Read more in the
+    <a href="http://www.mythtv.org/wiki/index.php/MythGame" title="MythTV Wiki:  MythGame">MythTV Wiki entry for MythGame</a>
+    </p>
+
     <h2>MythMovies</h2>
     <p>
     MythMovies is a new plugin that allows you to look up local movie showtimes
@@ -56,5 +66,26 @@
     Read more in the
     <a href="http://www.mythtv.org/wiki/index.php/MythMovies" title="MythTV Wiki:  MythMovies">MythTV Wiki entry for MythMovies</a>.
     </p>
+
+    <h2>MythWeather</h2>
+    <p>
+    Display information about local weather, including current temperatures,
+    forecasts, and radar maps.
+    </p>
+    <p>
+    Read more in the
+    <a href="http://www.mythtv.org/wiki/index.php/MythWeather" title="MythTV Wiki:  MythWeather">MythTV Wiki entry for MythWeather</a>
+    </p>
+
+    <h2>MythZoneMinder</h2>
+    <p>
+    Link up to your ZoneMinder video surveilance system and browse all of
+    your cameras from the comfort of your couch.
+    </p>
+    <p>
+    Read more in the
+    <a href="http://www.mythtv.org/wiki/index.php/MythZoneMinder" title="MythTV Wiki:  MythZoneMinder">MythTV Wiki entry for MythZoneMinder</a>
+    </p>
+
 
 </div>

@@ -16,7 +16,15 @@
 
     <h1>MythPhone</h1>
 
-    Integrate with Asterix
+    <p>
+    A simple video phone, which allows Internet based audio and video
+    conferencing.
+    </p>
+    <p>
+    Supports VoIP and a few different video stream codec standards, SIP
+    directory servers, VXML and a simple incoming &quot;answering machine&quot;
+    message, and even Text-To-Speech using Festival.
+    </p>
 
     <p>
     Read more in the

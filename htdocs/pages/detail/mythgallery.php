@@ -16,7 +16,16 @@
 
     <h1>MythGallery</h1>
 
-    Browse through and show off your photo collection.
+    <p>
+    Browse your digital images and photos on your TV!  Bore your friends
+    and relatives with a good old &quot;slideshow&quot; night!
+    </p>
+    <p>
+    Displays the metadata which most digital cameras store along with
+    their photos, displays video clips, allows rotation of images, simple
+    transition effects, and can import images (from mounted cameras) into
+    named folders.
+    </p>
 
     <p>
     Read more in the
