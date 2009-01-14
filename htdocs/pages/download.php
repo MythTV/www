@@ -54,7 +54,7 @@
     </div>
     <div class="content">
         <p>
-        For various reasons, we have chosen not distribute pre-compiled binary
+        For various reasons, we have chosen not to distribute pre-compiled binary
         versions of MythTV.  However, if you would like to compile from source,
         you may download the latest versions here:
         </p>
