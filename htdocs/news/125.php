@@ -26,7 +26,7 @@
             before asking questions.
             </li>
         <li>The
-            <a href="http://www.mythtv.org/modules.php?name=Web_Links&l_op=viewlink&cid=1">binary
+            <a href="http://www.mythtv.org/wiki/index.php/Packages">binary
             packages</a> should hopefully be updated to 0.20.2 soon.
             </li>
         <li>See this
