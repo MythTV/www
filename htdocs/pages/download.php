@@ -82,6 +82,7 @@
         <div class="bottom"></div>
     </div>
     <div class="content">
+        <a name="other-downloads"></a>
         <p>
         If you would like to forgo compiling MythTV from source, there are packages
         available for a variety of linux distrubutions.  You can find a
