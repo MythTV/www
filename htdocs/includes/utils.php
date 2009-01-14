@@ -14,6 +14,9 @@
 
 /**
  * Print a redirect header and exit
+ *
+ * @param string $url  The url to redirect to
+ * @param int    $code HTTP response code to send along with the redirect.
 /**/
     function redirect_browser($url, $code=301) {
         if ($code) {
