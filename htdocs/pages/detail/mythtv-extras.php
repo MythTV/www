@@ -32,7 +32,7 @@
     <h2>Perl Bindings</h2>
     <p>
     MythTV installs a series of Perl library files that make it easier for
-    developers to write python scripts that interact directly with MythTV.
+    developers to write perl scripts that interact directly with MythTV.
     </p>
     <p>
     Read more in the
