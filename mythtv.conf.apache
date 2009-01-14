@@ -133,6 +133,10 @@
         RewriteCond %{QUERY_STRING}     name=Web_Links
         RewriteRule (.*)                /support        [R=permanent,L]
 
+        RewriteCond %{REQUEST_URI}      ^/modules\.php
+        RewriteCond %{QUERY_STRING}     name=News&file=article&sid=(.+?)
+        RewriteRule (.*)                /news/%1        [R=permanent,L]
+
     # Skip out early if we've already been through rewrites,
     # or if this is a /css/, /js/ or /cache/ directory request.
         RewriteRule     ^(css|img|cache|js|robots.txt|[a-z_]+\.(php))(/|$)  -   [L]
