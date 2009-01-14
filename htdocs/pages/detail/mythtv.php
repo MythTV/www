@@ -107,7 +107,9 @@
     </p>
 
     <p>
-    Read more about MythTV in the <a href="http://www.mythtv.org/wiki/" title="MythTV Wiki">MythTV Wiki</a>
+    Read more about MythTV in the <a href="http://www.mythtv.org/wiki/" title="MythTV Wiki">MythTV Wiki</a>,
+    including the <a href="http://mythtv.org/modules.php?name=MythFeatures">Features and Screenshots</a>
+    wiki page with user-contributed content.
     </p>
 
 </div>
