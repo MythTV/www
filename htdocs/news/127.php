@@ -23,10 +23,10 @@
                 <a href="/docs">docs</a>
                 before asking questions.
                 </li>
-            <li>The <a href="http://www.mythtv.org/modules.php?name=Web_Links&amp;l_op=viewlink&amp;cid=1">binary
+            <li>The <a href="/download#other-downloads">binary
                 packages</a> should hopefully be updated to 0.21 soon.</li>
             <li>See this
-                <a href="http://www.mythtv.org/modules.php?name=Web_Links&amp;l_op=viewlink&amp;cid=3">links
+                <a href="/download#other-downloads">links
                 section</a> for a list of linux distributions based around MythTV.
                 </li>
         </ul>

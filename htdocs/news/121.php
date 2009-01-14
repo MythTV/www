@@ -9,7 +9,7 @@
   <li><p>
 A few months ago, Isaac mentioned to some of the other devs that the
 server hosting mythtv.org (and the <a
-href="http://mythtv.org/modules.php?name=MythInfo">mailing lists</a>, <a
+href="/support">mailing lists</a>, <a
 href="http://svn.mythtv.org/trac/">svn</a>, etc.) was reaching its
 limit. After a fruitless search for a new inexpensive host, Isaac
 contacted the <a href="http://www.osuosl.org/">OSU Open Source Lab</a>

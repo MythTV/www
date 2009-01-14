@@ -24,5 +24,5 @@
   <li>I will try to get the new and updated themes for 0.13 on the website in the next few days. 
   <li>Grab the release from the  <a href="/download">download section</a> and please at least try to read the <a href="/docs">docs</a>. 
   <li>The binary packages should hopefully be updated soon .
-  <li>See this <a href="http://www.mythtv.org/modules.php?name=Web_Links&l_op=viewlink&cid=3">links section</a> for a list of complete linux distributions based around MythTV.
+  <li>See this <a href="/download#other-downloads">links section</a> for a list of complete linux distributions based around MythTV.
 </ul>
