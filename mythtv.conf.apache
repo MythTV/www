@@ -115,7 +115,7 @@
 
         RewriteCond %{REQUEST_URI}      ^/modules\.php
         RewriteCond %{QUERY_STRING}     name=MythFeatures
-        RewriteRule (.*)                /detail         [R=permanent,L]
+        RewriteRule (.*)                /detail/mythtv  [R=permanent,L]
 
         RewriteCond %{REQUEST_URI}      ^/modules\.php
         RewriteCond %{QUERY_STRING}     name=MythInstall
