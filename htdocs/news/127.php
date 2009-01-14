@@ -18,9 +18,9 @@
     <li>Standard release info:
         <ul>
             <li>Grab the release from the
-                <a href="http://www.mythtv.org/modules.php?name=Downloads">download
+                <a href="/download">download
                 section</a> and please at least try to read the
-                <a href="http://www.mythtv.org/modules.php?name=MythInstall">docs</a>
+                <a href="/docs">docs</a>
                 before asking questions.
                 </li>
             <li>The <a href="http://www.mythtv.org/modules.php?name=Web_Links&amp;l_op=viewlink&amp;cid=1">binary

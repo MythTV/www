@@ -20,7 +20,7 @@
     <li>Stefan Frank added support in MythMusic to compress to MP3, instead of Vorbis or FLAC.
     <li>Renchi Raju contributed a RSS news feed reader plugin -- mythnews.
   </ul>
-  <li>Grab the release from the  <a href="http://www.mythtv.org/modules.php?name=Downloads">download section</a> and please at least try to read the <a href="http://www.mythtv.org/modules.php?name=MythInstall">docs</a>. 
+  <li>Grab the release from the  <a href="/download">download section</a> and please at least try to read the <a href="/docs">docs</a>. 
   <li>The binary packages should hopefully be updated soon (aside from the Debian ones, as the maintainer is unavailable for a little while).
   <li>And last but not least, I've added a <a href="http://www.mythtv.org/modules.php?name=Web_Links&l_op=viewlink&cid=3">section</a> to the Web Links page for distributions based around MythTV.
 </ul>

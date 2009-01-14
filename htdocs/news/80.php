@@ -19,7 +19,7 @@
     <li>Many more changes that I'm forgetting about.
     <li>Random bug fixes, random new bugs, as usual.
   </ul>
-  <li>As always, grab things from the <a href="http://www.mythtv.org/modules.php?name=Downloads">download section</a> and read the <a href="http://www.mythtv.org/modules.php?name=MythInstall">documentation</a>.  Make sure to read the various UPGRADING files if you're upgrading from an earlier release.
+  <li>As always, grab things from the <a href="/download">download section</a> and read the <a href="/docs">documentation</a>.  Make sure to read the various UPGRADING files if you're upgrading from an earlier release.
   <li>Be sure to check out the Add-ons section of the downloads.  I've noticed a large number of people never grab things like MythMusic, MythWeather, or MythVideo.
   <li>Precompiled packages for Debian will be available shortly from the <a href="http://dijkstra.csh.rit.edu:8088/~mdz/debian/dists/woody/mythtv/">usual place</a>.
 </ul>

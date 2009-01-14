@@ -21,7 +21,7 @@
     <li>More visualization modes in MythMusic.
     <li>More themes to ogle at.
   </ul>
-  <li>Anyway, grab things from the <a href="http://www.mythtv.org/modules.php?name=Downloads">downloads section</a>, and read the <a href="http://www.mythtv.org/modules.php?name=MythInstall">documentation</a>.  Make sure to do what it says in the UPGRADING file if you're coming from 0.7.
+  <li>Anyway, grab things from the <a href="/download">downloads section</a>, and read the <a href="/docs">documentation</a>.  Make sure to do what it says in the UPGRADING file if you're coming from 0.7.
   <li>Thanks to everyone who has contributed code or time to MythTV =)
   <li>Debian packages of the new release will be available shortly from <a href="http://dijkstra.csh.rit.edu:8088/~mdz/debian/dists/woody/mythtv/">here</a> as usual.
 </ul

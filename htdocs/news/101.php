@@ -20,7 +20,7 @@
     <li>Tons of tweaks and other random stuff.
   </ul>
    <li>Apologies if I forgot to mention anyone's contributions, but this is just a quick list of browsing through the commits list archives.
-  <li>Grab the release from the  <a href="http://www.mythtv.org/modules.php?name=Downloads">download section</a> and please at least try to read the <a href="http://www.mythtv.org/modules.php?name=MythInstall">docs</a>. 
+  <li>Grab the release from the  <a href="/download">download section</a> and please at least try to read the <a href="/docs">docs</a>. 
   <li>The <a href="http://www.mythtv.org/modules.php?name=Web_Links&l_op=viewlink&cid=1">binary packages</a> should hopefully be updated to 0.14 soon.
   <li>See this <a href="http://www.mythtv.org/modules.php?name=Web_Links&l_op=viewlink&cid=3">links section</a> for a list of complete linux distributions based around MythTV.
 </ul>

@@ -23,7 +23,7 @@
     <li>MythWeather got fixed -- a lot of people were seeing the weather forcast data collection process time out or error out.  Welp, no more of that. =)
   </ul>
   <li>As always, quite a few people contributed to this release.  Thanks everyone!
-  <li>As always, grab things from the <a href="http://www.mythtv.org/modules.php?name=Downloads">download section</a> and read the <a href="http://www.mythtv.org/modules.php?name=MythInstall">documentation</a>.  Make sure to read the various UPGRADING files if you're upgrading from an earlier release.
+  <li>As always, grab things from the <a href="/download">download section</a> and read the <a href="/docs">documentation</a>.  Make sure to read the various UPGRADING files if you're upgrading from an earlier release.
   <li>Check the <a href="http://www.mythtv.org/modules.php?name=Web_Links">links section</a> for Debian, Redhat, and Mandrake package updates.  Hopefully they'll all be available soon =)  I can't imagine the official Gentoo ebuild taking that long to update to 0.11 either.
   <li>And just a note to anyone who's wondering -- XMLTV 0.5.16 was released recently to fix a temporary problem with tv_grab_na.  This MythTV release is of course compatible with it, 0.5.15, and 0.5.14, so use whatever you want.
 </ul>
