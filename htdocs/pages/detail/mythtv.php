@@ -17,6 +17,9 @@
     <h1>MythTV</h1>
 
     <p>
+    <div style="float: right; margin-left: 2em">
+    <?php tv_thumb('mythtv_blue_theme.jpg', 'tv_black', 'l', 'a', '#e6e6f0', 'title="MythTV, Blue Theme"') ?>
+    </div>
     We like to think of MythTV as the ultimate Digital Video Recorder and
     home media center hub.  Think of it as a Free and Open Source alternative
     to Tivo and Windows Media Center.  It started out in 2002 as a way for

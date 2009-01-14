@@ -17,6 +17,9 @@
     <h1>MythVideo</h1>
 
     <p>
+    <div style="float: right; margin-left: 2em">
+    <?php tv_thumb('mythvideo_blue_theme.jpg', 'tv_black', 'l', 'a', '#e6e6f0', 'title="MythVideo, Blue Theme"') ?>
+    </div>
     A place to store, organise and play all those random video clips.
     Supports the MythTV internal player as well as several different
     external player utilities, so YouTube, Flash, archived DVDs, recorded
