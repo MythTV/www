@@ -18,7 +18,7 @@
 
     <p>
     <div style="float: right; margin-left: 2em">
-    <?php tv_thumb('mythtv_blue_theme.jpg', 'tv_black', 'l', 'a', '#e6e6f0', 'title="MythTV, Blue Theme"') ?>
+    <?php tv_thumb('tv_mainscreen.jpg', 'tv_black', 'l', 'a', '#e6e6f0', 'title="MythTV, Blue Theme"') ?>
     </div>
     We like to think of MythTV as the ultimate Digital Video Recorder and
     home media center hub.  Think of it as a Free and Open Source alternative
@@ -34,6 +34,11 @@
     </p>
 
     <h3>MythTV Features</h3>
+
+    <div style="float: left; margin-right: 2em">
+    <?php tv_thumb('tv_epg.png', 'tv_black', 'r', 'a', '#e6e6f0', 'title="MythTV, Blue Theme"') ?><br>
+    <?php tv_thumb('tv_paused.png', 'tv_black', 'r', 'a', '#e6e6f0', 'title="MythTV, Blue Theme"') ?><br>
+    </div>
 
     <ul>
         <li>Watch and record analog and/or digital TV, including HDTV.</li>
@@ -52,7 +57,10 @@
         <li>Many more...</li>
     </ul>
 
-    <p>
+    <p style="clear: both">
+    <div style="float: right; margin-left: 2em">
+    <?php tv_thumb('tv_editmode.jpg', 'tv_black', 'l', 'a', '#e6e6f0', 'title="MythTV, Blue Theme"') ?>
+    </div>
     Though MythTV was initially written to run only on the Linux operating
     system, BSD and MacOS X are also well supported, and it has recently become
     possible to build a version that can run on Microsoft Windows.  We are
@@ -60,9 +68,12 @@
     of your preferred operating system.
     </p>
 
-    <h3>MythBackend</h3>
+    <h3 style="clear: both">MythBackend</h3>
 
     <p>
+    <div style="float: right; margin-left: 2em">
+    <?php tv_thumb('tv_record.png', 'tv_black', 'l', 'a', '#e6e6f0', 'title="MythTV, Blue Theme"') ?>
+    </div>
     The backend server application runs the core "behind the scenes"
     functionality for MythTV.  The bulk of this is taken up by scheduling and
     recording your TV shows, but also includes keeping your TV listings up to
@@ -80,9 +91,13 @@
     frontend machine kept next to the TV.
     </p>
 
-    <h3>MythFrontend</h3>
+    <h3 style="clear: both">MythFrontend</h3>
 
     <p>
+    <div style="float: right; margin-left: 2em">
+    <?php tv_thumb('tv_resolveconflict.png', 'tv_black', 'r', 'a', '#e6e6f0', 'title="MythTV, Blue Theme"') ?>
+    <?php tv_thumb('tv_pip.jpg', 'tv_black', 'l', 'a', '#e6e6f0', 'title="MythTV, Blue Theme"') ?>
+    </div>
     The frontend client is the human interface to MythTV.  This is where you
     watch TV, listen to music, etc.  Each frontend communicates with one or
     more backend servers in order to determine which recorded shows are

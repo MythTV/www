@@ -18,7 +18,7 @@
 
     <p>
     <div style="float: right; margin-left: 2em">
-    <?php tv_thumb('mythmusic_blue_theme.jpg', 'tv_black', 'l', 'a', '#e6e6f0', 'title="MythMusic, Blue Theme"') ?>
+    <?php tv_thumb('mythmusic_play.jpg', 'tv_black', 'l', 'a', '#e6e6f0', 'title="MythMusic, Blue Theme"') ?>
     </div>
     Play audio CDs, MP3 files, and many downloaded music file formats.
     Allows different named playlists, imported playlists from iTunes,
