@@ -88,19 +88,16 @@
 
     # Rewrites for alternate hostnames
         RewriteCond %{HTTP_HOST}    ^wiki\.mythtv\.org$             [NC]
-        RewriteRule (.*)            http://www.mythtv.org/wiki$1    [R=permanent,L]
+        RewriteRule (.*)            http://www.mythtv.org/wiki$1    [R=permanent,L,QSA,NC]
 
-        RewriteCond %{HTTP_HOST}    ^mythtv\.com$                   [NC]
-        RewriteRule (.*)            http://www.mythtv.org/$1        [R=permanent,L]
+        RewriteCond %{HTTP_HOST}    ^mythtv\.(com|org)$             [NC]
+        RewriteRule (.*)            http://www.mythtv.org/$1        [R=permanent,L,QSA,NC]
 
         RewriteCond %{HTTP_HOST}    ^([^.]+)\.mythtv\.com$          [NC]
-        RewriteRule (.*)            http://www.mythtv.org/$1        [R=permanent,L]
+        RewriteRule (.*)            http://www.mythtv.org/$1        [R=permanent,L,QSA,NC]
 
-        RewriteCond %{HTTP_HOST}    ^mythtv\.info$                  [NC]
-        RewriteRule (.*)            http://www.mythtv.org/wiki$1    [R=permanent,L]
-
-        RewriteCond %{HTTP_HOST}    ^([^.]+)\.mythtv\.info$         [NC]
-        RewriteRule (.*)            http://www.mythtv.org/wiki$1    [R=permanent,L]
+        RewriteCond %{HTTP_HOST}    ^([^.]+\.)?mythtv\.info$        [NC]
+        RewriteRule (.*)            http://www.mythtv.org/wiki$1    [R=permanent,L,QSA,NC]
 
     # Make sure we have www.name.tld instead of just name.tld
         RewriteCond %{HTTP_HOST}    ^([^\.]\.[^\.])$
