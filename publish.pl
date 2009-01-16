@@ -66,6 +66,9 @@
     copy('mythtv.conf.apache', '/etc/apache2/sites-available/newmythtv')
         or die "Can't install mythtv.conf.apache\n";
 
+# Make sure the files are all owned properly
+    chown -R www\:www $target
+
 # Re-enable the website
     unlink "$target/site_is_disabled"
         or die "Can't unlink $target/site_is_disabled:  $!\n";
