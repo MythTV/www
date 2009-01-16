@@ -52,15 +52,13 @@
 
 # Copy
     system('rsync -ualvHS --cvs-exclude --delete'
-           .' --exclude google_debug'
-           .' --exclude pp_ipn_debug'
+           # Files we don't want to copy
            .' --exclude publish.pl'
+           .' --exclude mythtv.conf.apache'
+           # Files we don't want the rsync to blow away
            .' --exclude myth_docs'
            .' --exclude site_is_disabled'
-           .' --exclude sync_dev_db.pl'
-           .' --exclude perc.apache.conf'
-           .' --exclude edentest.php'
-           .' --exclude httpdocs/img/captchas/\*gif'
+           # src/dest
            .' '.shell_escape($src)
            .' '.shell_escape($target));
 
