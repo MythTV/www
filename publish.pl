@@ -80,7 +80,7 @@
 
 # Fix CSS links, etc. for better image cache behavior in browsers
     system("sed -i -e 's,/img,/$svn_rev/img,g' $safe_target/htdocs/css/*css");
-    system("sed -i -e \"s/define('svn_rev', \+time());/define('svn_rev', '$svn_rev');/g\"");
+    system("sed -i -e \"s/define('svn_rev', \+time());/define('svn_rev', '$svn_rev');/g\" $safe_target/includes/conf.php");
 
 # Make sure the files are all owned properly
     system('chown -R www-data\:www '.shell_escape($target));
