@@ -15,6 +15,9 @@
 // We always want to look one level up from the document root
     ini_set('include_path', ini_get('include_path').':'.dirname($_SERVER['DOCUMENT_ROOT']));
 
+// Code root
+    define('root', dirname($_SERVER['DOCUMENT_ROOT']));
+
 // Hide errors from the live server, show ALL on dev machines.
     if ($_SERVER['HTTP_HOST'] == 'www.mythtv.org') {
         error_reporting(E_NONE);
@@ -70,7 +73,7 @@
 
 // Print the requested page
     if (preg_match('/\w/', $Path[0]))
-        if (file_exists(dirname($_SERVER['DOCUMENT_ROOT']).'/pages/'.$Path[0].'.php'))
+        if (file_exists(root.'/pages/'.$Path[0].'.php'))
             require_once 'pages/'.$Path[0].'.php';
         else
             redirect_browser('/');

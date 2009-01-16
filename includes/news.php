@@ -19,7 +19,7 @@
  * @name    $NewsDir
 /**/
     global $NewsDir;
-    $NewsDir = dirname($_SERVER['DOCUMENT_ROOT']).'/news';
+    $NewsDir = root.'/news';
 
 /**
  * Load and return the contents of a news post file.
