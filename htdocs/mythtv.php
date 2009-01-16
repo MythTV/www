@@ -12,6 +12,9 @@
  *
 /**/
 
+// We always want to look one level up from the document root
+    ini_set('include_path', ini_get('include_path').':'.dirname($_SERVER['DOCUMENT_ROOT']));
+
 /**
  * $Path is an array of PATH_INFO passed into the script via mod_rewrite or some
  * other lesser means.  It contains most of the information required for

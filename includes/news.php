@@ -12,6 +12,14 @@
  *
 /**/
 
+/**
+ * Directory containing all of the news.php files.
+ *
+ * @global  string   $GLOBALS['NewsDir']
+ * @name    $NewsDir
+/**/
+    global $NewsDir;
+    $NewsDir = dirname($_SERVER['DOCUMENT_ROOT']).'/news';
 
 /**
  * Load and return the contents of a news post file.
@@ -22,8 +30,9 @@
  * @return array Hash of the news data, or null
 /**/
     function load_news($id, $load_content=true) {
+        global $NewsDir;
     // Make sure the file exists
-        if (!file_exists("news/$id.php")) {
+        if (!file_exists("$NewsDir/$id.php")) {
             return null;
         }
     // Define some variables to keep the error logs quiet, in case they are not
@@ -35,7 +44,7 @@
         $author     = null;
     // Load the news file and pull its data into an array
         ob_start();
-        require "news/$id.php";
+        require "$NewsDir/$id.php";
         $post = array(
             'id'         => $id,
             'title'      => $title,
@@ -60,9 +69,10 @@
  * @return array Array of the meta data in all news post files
 /**/
     function load_news_headers() {
+        global $NewsDir;
         $news = array();
     // Get the list of files
-        foreach (array_reverse(get_sorted_files('news/')) as $file) {
+        foreach (array_reverse(get_sorted_files($NewsDir)) as $file) {
             if (!preg_match('/^(\d+)\.php$/', $file, $id))
                 continue;
             $id = $id[1];
@@ -80,8 +90,9 @@
  * @param int $qty Quantity of recent news entries to print
 /**/
     function print_recent_news($qty) {
+        global $NewsDir;
     // Display the news items
-        foreach (array_reverse(get_sorted_files('news/')) as $file) {
+        foreach (array_reverse(get_sorted_files($NewsDir)) as $file) {
             if (!preg_match('/^(\d+)\.php$/', $file, $id))
                 continue;
             $id = $id[1];
@@ -103,9 +114,10 @@
  * @return array Array of full data data in the requested news posts
 /**/
     function load_recent_news($qty) {
+        global $NewsDir;
         $news = array();
     // Display the news items
-        foreach (array_reverse(get_sorted_files('news/')) as $file) {
+        foreach (array_reverse(get_sorted_files($NewsDir)) as $file) {
             if (!preg_match('/^(\d+)\.php$/', $file, $id))
                 continue;
             $id = $id[1];

@@ -16,7 +16,7 @@
     $Nav = 'support';
 
 // Path to the mythtv documentation checkout
-    $docs_path = "myth_docs";
+    $docs_path = '../myth_svndocs';
 
 // Load the global page header
     require_once 'tmpl/header.php';
@@ -35,7 +35,7 @@
 <?php
 
 // Load up the proper documentation file
-    if ($Path[1] && file_exists('myth_docs/'.$Path[1]))
+    if ($Path[1] && file_exists("$docs_path/".$Path[1]))
         $file = "$docs_path/".$Path[1];
     else
         $file = "$docs_path/index.html";
