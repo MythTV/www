@@ -12,7 +12,7 @@
 #
 
 # Target directory
-    my $target = '/data/www/new.mythtv.org';
+    my $target = '/data/www/www.mythtv.org';
 
 ###############################################################################
 

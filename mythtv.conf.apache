@@ -16,14 +16,14 @@
     ServerAdmin webmaster@mythtv.org
 
 ## Enable these for the live site
-#    #DocumentRoot /data/www/mythtv.org/htdocs
-#    #ErrorLog /data/www/mythtv.org/logs/error.log
-#    #CustomLog /data/www/mythtv.org/logs/access.log full
+    DocumentRoot /data/www/www.mythtv.org/htdocs
+    ErrorLog /data/www/www.mythtv.org/logs/error.log
+    CustomLog /data/www/www.mythtv.org/logs/access.log full
 
 # Enable these for newmyth.forevermore.net development
-    DocumentRoot /var/www/forevermore.net/newmyth/htdocs
-    ErrorLog logs/forevermore.net/newmyth-error_log
-    CustomLog logs/forevermore.net/newmyth-access_log combined
+    #DocumentRoot /var/www/forevermore.net/newmyth/htdocs
+    #ErrorLog logs/forevermore.net/newmyth-error_log
+    #CustomLog logs/forevermore.net/newmyth-access_log combined
 
 #
 # Aliases and links to other programs that live on the site, too
