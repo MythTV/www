@@ -26,7 +26,11 @@
     global $Contact_Err;
     $Contact_Err = array();
 
-    $Contact_Err['subject'] = "Testing.  Emails will not be sent!";
+
+// Dev check
+    if ($_SERVER['HTTP_HOST'] != 'www.mythtv.org') {
+        $Contact_Err['subject'] = "Testing.  Emails will not be sent!";
+    }
 
 // Load some utilities
     require_once 'includes/EmailVerify.php';
