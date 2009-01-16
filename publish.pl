@@ -63,7 +63,7 @@
     close DATA;
 
 # Copy
-    system('rsync -alvHS --cvs-exclude --delete'
+    my $cmd = 'rsync -alvHS --cvs-exclude --delete'
            # Files we don't want to copy
            .' --exclude publish.pl'
            .' --exclude mythtv.conf.apache'
@@ -72,7 +72,9 @@
            .' --exclude site_is_disabled'
            # src/dest
            .' '.$safe_src
-           .' '.$safe_target);
+           .' '.$safe_target;
+    print "$cmd\n";
+    system($cmd);
 
 # Make sure the apache config gets updated, too
     copy('mythtv.conf.apache', '/etc/apache2/sites-available/mythtv')
