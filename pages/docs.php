@@ -18,6 +18,22 @@
 // Path to the mythtv documentation checkout
     $docs_path = '../myth_svndocs';
 
+// Load up the proper documentation file
+    if ($Path[1] && file_exists("$docs_path/".$Path[1]))
+        $file = "$docs_path/".$Path[1];
+    else
+        $file = "$docs_path/index.html";
+
+// Non-HTML files should just get sent
+    if (preg_match('/\.(eps|gif|jpg|png|pdf|sgml|txt|patch|cpp)$/i', $file)) {
+        /* note that mime_content_type is deprecated and should be replaced
+         * with finfo_file as soon as we upgrade to php >= 5.3 */
+        $mime = mime_content_type($file);
+        header("Content-type: $mime");
+        readfile($file);
+        exit;
+    }
+
 // Load the global page header
     require_once 'tmpl/header.php';
 
@@ -33,12 +49,6 @@
     </div>
     <div class="content">
 <?php
-
-// Load up the proper documentation file
-    if ($Path[1] && file_exists("$docs_path/".$Path[1]))
-        $file = "$docs_path/".$Path[1];
-    else
-        $file = "$docs_path/index.html";
 
 // Cleanup and output
     echo preg_replace(array('/^.+?<body[^>]*>\s+/si', '/<\\/body>.+?$/si'),
