@@ -67,7 +67,7 @@
         or die "Can't install mythtv.conf.apache\n";
 
 # Make sure the files are all owned properly
-    system('chown -R www\:www '.shell_escape($target));
+    system('chown -R www-data\:www '.shell_escape($target));
 
 # Re-enable the website
     unlink "$target/site_is_disabled"
