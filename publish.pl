@@ -63,7 +63,7 @@
     close DATA;
 
 # Copy
-    system('rsync -ualvHS --cvs-exclude --delete'
+    system('rsync -alvHS --cvs-exclude --delete'
            # Files we don't want to copy
            .' --exclude publish.pl'
            .' --exclude mythtv.conf.apache'
