@@ -15,6 +15,14 @@
 // We always want to look one level up from the document root
     ini_set('include_path', ini_get('include_path').':'.dirname($_SERVER['DOCUMENT_ROOT']));
 
+// Hide errors from the live server, show ALL on dev machines.
+    if ($_SERVER['HTTP_HOST'] == 'www.mythtv.org') {
+        error_reporting(E_NONE);
+    }
+    else {
+        error_reporting(E_ALL);
+    }
+
 /**
  * $Path is an array of PATH_INFO passed into the script via mod_rewrite or some
  * other lesser means.  It contains most of the information required for
@@ -49,11 +57,6 @@
         }
     }
 
-// Edit allowed?
-    $Edit = ($Edit === true && in_array($_SERVER['REMOTE_ADDR'], $Allowed_IP))
-            ? true
-            : false;
-
 /**
  * $Nav dictates how the header file highlights the current navigation section.
  *
@@ -64,14 +67,6 @@
     $Nav = 'about';
 
 /* ****************************************************************************/
-
-// Hide errors from the live server, show ALL on dev machines.
-    if ($_SERVER['HTTP_HOST'] == 'www.mythtv.org') {
-        error_reporting(E_NONE);
-    }
-    else {
-        error_reporting(E_ALL);
-    }
 
 // Print the requested page
     if (preg_match('/\w/', $Path[0]))

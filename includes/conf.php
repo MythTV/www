@@ -3,14 +3,6 @@
  * Config for mythtv.org
 /**/
 
-// Edit mode enabled?
-    global $Edit;
-    $Edit = true;
-
-// The following IP's are allowed to edit:
-    global $Allowed_IP;
-    $Allowed_IP = array('10.0.0.13');
-
 // Authors
     global $Authors;
     $Authors = array(
