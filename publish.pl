@@ -56,7 +56,7 @@
            .' --exclude publish.pl'
            .' --exclude mythtv.conf.apache'
            # Files we don't want the rsync to blow away
-           .' --exclude myth_docs'
+           .' --exclude myth_svndocs'
            .' --exclude site_is_disabled'
            # src/dest
            .' '.shell_escape($src)
