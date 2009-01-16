@@ -55,6 +55,8 @@
            .' --exclude google_debug'
            .' --exclude pp_ipn_debug'
            .' --exclude publish.pl'
+           .' --exclude myth_docs'
+           .' --exclude site_is_disabled'
            .' --exclude sync_dev_db.pl'
            .' --exclude perc.apache.conf'
            .' --exclude edentest.php'
