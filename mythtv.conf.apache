@@ -55,7 +55,8 @@
 
 # The following rewrite conditions need to live within a <Directory> tag.  Make
 # sure that it matches the DocumentRoot defined above.
-    <Directory /var/www/forevermore.net/newmyth/htdocs>
+    #<Directory /var/www/forevermore.net/newmyth/htdocs>
+    <Directory /data/www/www.mythtv.org/htdocs>
 
     # PHP Configuration
      	<Files *.php>
