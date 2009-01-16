@@ -70,7 +70,7 @@
 
 // Print the requested page
     if (preg_match('/\w/', $Path[0]))
-        if (file_exists('pages/'.$Path[0].'.php'))
+        if (file_exists(dirname($_SERVER['DOCUMENT_ROOT']).'/pages/'.$Path[0].'.php'))
             require_once 'pages/'.$Path[0].'.php';
         else
             redirect_browser('/');
