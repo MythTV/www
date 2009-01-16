@@ -32,7 +32,7 @@
         #'mythmovies'     => 'MythMovies',
         'mythmusic'      => 'MythMusic',
         #'mythnews'       => 'MythNews',
-        'mythphone'      => 'MythPhone',
+        #'mythphone'      => 'MythPhone',
         'mythvideo'      => 'MythVideo',
         #'mythweather'    => 'MythWeather',
         'mythweb'        => 'MythWeb',
