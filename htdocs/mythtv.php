@@ -74,6 +74,11 @@
 
 /* ****************************************************************************/
 
+// People shouldn't be hitting the php files directly
+    if ($_SERVER['REQUEST_URI'] == '/mythtv.php') {
+        redirect_browser('/');
+    }
+
 // Print the requested page
     if (preg_match('/\w/', $Path[0]))
         if (file_exists(root.'/pages/'.$Path[0].'.php'))
