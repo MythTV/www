@@ -26,7 +26,7 @@
     </p>
     <p>
     Read more in the
-    <a href="http://www.mythtv.org/wiki/index.php/Nuvexport" title="MythTV Wiki:  nuvexport">MythTV Wiki entry for nuvexport</a>.
+    <a href="http://www.mythtv.org/wiki/Nuvexport" title="MythTV Wiki:  nuvexport">MythTV Wiki entry for nuvexport</a>.
     </p>
 
     <h2>Perl Bindings</h2>
@@ -36,7 +36,7 @@
     </p>
     <p>
     Read more in the
-    <a href="http://www.mythtv.org/wiki/index.php/Perl_bindings" title="MythTV Wiki:  Perl Bindings">MythTV Wiki entry for perl bindings</a>.
+    <a href="http://www.mythtv.org/wiki/Perl_bindings" title="MythTV Wiki:  Perl Bindings">MythTV Wiki entry for perl bindings</a>.
     </p>
 
     <h2>Python Bindings</h2>
@@ -46,7 +46,7 @@
     </p>
     <p>
     Read more in the
-    <a href="http://www.mythtv.org/wiki/index.php/Python_bindings" title="MythTV Wiki:  Python Bindings">MythTV Wiki entry for python bindings</a>.
+    <a href="http://www.mythtv.org/wiki/Python_bindings" title="MythTV Wiki:  Python Bindings">MythTV Wiki entry for python bindings</a>.
     </p>
 
 </div>

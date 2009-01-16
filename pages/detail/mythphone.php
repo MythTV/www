@@ -28,7 +28,7 @@
 
     <p>
     Read more in the
-    <a href="http://www.mythtv.org/wiki/index.php/MythPhone" title="MythTV Wiki:  MythPhone">MythTV Wiki entry for MythPhone</a>
+    <a href="http://www.mythtv.org/wiki/MythPhone" title="MythTV Wiki:  MythPhone">MythTV Wiki entry for MythPhone</a>
     </p>
 
 </div>

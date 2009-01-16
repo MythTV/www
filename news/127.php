@@ -11,7 +11,7 @@
         on one DVB/ATSC multiplex, a couple new plugins, some new
         deinterlacing/video display options, and many, many other things.
         </li>
-    <li>The <a href="http://www.mythtv.org/wiki/index.php/Release_Notes_-_0.21">Release
+    <li>The <a href="http://www.mythtv.org/wiki/Release_Notes_-_0.21">Release
         notes page in the wiki</a> has the list of what's changed, but it's
         currently a couple thousand checkins out of date.
         </li>

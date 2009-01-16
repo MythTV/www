@@ -21,7 +21,7 @@
 
     <p>
     Read more in the
-    <a href="http://www.mythtv.org/wiki/index.php/MythZoneMinder" title="MythTV Wiki:  MythZoneMinder">MythTV Wiki entry for MythZoneMinder</a>
+    <a href="http://www.mythtv.org/wiki/MythZoneMinder" title="MythTV Wiki:  MythZoneMinder">MythTV Wiki entry for MythZoneMinder</a>
     </p>
 
 </div>

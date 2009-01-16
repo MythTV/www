@@ -86,13 +86,13 @@
         <p>
         If you would like to forgo compiling MythTV from source, there are packages
         available for a variety of linux distrubutions.  You can find a
-        <a href="http://www.mythtv.org/wiki/index.php/Packages">list of available third
+        <a href="http://www.mythtv.org/wiki/Packages">list of available third
         party packages</a> in the wiki, along with a handful of howtos for getting
         MythTV installed in your favorite distro.
         </p>
         <p>
         In the wiki, you will also find a list of full-blown
-        <a href="http://www.mythtv.org/wiki/index.php/External_Links#MythTV_Install_Guides_.2F_Distros">linux distributions</a>
+        <a href="http://www.mythtv.org/wiki/External_Links#MythTV_Install_Guides_.2F_Distros">linux distributions</a>
         that come pre-installed with MythTV, along with howtos for getting
         MythTV running on most other major linux distributions (as well as
         FreeBSD).

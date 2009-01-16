@@ -20,7 +20,7 @@
 
     <p>
     Read more in the
-    <a href="http://www.mythtv.org/wiki/index.php/MythWeather" title="MythTV Wiki:  MythWeather">MythTV Wiki entry for MythWeather</a>
+    <a href="http://www.mythtv.org/wiki/MythWeather" title="MythTV Wiki:  MythWeather">MythTV Wiki entry for MythWeather</a>
     </p>
 
 </div>

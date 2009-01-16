@@ -7,7 +7,7 @@
     global $Authors;
     $Authors = array(
         'isaac' => '<a href="http://www.mythtv.org/">Isaac</a>',
-        'xris'  => '<a href="http://www.mythtv.org/wiki/index.php/User:Xris">xris</a>',
+        'xris'  => '<a href="http://www.mythtv.org/wiki/User:Xris">xris</a>',
         );
 
 // Topics

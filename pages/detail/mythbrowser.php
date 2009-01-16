@@ -20,7 +20,7 @@
 
     <p>
     Read more in the
-    <a href="http://www.mythtv.org/wiki/index.php/MythBrowser" title="MythTV Wiki:  MythBrowser">MythTV Wiki entry for MythBrowser</a>
+    <a href="http://www.mythtv.org/wiki/MythBrowser" title="MythTV Wiki:  MythBrowser">MythTV Wiki entry for MythBrowser</a>
     </p>
 
 </div>

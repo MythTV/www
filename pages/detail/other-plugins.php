@@ -34,7 +34,7 @@
     </p>
     <p>
     Read more in the
-    <a href="http://www.mythtv.org/wiki/index.php/MythControls" title="MythTV Wiki:  MythControls">MythTV Wiki entry for MythControls</a>
+    <a href="http://www.mythtv.org/wiki/MythControls" title="MythTV Wiki:  MythControls">MythTV Wiki entry for MythControls</a>
     </p>
 
     <h2>MythFlix</h2>
@@ -44,7 +44,7 @@
     </p>
     <p>
     Read more in the
-    <a href="http://www.mythtv.org/wiki/index.php/MythFlix" title="MythTV Wiki:  MythFlix">MythTV Wiki entry for MythFlix</a>
+    <a href="http://www.mythtv.org/wiki/MythFlix" title="MythTV Wiki:  MythFlix">MythTV Wiki entry for MythFlix</a>
     </p>
 
     <h2>MythGame</h2>
@@ -54,7 +54,7 @@
     </p>
     <p>
     Read more in the
-    <a href="http://www.mythtv.org/wiki/index.php/MythGame" title="MythTV Wiki:  MythGame">MythTV Wiki entry for MythGame</a>
+    <a href="http://www.mythtv.org/wiki/MythGame" title="MythTV Wiki:  MythGame">MythTV Wiki entry for MythGame</a>
     </p>
 
     <h2>MythMovies</h2>
@@ -64,7 +64,7 @@
     </p>
     <p>
     Read more in the
-    <a href="http://www.mythtv.org/wiki/index.php/MythMovies" title="MythTV Wiki:  MythMovies">MythTV Wiki entry for MythMovies</a>.
+    <a href="http://www.mythtv.org/wiki/MythMovies" title="MythTV Wiki:  MythMovies">MythTV Wiki entry for MythMovies</a>.
     </p>
 
     <h2>MythWeather</h2>
@@ -74,7 +74,7 @@
     </p>
     <p>
     Read more in the
-    <a href="http://www.mythtv.org/wiki/index.php/MythWeather" title="MythTV Wiki:  MythWeather">MythTV Wiki entry for MythWeather</a>
+    <a href="http://www.mythtv.org/wiki/MythWeather" title="MythTV Wiki:  MythWeather">MythTV Wiki entry for MythWeather</a>
     </p>
 
     <h2>MythZoneMinder</h2>
@@ -84,7 +84,7 @@
     </p>
     <p>
     Read more in the
-    <a href="http://www.mythtv.org/wiki/index.php/MythZoneMinder" title="MythTV Wiki:  MythZoneMinder">MythTV Wiki entry for MythZoneMinder</a>
+    <a href="http://www.mythtv.org/wiki/MythZoneMinder" title="MythTV Wiki:  MythZoneMinder">MythTV Wiki entry for MythZoneMinder</a>
     </p>
 
 

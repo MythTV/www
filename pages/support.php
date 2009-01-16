@@ -51,7 +51,7 @@
         <p>
         The first place to look for answers to basic questions should be to
         check our list of
-        <a href="http://www.mythtv.org/wiki/index.php/Frequently_Asked_Questions">frequently asked questions</a>.
+        <a href="http://www.mythtv.org/wiki/Frequently_Asked_Questions">frequently asked questions</a>.
         </p>
 
         <h3>Mailing Lists</h3>
@@ -141,7 +141,7 @@
                 developers.  It is the most up to date piece of documentation
                 about MythTV, and contains a variety of pieces of general
                 information from screenshots and our
-                <a href="http://www.mythtv.org/wiki/index.php/Frequently_Asked_Questions">FAQ</a>
+                <a href="http://www.mythtv.org/wiki/Frequently_Asked_Questions">FAQ</a>
                 to detailed explanations about of rare configurations set up by
                 some of our more adventurous users.
                 </dd>

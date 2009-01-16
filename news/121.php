@@ -39,7 +39,7 @@ have generously offered to host the server in their brand new colocation
 facility.
 </p>
 <p>
-- <a href="http://www.mythtv.org/wiki/index.php/User:Xris">Chris
+- <a href="http://www.mythtv.org/wiki/User:Xris">Chris
 Petersen</a>
 </p>
 </ul>

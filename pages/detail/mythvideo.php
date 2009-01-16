@@ -34,7 +34,7 @@
 
     <p>
     Read more in the
-    <a href="http://www.mythtv.org/wiki/index.php/MythVideo" title="MythTV Wiki:  MythVideo">MythTV Wiki entry for MythVideo</a>
+    <a href="http://www.mythtv.org/wiki/MythVideo" title="MythTV Wiki:  MythVideo">MythTV Wiki entry for MythVideo</a>
     </p>
 
 </div>

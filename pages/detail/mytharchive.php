@@ -45,7 +45,7 @@
 
     <p>
     Read more in the
-    <a href="http://www.mythtv.org/wiki/index.php/MythArchive" title="MythTV Wiki:  MythArchive">MythTV Wiki entry for MythArchive</a>
+    <a href="http://www.mythtv.org/wiki/MythArchive" title="MythTV Wiki:  MythArchive">MythTV Wiki entry for MythArchive</a>
     </p>
 
 </div>

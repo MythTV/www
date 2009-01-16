@@ -40,7 +40,7 @@
 
     <p>
     For a complete list of current themes, please see the
-    <a href="http://www.mythtv.org/wiki/index.php/Themes" title="MythTV Wiki:  MythTV Themes">MythTV Wiki entry for Themes</a>
+    <a href="http://www.mythtv.org/wiki/Themes" title="MythTV Wiki:  MythTV Themes">MythTV Wiki entry for Themes</a>
     </p>
 
 </div>

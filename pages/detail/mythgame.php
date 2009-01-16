@@ -26,7 +26,7 @@
 
     <p>
     Read more in the
-    <a href="http://www.mythtv.org/wiki/index.php/MythGame" title="MythTV Wiki:  MythGame">MythTV Wiki entry for MythGame</a>
+    <a href="http://www.mythtv.org/wiki/MythGame" title="MythTV Wiki:  MythGame">MythTV Wiki entry for MythGame</a>
     </p>
 
 </div>

@@ -79,14 +79,14 @@
 
     <p style="clear: both">
     MythWeb is currently maintained by
-    <a href="http://www.mythtv.org/wiki/index.php/User:Xris">Chris Petersen</a> (a.k.a. xris)
+    <a href="http://www.mythtv.org/wiki/User:Xris">Chris Petersen</a> (a.k.a. xris)
     and
-    <a href="http://www.mythtv.org/wiki/index.php/User:Kormoc">Rob Smith</a> (a.k.a. kormoc).
+    <a href="http://www.mythtv.org/wiki/User:Kormoc">Rob Smith</a> (a.k.a. kormoc).
     </p>
 
     <p>
     Read more in the
-    <a href="http://www.mythtv.org/wiki/index.php/MythWeb" title="MythTV Wiki:  MythWeb">MythTV Wiki entry for MythWeb</a>
+    <a href="http://www.mythtv.org/wiki/MythWeb" title="MythTV Wiki:  MythWeb">MythTV Wiki entry for MythWeb</a>
     </p>
 
 </div>

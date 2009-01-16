@@ -49,7 +49,7 @@
         <p>
         <strong>Do not</strong> use this form for
         <a href="http://svn.mythtv.org/trac/newticket">bug reports</a>,
-        <a href="http://www.mythtv.org/wiki/index.php/Feature_Wishlist">feature requests</a>,
+        <a href="http://www.mythtv.org/wiki/Feature_Wishlist">feature requests</a>,
         <a href="/support">support inquiries</a>, or other similar queries that
         are easily answered by using the
         <a href="/support">appropriate community support tools</a>.  You will

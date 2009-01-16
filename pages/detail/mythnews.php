@@ -20,7 +20,7 @@
 
     <p>
     Read more in the
-    <a href="http://www.mythtv.org/wiki/index.php/MythNews" title="MythTV Wiki:  MythNews">MythTV Wiki entry for MythNews</a>
+    <a href="http://www.mythtv.org/wiki/MythNews" title="MythTV Wiki:  MythNews">MythTV Wiki entry for MythNews</a>
     </p>
 
 </div>

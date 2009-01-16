@@ -26,4 +26,4 @@ Chris asked me to post this:
         <a href="http://forevermore.net/feedback.php">http://forevermore.net/feedback.php</a>.
         </li>
 </ul>
-- <a href="http://www.mythtv.org/wiki/index.php/User:Xris">Chris Petersen</a>
+- <a href="http://www.mythtv.org/wiki/User:Xris">Chris Petersen</a>

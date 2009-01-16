@@ -10,11 +10,11 @@
       <a href="http://www.schedulesdirect.org/">Schedules Direct</a> support.
       </li>
   <li>The
-      <a href="http://www.mythtv.org/wiki/index.php/Release_Notes_-_0.20.2">0.20.2
+      <a href="http://www.mythtv.org/wiki/Release_Notes_-_0.20.2">0.20.2
       release notes</a> have a list of the two major and many minor changes
       since 0.20.1. Since 0.20.1 never made it to a public release you may want
       to look at the
-      <a href="http://www.mythtv.org/wiki/index.php/Release_Notes_-_0.20.1">0.20.1
+      <a href="http://www.mythtv.org/wiki/Release_Notes_-_0.20.1">0.20.1
       release notes</a> as well.
       </li>
   <li>Standard release info:
@@ -26,7 +26,7 @@
             before asking questions.
             </li>
         <li>The
-            <a href="http://www.mythtv.org/wiki/index.php/Packages">binary
+            <a href="http://www.mythtv.org/wiki/Packages">binary
             packages</a> should hopefully be updated to 0.20.2 soon.
             </li>
         <li>See this

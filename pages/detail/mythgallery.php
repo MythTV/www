@@ -29,7 +29,7 @@
 
     <p>
     Read more in the
-    <a href="http://www.mythtv.org/wiki/index.php/MythGallery" title="MythTV Wiki:  MythGallery">MythTV Wiki entry for MythGallery</a>
+    <a href="http://www.mythtv.org/wiki/MythGallery" title="MythTV Wiki:  MythGallery">MythTV Wiki entry for MythGallery</a>
     </p>
 
 </div>

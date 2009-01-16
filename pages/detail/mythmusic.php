@@ -42,7 +42,7 @@
 
     <p>
     Read more in the
-    <a href="http://www.mythtv.org/wiki/index.php/MythMusic" title="MythTV Wiki:  MythMusic">MythTV Wiki entry for MythMusic</a>
+    <a href="http://www.mythtv.org/wiki/MythMusic" title="MythTV Wiki:  MythMusic">MythTV Wiki entry for MythMusic</a>
     </p>
 
 </div>

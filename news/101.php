@@ -21,6 +21,6 @@
   </ul>
    <li>Apologies if I forgot to mention anyone's contributions, but this is just a quick list of browsing through the commits list archives.
   <li>Grab the release from the  <a href="/download">download section</a> and please at least try to read the <a href="/docs">docs</a>. 
-  <li>The <a href="http://www.mythtv.org/wiki/index.php/Packages">binary packages</a> should hopefully be updated to 0.14 soon.
+  <li>The <a href="http://www.mythtv.org/wiki/Packages">binary packages</a> should hopefully be updated to 0.14 soon.
   <li>See this <a href="/download#other-downloads">links section</a> for a list of complete linux distributions based around MythTV.
 </ul>
