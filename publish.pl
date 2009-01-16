@@ -29,6 +29,10 @@
 
 # Where are the files located?
     my $src = dirname(abs_path($0 or $PROGRAM_NAME));
+
+# Cleanup, and build shell-safe versions
+    $src    =~ s#/*$#/#;
+    $target =~ s#/*$#/#;
     my $safe_src    = shell_escape($src);
     my $safe_target = shell_escape($target);
 
