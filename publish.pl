@@ -63,7 +63,7 @@
            .' '.shell_escape($target));
 
 # Make sure the apache config gets updated, too
-    copy('mythtv.conf.apache', '/etc/apache2/sites-available/newmythtv')
+    copy('mythtv.conf.apache', '/etc/apache2/sites-available/mythtv')
         or die "Can't install mythtv.conf.apache\n";
 
 # Make sure the files are all owned properly
