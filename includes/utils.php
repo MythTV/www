@@ -136,7 +136,6 @@
             $command = 'convert -quality 60 -size '.escapeshellarg($sizes[$side][$size]['size'])
                       .' '.escapeshellarg("xc:$color")
                       .' -background '.escapeshellarg($color)
-                      .' -composite '
                       .' '.escapeshellarg($img)
                       .' -background '.escapeshellarg($color)
                       .' -geometry '.escapeshellarg($sizes[$side][$size]['geo1']).'!'
@@ -146,8 +145,10 @@
                       .' -geometry '.escapeshellarg($sizes[$side][$size]['geo2'])
                       .' -composite '
                       .escapeshellarg($thumb)
+                      .' '
+                      .escapeshellarg($thumb)
                       ;
-            #echo $command,'<hr>';return;
+            #echo '<hr>',html_entities($command),'<hr>';
             system($command);
         }
     // Get the image info
