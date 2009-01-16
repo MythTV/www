@@ -25,9 +25,9 @@
     <li>On a side note, <a href="http://schedulesdirect.org/">Schedules Direct</a>
         is looking for information about users from outside of the US and Canada.
         We know that there are a lot of MythTV users abroad, and it would really
-        help them out if you would head over there and fill out the
-        <a href="http://xris.schedulesdirect.org/survey/where">survey</a> that
-        they've posted.
+        help them out if you would head over there and
+        <a href="http://xris.schedulesdirect.org/survey/where">fill out the survey</a>
+        that they've posted.
         </li>
 </ul>
 
