@@ -45,7 +45,7 @@
 
 
 // Check that the file exists, and 404 if it doesn't
-    if (!file_exists(root.'pages/detail/'.$Path[1].'.php')) {
+    if (!file_exists(root.'/pages/detail/'.$Path[1].'.php')) {
         redirect_browser('/detail/mythtv', 404);
     }
     elseif (!$sections[$Path[1]]) {
