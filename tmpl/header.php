@@ -15,13 +15,13 @@
 <html>
 <head>
 	<title><?php echo $Meta['title'] ?></title>
-    <link rel="stylesheet" type="text/css" href="/css/site.css">
+    <link rel="stylesheet" type="text/css" href="/<?php echo svn_rev ?>/css/site.css">
     <!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/css/ie6.css"><![endif]-->
     <!--[if IE]><link rel="stylesheet" type="text/css" href="/css/ie.css" /><![endif]-->
     <link rel="alternate" type="application/atom+xml" title="MythTV News - Atom" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/feed" />
     <link rel="alternate" type="application/rss+xml" title="MythTV News - RSS" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/feed?rss" />
-    <link rel="icon"          href="/img/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="icon"          href="/<?php echo svn_rev ?>/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/<?php echo svn_rev ?>/img/favicon.ico" type="image/x-icon">
 <?php
     if ($Meta['description'])
         echo '    <meta name="description" content="', htmlentities($Meta['description']), "\">\n";

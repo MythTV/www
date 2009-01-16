@@ -155,7 +155,7 @@
         list($width, $height) = getimagesize($thumb);
     // Return
         echo '<a href="', _or($href, '/'.$img), '">',
-               '<img src="/', $thumb,  '"',
+               '<img src="/', svn_rev, '/', $thumb, '"',
                ' height="',   $height, '"',
                ' width="',    $width,  '"',
                ' border="0" ', $params, ' /></a>';

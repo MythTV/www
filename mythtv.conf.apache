@@ -83,6 +83,21 @@
 
        	</Files>
 
+    # Turn on Expires headers
+        ExpiresActive On
+
+    # These types should be cached for at least 30 days after the client
+    # downloads them because new versions will get different URLs.
+        ExpiresByType text/javascript           A2592000
+        ExpiresByType application/x-javascript  A2592000
+        ExpiresByType text/css                  A2592000
+
+    # Images should be cached for at least a week
+        ExpiresByType image/gif         A604800
+        ExpiresByType image/jpeg        A604800
+        ExpiresByType image/png         A604800
+        ExpiresByType image/x-icon      A604800
+
     # Turn on the rewrite engine
         RewriteEngine  on
 
@@ -134,6 +149,9 @@
         RewriteCond %{REQUEST_URI}      ^/modules\.php
         RewriteCond %{QUERY_STRING}     name=News&file=article&sid=(.+?)
         RewriteRule (.*)                /news/%1        [R=permanent,L]
+
+    # Skip over cache-friendly rewrites
+        RewriteRule     ^[0-9]+/(css|img|cache|js)(/.*)?$       $1$2    [PT,QSA]
 
     # Skip out early if we've already been through rewrites,
     # or if this is a /css/, /js/ or /cache/ directory request.

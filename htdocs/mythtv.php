@@ -18,6 +18,9 @@
 // Code root
     define('root', dirname($_SERVER['DOCUMENT_ROOT']));
 
+// SVN revision:  publish.pl replaces this with the current svn revision.
+    define('svn_rev', time());
+
 // Hide errors from the live server, show ALL on dev machines.
     if ($_SERVER['HTTP_HOST'] == 'www.mythtv.org') {
         error_reporting(E_NONE);

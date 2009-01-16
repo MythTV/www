@@ -29,6 +29,18 @@
 
 # Where are the files located?
     my $src = dirname(abs_path($0 or $PROGRAM_NAME));
+    my $safe_src    = shell_escape($src);
+    my $safe_target = shell_escape($target);
+
+# Get the current svn revision
+    my $svn_info = `svn info $safe_src 2>/dev/null`;
+    my ($svn_rev) = $svn_info =~ /^Revision:\s*(\d+)/m;
+    if ($svn_rev) {
+        print "Publishing SVN revision $svn_rev\n";
+    }
+    else {
+        die "Can't determine SVN revision for $src\n";
+    }
 
 # Cleanup, since trailing slashes change rsync behavior
     $target =~ s/\/+$//s;
@@ -59,12 +71,16 @@
            .' --exclude myth_svndocs'
            .' --exclude site_is_disabled'
            # src/dest
-           .' '.shell_escape($src)
-           .' '.shell_escape($target));
+           .' '.$safe_src
+           .' '.$safe_target);
 
 # Make sure the apache config gets updated, too
     copy('mythtv.conf.apache', '/etc/apache2/sites-available/mythtv')
         or die "Can't install mythtv.conf.apache\n";
+
+# Fix CSS links, etc. for better image cache behavior in browsers
+    system("sed -i -e 's,/img,/$svn_rev/img,g' $safe_target/htdocs/css/*css");
+    system("sed -i -e \"s/define('svn_rev', \+time());/define('svn_rev', '$svn_rev');/g\"");
 
 # Make sure the files are all owned properly
     system('chown -R www-data\:www '.shell_escape($target));
