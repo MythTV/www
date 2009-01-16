@@ -28,9 +28,9 @@
 
 
 // Dev check
-    #if ($_SERVER['HTTP_HOST'] != 'www.mythtv.org') {
-    #    $Contact_Err['subject'] = "Testing.  Emails will not be sent!";
-    #}
+    if ($_SERVER['HTTP_HOST'] != 'www.mythtv.org') {
+        $Contact_Err['subject'] = "Testing.  Emails will not be sent!";
+    }
 
 // Load some utilities
     require_once 'includes/EmailVerify.php';
