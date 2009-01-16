@@ -53,7 +53,7 @@
             'digg_topic' => $digg_topic,
             'solo'       => false,
             'author'     => $author,
-            'url'        => "/news/$id/".str_replace('/', '-', urlencode($title)),
+            'url'        => "/news/$id/".str_replace('/', '-', rawurlencode($title)),
             );
         if ($load_content) {
             $post['content'] = ob_get_contents();
