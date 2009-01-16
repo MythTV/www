@@ -20,6 +20,7 @@
         thank designer <a href="http://miffteevee.co.uk/">Stuart Morgan</a>
         (gbee) and coder <a href="http://forevermore.net/">Chris Petersen</a>
         (xris) for all of the great work they put into setting up the new site.
+        <br><br>
         </li>
     <li>On a side note, <a href="http://schedulesdirect.org/">Schedules Direct</a>
         is looking for information about users from outside of the US and Canada.
