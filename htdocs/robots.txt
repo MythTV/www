@@ -8,6 +8,7 @@ User-agent: WebStripper
 Disallow: /
 
 User-agent: *
+Disallow: /downloads/*
 Disallow: /w/
 Disallow: /wiki/Special:Search
 Disallow: /wiki/Special:Random
