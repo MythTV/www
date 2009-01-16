@@ -21,9 +21,9 @@
  * @name    $Path
 /**/
     global $Path;
-    $Path = explode('/', preg_replace('/^\/+/',   '',    // Remove leading slashes
-                         preg_replace('/[\s]+/', ' ',    // Convert extra whitespace
-                                                         // Grab the path info from various different places.
+    $Path = explode('/', preg_replace('/^\/+/',    '',   // Remove leading slashes
+                         preg_replace('/[\s]+/',   ' ',  // Convert extra whitespace
+                        // Grab the path info from various different places.
                              array_key_exists('PATH_INFO', $_SERVER)
                              && $_SERVER['PATH_INFO']
                                 ? $_SERVER['PATH_INFO']
@@ -38,6 +38,13 @@
 // Load some utility functions, etc
     require_once 'includes/conf.php';
     require_once 'includes/utils.php';
+
+// Don't allow path sections that start with a .
+    foreach ($Path as $dir) {
+        if (preg_match('/^\\./', $dir)) {
+            redirect_browser('/', 404);
+        }
+    }
 
 // Edit allowed?
     $Edit = ($Edit === true && in_array($_SERVER['REMOTE_ADDR'], $Allowed_IP))

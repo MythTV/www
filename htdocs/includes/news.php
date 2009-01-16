@@ -26,16 +26,25 @@
         if (!file_exists("news/$id.php")) {
             return null;
         }
+    // Define some variables to keep the error logs quiet, in case they are not
+    // defined in the news file itself;
+        $title      = null;
+        $date       = null;
+        $topic      = null;
+        $digg_topic = null;
+        $author     = null;
     // Load the news file and pull its data into an array
         ob_start();
         require "news/$id.php";
         $post = array(
-            'id'     => $id,
-            'title'  => $title,
-            'date'   => $date,
-            'topic'  => $topic,
-            'author' => $author,
-            'url'    => "/news/$id/".str_replace('/', '-', urlencode($title)),
+            'id'         => $id,
+            'title'      => $title,
+            'date'       => $date,
+            'topic'      => $topic,
+            'digg_topic' => $digg_topic,
+            'solo'       => false,
+            'author'     => $author,
+            'url'        => "/news/$id/".str_replace('/', '-', urlencode($title)),
             );
         if ($load_content) {
             $post['content'] = ob_get_contents();
