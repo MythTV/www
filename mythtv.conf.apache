@@ -43,7 +43,8 @@
     Alias /pipermail       /var/lib/mailman/archives/public
 
 # Mediawiki
-    Alias /wiki            /data/www/wiki.mythtv.org
+    Alias /w               /data/www/wiki.mythtv.org
+    Alias /wiki            /data/www/wiki.mythtv.org/index.php
     <Directory /data/www/wiki.mythtv.org/images/>
         AllowOverride None
         php_admin_flag engine off

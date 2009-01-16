@@ -8,8 +8,6 @@ User-agent: WebStripper
 Disallow: /
 
 User-agent: *
-Disallow: /wiki/index.php/Special:Search
-Disallow: /wiki/index.php/Special%3ASearch
-Disallow: /wiki/index.php/Special:Recentchanges
-Disallow: /wiki/index.php/Special%3ARecentchanges
-
+Disallow: /w/
+Disallow: /wiki/Special:Search
+Disallow: /wiki/Special:Random
