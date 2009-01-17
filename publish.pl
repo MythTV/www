@@ -21,7 +21,6 @@
 
 # Add a couple of include paths so we can load the various export and gui modules
     use English;
-    use DBI;
     use File::Basename;
     use File::Path;
     use File::Copy;
