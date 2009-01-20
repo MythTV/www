@@ -1,7 +1,7 @@
 <?php
     $topic  = 'news';
     $title  = 'October 30, 2002';
-    $author = 'isaac';
+    $author = 'ijr';
     $date   = strtotime('2002-10-30 21:59:44 UTC');
 ?>
 <ul>                                                                              <li>Bunch of bugfixes, faster seeking, and some internal architecture improvements have gone into CVS recently.                                                 

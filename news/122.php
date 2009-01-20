@@ -1,7 +1,7 @@
 <?php
     $topic  = 'news';
     $title  = 'Calling All Graphic Designers and SWF Developers';
-    $author = 'isaac';
+    $author = 'ijr';
     $date   = strtotime('2007-03-29 17:08:28 UTC');
 ?>
 Hey, long time no update.  Been a little on the busy side of things lately, but

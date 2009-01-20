@@ -1,7 +1,7 @@
 <?php
     $topic  = 'theme_news';
     $title  = 'PurpleGalaxy theme updated..';
-    $author = 'isaac';
+    $author = 'ijr';
     $date   = strtotime('2003-06-22 18:32:38 UTC');
 ?>
 <ul>

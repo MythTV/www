@@ -70,6 +70,7 @@
            # Files we don't want to copy
            .' --exclude publish.pl'
            .' --exclude mythtv.conf.apache'
+           .' --exclude newpost.pl'
            # Files we don't want the rsync to blow away
            .' --exclude logs'
            .' --exclude myth_svndocs'

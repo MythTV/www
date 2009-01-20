@@ -1,7 +1,7 @@
 <?php
     $topic  = 'announcement';
     $title  = 'TV Listings update';
-    $author = 'isaac';
+    $author = 'ijr';
     $date   = strtotime('2007-07-12 19:10:21 UTC');
 ?>
 As you may or may not be aware, Zap2It is

@@ -1,7 +1,7 @@
 <?php
     $topic  = 'bug';
     $title  = 'Don\'t use XMLTV 0.5.11';
-    $author = 'isaac';
+    $author = 'ijr';
     $date   = strtotime('2003-06-28 08:44:13 UTC');
 ?>
 <ul>

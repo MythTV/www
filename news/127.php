@@ -1,7 +1,7 @@
 <?php
     $topic  = 'announcement';
     $title  = 'MythTV 0.21';
-    $author = 'isaac';
+    $author = 'ijr';
     $date   = strtotime('2008-03-08 22:53:51 UTC ');
 ?>
 <ul>

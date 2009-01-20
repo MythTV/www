@@ -1,7 +1,7 @@
 <?php
     $topic  = 'news';
     $title  = 'Yet more hardware decoder support...';
-    $author = 'isaac';
+    $author = 'ijr';
     $date   = strtotime('2003-09-26 19:29:19 UTC');
 ?>
 <ul>

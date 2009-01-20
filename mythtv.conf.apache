@@ -4,14 +4,13 @@
 
 <VirtualHost *>
 
-    ServerName mythtv.org
-    ServerAlias www.mythtv.org
+    ServerName www.mythtv.org
+    ServerAlias mythtv.org
     ServerAlias wiki.mythtv.org
     ServerAlias mythtv.com   www.mythtv.com
     ServerAlias mythtv.info  www.mythtv.info
     ServerAlias alcor-2.osuosl.org
     ServerAlias mythtv.snowman.net
-    ServerAlias newmyth.forevermore.net
 
     ServerAdmin webmaster@mythtv.org
 
@@ -19,11 +18,6 @@
     DocumentRoot /data/www/www.mythtv.org/htdocs
     ErrorLog /data/www/www.mythtv.org/logs/error.log
     CustomLog /data/www/www.mythtv.org/logs/access.log full
-
-# Enable these for newmyth.forevermore.net development
-    #DocumentRoot /var/www/forevermore.net/newmyth/htdocs
-    #ErrorLog logs/forevermore.net/newmyth-error_log
-    #CustomLog logs/forevermore.net/newmyth-access_log combined
 
 #
 # Aliases and links to other programs that live on the site, too
@@ -56,7 +50,6 @@
 
 # The following rewrite conditions need to live within a <Directory> tag.  Make
 # sure that it matches the DocumentRoot defined above.
-    #<Directory /var/www/forevermore.net/newmyth/htdocs>
     <Directory /data/www/www.mythtv.org/htdocs>
 
     # PHP Configuration

@@ -1,7 +1,7 @@
 <?php
     $topic  = 'software_news';
     $title  = 'New Look for MythNews/MythGallery';
-    $author = 'isaac';
+    $author = 'ijr';
     $date   = strtotime('2004-01-14 22:03:44 UTC');
 ?>
 <ul>

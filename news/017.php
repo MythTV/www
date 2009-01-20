@@ -1,7 +1,7 @@
 <?php
     $topic  = 'news';
     $title  = 'July 15, 2002';
-    $author = 'isaac';
+    $author = 'ijr';
     $date   = strtotime('2002-07-15 21:11:31 UTC');
 ?>
 <ul>
