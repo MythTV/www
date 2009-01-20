@@ -68,7 +68,7 @@
     // No errors - send the message
         if (empty($Contact_Err)) {
         // Start the headers list
-            $headers = array('From: "'.$_POST['name'].'" <'.$_POST['email'],
+            $headers = array('From: "'.$_POST['name'].'" <'.$_POST['email'].'>',
                              'X-Remote-IP: '.$_SERVER['REMOTE_ADDR'],
                              'X-User-Agent: '.$_SERVER['HTTP_USER_AGENT']);
         // Get a list of extra POST variables
