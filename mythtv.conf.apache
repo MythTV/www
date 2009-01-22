@@ -23,6 +23,9 @@
 # Aliases and links to other programs that live on the site, too
 #
 
+# Random files
+    Alias /misc  /data/www/misc-files
+
 # Mailman
     ScriptAlias /cgi-bin   /usr/lib/cgi-bin
     ScriptAlias /mailman   /usr/lib/cgi-bin/mailman
