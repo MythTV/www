@@ -14,16 +14,25 @@
 
 // Requested a specific file?
     if ($Path[1]) {
+    // No version specified
         if (!$Path[2])
-            $Path[2] = $Version;
+            $Path[2] = $Version[$Path[1]];
+    // Load the database routines
+        require_once 'includes/db.php';
+    // Redirect the user to the actual download location
         switch (str_replace('myth', '', strtolower($Path[1]))) {
             case 'tv':
+                log_download('tv', $Path[2]);
                 redirect_browser('ftp://ftp.osuosl.org/pub/mythtv/mythtv-'.$Path[2].'.tar.bz2');
             case 'plugins':
+                log_download('plugins', $Path[2]);
                 redirect_browser('ftp://ftp.osuosl.org/pub/mythtv/mythplugins-'.$Path[2].'.tar.bz2');
             case 'themes':
+                log_download('themes', $Path[2]);
                 redirect_browser('ftp://ftp.osuosl.org/pub/mythtv/myththemes-'.$Path[2].'.tar.bz2');
         }
+    // Unknown file type; redirect to the download overview page
+        redirect_browser('/download');
     }
 
 // Which section are we in?

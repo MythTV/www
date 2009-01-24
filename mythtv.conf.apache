@@ -55,6 +55,11 @@
 # sure that it matches the DocumentRoot defined above.
     <Directory /data/www/www.mythtv.org/htdocs>
 
+    # Some special instructions for the controller file
+     	<Files mythtv.*>
+            setenv db_file          "/data/www/web-db/mythtv.sqlite"
+        </Files>
+
     # PHP Configuration
      	<Files *.php>
 
