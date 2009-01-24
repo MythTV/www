@@ -61,6 +61,12 @@
         if (strlen($_POST['text']) < 25 || !preg_match('/\w/', $_POST['text'])) {
             $Contact_Err['text'] = 'You might want to try typing a more substantial message.';
         }
+    // Check the subject for certain unwanted phrases
+        if (!$Contact_Err['subject']) {
+            if (stristr($_POST['subject'], 'feature')) {
+                $Contact_Err['subject'] = 'Please read the instructions and do not use this form for feature requests.';
+            }
+        }
     // Make sure that a valid reason was given
         if (empty($Contact[$_POST['reason']])) {
             $Contact_Err['reason'] = 'Please select a valid reason for this contact request.';
