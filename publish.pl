@@ -44,7 +44,7 @@
         or die "Can't read mythtv.conf.apache:  $!\n";
     while (<DATA>) {
         next unless (/setenv\s+db_file\s+"([^"]+)/);
-        $db_host = $1;
+        $db_file = $1;
         last;
     }
     close DATA;
