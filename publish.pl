@@ -28,6 +28,7 @@
     use File::Path;
     use File::Copy;
     use Cwd 'abs_path';
+    use DBI;
 
 # Where are the files located?
     my $src = dirname(abs_path($0 or $PROGRAM_NAME));
