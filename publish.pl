@@ -53,7 +53,7 @@
 
 # Connect to the database
     my $dbh = DBI->connect("dbi:SQLite:dbname=$db_file",'','');
-        die "Couldn't open/create $db_file SQLite database:  $DBI::errstr\n";
+    die "Couldn't open/create $db_file SQLite database:  $DBI::errstr\n" if ($DBI::errstr || !$dbh);
 
 # Get the current db_vers from the database, but only query if we know the
 # settings table exists.
