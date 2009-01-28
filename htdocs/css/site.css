@@ -9,7 +9,6 @@
         margin:           0px;
         padding:          0px;
     }
-
     a, a:visited {
         color:              #026;
         text-decoration:    underline;
@@ -154,6 +153,9 @@
         margin:             0px;
         padding:            6em 2em 7em 2em;
         width:              964px;
+    }
+    #content a[name] {
+        padding-top: 6em;
     }
 
     #footer-start {
@@ -443,7 +445,7 @@
      * but we include the <i> tag to distinguis the author in browsers
      * that do not have css. */
     .news-post .content .author i {
-        font-style:             normal !important; 
+        font-style:             normal !important;
     }
     .news-post .content .author a {
         color:              #bcf;
@@ -627,4 +629,3 @@
 
     #official-docs {
     }
-
