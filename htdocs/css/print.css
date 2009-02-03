@@ -1,0 +1,13 @@
+/* Special styles to be used when printing */
+
+    #header {
+        display: none !important;
+    }
+    #footer {
+        display: none !important;
+    }
+
+    #content {
+        margin:     0px !important;
+        padding:    0px !important;
+    }
