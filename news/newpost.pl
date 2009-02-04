@@ -53,7 +53,7 @@
 
 # Get the time in the format we like
     my @lt = localtime(time);
-    my $time = strftime('%Y-%m-%d %k-%M-%S UTC', @lt, 'UTC');
+    my $time = strftime('%Y-%m-%d %k:%M:%S UTC', @lt, 'UTC');
 
 # Load the next post number
     my $file = 0;
