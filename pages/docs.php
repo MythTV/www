@@ -51,8 +51,11 @@
 <?php
 
 // Cleanup and output
-    echo preg_replace(array('/^.+?<body[^>]*>\s+/si', '/<\\/body>.+?$/si'),
-                      array('',                       ''),
+    echo preg_replace(array('/^.+?<body[^>]*>\s+/si',
+                            '/<\\/body>.+?$/si',
+                            '/<A\s+HREF="mailto:(.+?)">(.+?)<\/A>/ie'
+                            ),
+                      array('', '', 'encoded_mailto("$1","$2")'),
                       file_get_contents($file)
                      );
 

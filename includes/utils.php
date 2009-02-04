@@ -201,6 +201,53 @@
     }
 
 /**
+ * Studies have shown that email addresses encoded into html hex entities are
+ * virtually ignored by harvesting robots.  If you absolutely must put an email
+ * address into a web page, this will make it look perfectly normal to your
+ * users, but will cut down significantly on the number of harvesters finding
+ * it.
+ *
+ * Set $obfuscate to true if you want to add another layer of obfuscation to
+ * the encode:  user(a)example*com.  This will of course require users to
+ * manually fix the address so that it is usable.
+ *
+ * @param string $email     the address to be encoded
+ * @param string $title     the content of the hyperlink (eg. click here to email me)
+ * @param bool   $obfuscate turn on secondary obfuscation [see above]
+ *
+ * @return string anti-spammer hex-encoded <a href="mailto:$email">$title</a>
+/**/
+    function encoded_mailto($email, $title=NULL, $obfuscate=false) {
+    // Pull off any query string
+        if (preg_match('/^(.+?)(\?.*)$/', $email, $match)) {
+            $email = $match[1];
+            $query = $match[2];
+        }
+        else
+            $query = '';
+    // Do some fun obfuscation to the email address
+        if ($obfuscate) {
+            $email = str_replace('.', '*',
+                     str_replace('@', '(a)', $email)
+                     );
+        }
+    // Default title is the email address
+        if (empty($title))
+            $title = $email;
+    // hex-encode the mailto link
+        return '<a href="'
+               # Safari doesn't allow the "mailto:" to be encoded, too
+               #.'&#x00'.rtrim(chunk_split(bin2hex('mailto:'), 2, ';&#x00'), '&#x00')
+               .'mailto:'
+               .'%'.rtrim(chunk_split(bin2hex($email), 2, '%'), '%')
+               .$query
+               .'">'
+               .'&#x00'.rtrim(chunk_split(bin2hex($title), 2, ';&#x00'), '&#x00')
+               .'</a>';
+
+    }
+
+/**
  * Prints out a piece of data to the firebug console.
 /**/
     function debug($data, $file = false) {
@@ -238,4 +285,3 @@
             fclose($out);
         }
     }
-
