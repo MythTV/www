@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 #
-# Publish percdata.com code to /var/www/sites
+# Publish www.mythtv.org code to /data/www
 #
 # @url       $URL$
 # @date      $Date$

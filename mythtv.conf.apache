@@ -166,11 +166,7 @@
     # Catch anything else that comes through and send it to mythweb.php with no parameters.
         RewriteRule     ^(.*)$                  mythtv.php          [QSA,L]
 
-    # Enable mod_deflate.  This works MUCH more reliably than PHP's built-in
-    # gzip/Zlib compressors.  It is disabled here because many distros seem not
-    # to enable mod_deflate by default, but I strongly recommend that you
-    # enable this section.
-
+    # Enable mod_deflate.
         BrowserMatch ^Mozilla/4 gzip-only-text/html
         BrowserMatch ^Mozilla/4\.0[678] no-gzip
         BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
@@ -183,7 +179,6 @@
     # the user agent to/from this server, which can prevent compression from
     # being enabled.  It is disabled here because many distros seem not to
     # enable mod_headers by default, but I recommend that you enable it.
-
         Header append Vary User-Agent env=!dont-vary
 
     </Directory>
