@@ -117,7 +117,7 @@
         RewriteRule (.*)            http://www.mythtv.org/wiki$1    [R=permanent,L,QSA,NC]
 
     # Make sure we have www.name.tld instead of just name.tld
-        RewriteCond %{HTTP_HOST}    ^([^\.]\.[^\.])$
+        RewriteCond %{HTTP_HOST}    ^([^\.]+\.[^\.]+)$
         RewriteRule (.*)            http://www.%1$1                 [R=permanent,L,QSA,NC]
 
     # Redirect some old pages so we don't lose SEO
