@@ -117,10 +117,12 @@
     #header_text li:hover ul li.first {
         border-left:        1px solid #445;
         -moz-border-radius-bottomleft:  11px;
+        -webkit-border-radius-bottomleft:  11px;
     }
     #header_text li:hover ul li.last {
         border-right:       1px solid #445;
         -moz-border-radius-bottomright:  11px;
+        -webkit-border-radius-bottomright:  11px;
     }
     #header_text li:hover ul li:hover {
         background-color:       #3786b7;

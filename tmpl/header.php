@@ -17,10 +17,10 @@
 	<title><?php echo $Meta['title'] ?></title>
     <link rel="stylesheet" type="text/css" href="/<?php echo svn_rev ?>/css/site.css">
     <!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/css/ie6.css"><![endif]-->
-    <!--[if IE]><link rel="stylesheet" type="text/css" href="/css/ie.css" /><![endif]-->
+    <!--[if IE]><link rel="stylesheet" type="text/css" href="/css/ie.css" ><![endif]-->
     <link rel="stylesheet" type="text/css" href="/<?php echo svn_rev ?>/css/print.css" media="print">
-    <link rel="alternate" type="application/atom+xml" title="MythTV News - Atom" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/feed" />
-    <link rel="alternate" type="application/rss+xml" title="MythTV News - RSS" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/feed?rss" />
+    <link rel="alternate" type="application/atom+xml" title="MythTV News - Atom" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/feed" >
+    <link rel="alternate" type="application/rss+xml" title="MythTV News - RSS" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/feed?rss" >
     <link rel="icon"          href="/<?php echo svn_rev ?>/img/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/<?php echo svn_rev ?>/img/favicon.ico" type="image/x-icon">
 <?php
@@ -36,7 +36,7 @@
 <!-- Header -->
 <div id="header">
     <div id="header_logo">
-        <a href="/"><img src="/img/mythtv.png" class="png" width="180" height="64" border="0"></a>
+        <a href="/"><img src="/img/mythtv.png" class="png" width="180" height="64" border="0" alt="MythTV"></a>
     </div>
     <div id="header_text">
         <ul>

@@ -153,12 +153,16 @@
         }
     // Get the image info
         list($width, $height) = getimagesize($thumb);
+    // HTML Validation
+        if (!preg_match('/alt=/', $params)) {
+            $params = trim($params.' alt=""');
+        }
     // Return
         echo '<a href="', _or($href, '/'.$img), '">',
                '<img src="/', svn_rev, '/', $thumb, '"',
                ' height="',   $height, '"',
                ' width="',    $width,  '"',
-               ' border="0" ', $params, ' /></a>';
+               ' border="0" ', $params, ' ></a>';
     }
 
 /**
@@ -197,7 +201,7 @@
                '<img src="/', $thumb,  '"',
                ' height="',  $height, '"',
                ' width="',   $width,  '"',
-               " $params /></a>";
+               " $params ></a>";
     }
 
 /**

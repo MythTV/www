@@ -77,19 +77,19 @@
             <td><input type="text" name="name" size="40" tabindex="1" value="<?php echo htmlentities($_POST['name']) ?>"<?php
                 if ($Contact_Err['name'])
                     echo ' class="error"';
-                ?>/></td>
+                ?>></td>
             <td nowrap rowspan="4">
-                <input type="reset" value="Clear" class="submit" />
-                <img src="/<?php echo svn_rev ?>/img/spacer.gif" width="35" height="1" />
-                <input type="submit" disabled name="send" value="Send" class="submit" style="display: none" />
-                <input type="submit" name="realsend" value="Send" class="submit" />
+                <input type="reset" value="Clear" class="submit" >
+                <img src="/<?php echo svn_rev ?>/img/spacer.gif" width="35" height="1" >
+                <input type="submit" disabled name="send" value="Send" class="submit" style="display: none" >
+                <input type="submit" name="realsend" value="Send" class="submit" >
                 </td>
         </tr><tr>
             <td align="right">Your&nbsp;Email:&nbsp;</td>
             <td><input type="text" name="email" size="40" tabindex="2" value="<?php echo htmlentities($_POST['email']) ?>"<?php
                 if ($Contact_Err['email'])
                     echo ' class="error"';
-                ?>/></td>
+                ?>></td>
         </tr><tr>
             <td align="right">Reason for Contact:&nbsp;</td>
             <td colspan="3"><select name="reason" tabindex="3"><?php
@@ -106,7 +106,7 @@
             <td colspan="3"><input type="text" name="subject" tabindex="4" size="40" value="<?php echo htmlentities($_POST['subject']) ?>"<?php
                 if ($Contact_Err['subject'])
                     echo ' class="error"';
-                ?>/></td>
+                ?>></td>
         </tr><tr>
             <td align="right" valign="top">Message:&nbsp;</td>
             <td colspan="3"><textarea name="text" rows="10" cols="70" tabindex="5" wrap="hard"<?php
@@ -122,9 +122,9 @@
     }
     else {
 ?>
-        <hr />
+        <hr >
         <h2>
-        Your browser user agent does not match the standard recognized format.<br />
+        Your browser user agent does not match the standard recognized format.<br >
         Please use a standard web browser in order to use this feedback form.
         </h2>
 <?php
