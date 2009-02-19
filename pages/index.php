@@ -107,7 +107,6 @@
         <div class="download">
             <a href="/download">Download Now</a>
         </div>
-        </a>
     </div>
 </div>
 
