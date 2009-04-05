@@ -68,11 +68,11 @@
         you may download the latest versions here:
         </p>
         <ul>
-            <li><a href="/download/mythtv/<?php echo $Version['tv'] ?>">
+            <li><a href="/download/mythtv/<?php echo $Version['tv'] ?>" onclick="pageTracker._trackPageview('/download/mythtv/<?php echo $Version['tv'] ?>');">
                 MythTV <?php echo $Version['tv'] ?></a>
-            <li><a href="/download/plugins/<?php echo $Version['plugins'] ?>">
+            <li><a href="/download/plugins/<?php echo $Version['plugins'] ?>"" onclick="pageTracker._trackPageview('/download/plugins/<?php echo $Version['plugins'] ?>');">
                 MythTV Plugins <?php echo $Version['plugins'] ?></a>
-            <li><a href="/download/themes/<?php echo $Version['themes'] ?>">
+            <li><a href="/download/themes/<?php echo $Version['themes'] ?>"" onclick="pageTracker._trackPageview('/download/themes/<?php echo $Version['themes'] ?>');">
                 MythTV Themes <?php echo $Version['themes'] ?></a>
         </ul>
         <p>
