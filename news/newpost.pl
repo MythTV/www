@@ -93,7 +93,7 @@
     open(DATA, ">$path/$file") or die "Can't create $path/$file:  $!\n";
     print DATA <<EOF;
 <?php
-    \$topic  = 'announcement';
+    \$topic  = '$topic';
     \$title  = 'POST TITLE HERE';
     \$author = '$author';
     \$date   = strtotime('$time');
