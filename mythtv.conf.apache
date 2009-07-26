@@ -155,6 +155,9 @@
     # Skip over cache-friendly rewrites
         RewriteRule     ^[0-9]+/(css|img|cache|js)(/.*)?$       $1$2    [PT,QSA]
 
+    # Google verification files
+        RewriteRule     ^google.+\.html$                        -       [L]
+
     # Skip out early if we've already been through rewrites,
     # or if this is a /css/, /js/ or /cache/ directory request.
         RewriteRule     ^(css|img|cache|js|robots.txt|[a-z_]+\.(php))(/|$)  -   [L]
