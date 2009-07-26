@@ -107,6 +107,18 @@
         FreeBSD).
         </p>
         <p>
+        There are also pre-built versions of
+        <a href="http://www.mythtv.org/wiki/Myth_on_Mac_OS_X#Pre-built_Downloads" title="MythTV Downloads for MacOS">MythTV for MacOS</a>
+        available from several different websites.
+        </p>
+        <p>
+        There are no known pre-built versions of MythTV for Windows yet.  Until
+        then, you'll have to build it yourself by following the
+        <a href="http://www.mythtv.org/wiki/Windows_Port" title="MythTV on Windows">instructions</a>.
+        Hopefully someone will eventually offer a pre-built version and put a
+        link on that page.
+        </p>
+        <p>
         If you would like to grab the latest development version or just want to keep up
         with the latest fixes to the stable branch, you will find subversion checkout
         instructions at <a href="http://svn.mythtv.org/trac/">http://svn.mythtv.org/</a>
