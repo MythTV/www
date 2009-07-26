@@ -21,8 +21,9 @@
     function redirect_browser($url, $code=301) {
         if ($code) {
             switch ($code) {
-                case 301:   header("HTTP/1.0 301 Moved Permanently");   break;
-                case 404:   header("HTTP/1.0 404 Not Found");           break;
+                case 301:   header('HTTP/1.0 301 Moved Permanently');   break;
+                case 302:   header('HTTP/1.0 302 Found');               break;
+                case 404:   header('HTTP/1.0 404 Not Found');           break;
                 default:    header("HTTP/1.0 $code");
             }
         }

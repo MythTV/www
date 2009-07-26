@@ -62,7 +62,7 @@
 // Don't allow path sections that start with a .
     foreach ($Path as $dir) {
         if (preg_match('/^\\./', $dir)) {
-            redirect_browser('/', 404);
+            require_once 'pages/404.php';
         }
     }
 
@@ -79,7 +79,7 @@
 
 // People shouldn't be hitting the php files directly
     if ($_SERVER['REQUEST_URI'] == '/mythtv.php') {
-        redirect_browser('/');
+        redirect_browser('/', 301);
     }
 
 // Print the requested page
@@ -87,7 +87,7 @@
         if (file_exists(root.'/pages/'.$Path[0].'.php'))
             require_once 'pages/'.$Path[0].'.php';
         else
-            redirect_browser('/');
+            require_once 'pages/404.php';
     else
         require_once 'pages/index.php';
 

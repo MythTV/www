@@ -1,3 +1,8 @@
+<?php
+// This check is stored as a global;
+    global $is404;
+
+?>
 </div><!-- content -->
 
 <!-- Footer region and sponsorship text -->
@@ -24,7 +29,11 @@
     <script type="text/javascript">
         try {
         var pageTracker = _gat._getTracker("UA-6891668-1");
+<?php if ($is404) { ?>
+        pageTracker._trackPageview("/404/?page=" + document.location.pathname + document.location.search + "&from=" + document.referrer);
+<?php } else { ?>
         pageTracker._trackPageview();
+<?php } ?>
         } catch(err) {}
     </script>
 <?php } ?>

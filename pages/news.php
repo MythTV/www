@@ -23,8 +23,8 @@
         $post = load_news($Path[1]);
     // Unknown news post?
         if (!$post) {
-            redirect_browser('/news/', 404);
-            exit;
+            require_once 'pages/404.php';
+            #redirect_browser('/news/', 404);
         }
     // Make sure the URL is correct (for SEO)
         if ($post['url'] != $_SERVER['REQUEST_URI']) {
