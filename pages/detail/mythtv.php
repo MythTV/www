@@ -22,7 +22,7 @@
     </div>
     We like to think of MythTV as the ultimate Digital Video Recorder and
     home media center hub.  Think of it as a Free and Open Source alternative
-    to Tivo and Windows Media Center.  It started out in 2002 as a way for
+    to Windows Media Center or Tivo.  It started out in 2002 as a way for
     Isaac Richards to produce a better TV-viewing environment than his cable
     company's digital cable box could provide, and through the help of the open
     source community quickly grew into a powerful tool for watching and
