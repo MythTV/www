@@ -16,6 +16,9 @@
     a:hover {
         color:              #26c;
     }
+    .bold {
+        font-weight:        bold;
+    }
 
     #header {
         background-color:       black;
