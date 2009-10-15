@@ -84,7 +84,7 @@
             next;
         }
     # Set the requested topic, and move on
-        $topic = $topics{$answers[$c]};
+        $topic = $answers[$c];
         last;
     }
 
