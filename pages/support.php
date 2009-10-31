@@ -67,21 +67,31 @@
                 but is the first place that we recommend you look if you are
                 interested in learning more about MythTV and/or getting involved
                 with its user community.  Here is the
-                <a href="http://www.gossamer-threads.com/archive/MythTV_C2/Users_F11/">mailing list archive</a>
+                <a href="http://www.gossamer-threads.com/lists/mythtv/users/">mailing list archive</a>
                 for MythTV-users.
+                </dd>
+            <dt><a href="http://www.mythtv.org/mailman/listinfo/mythtv-theming/">MythTV-theming</a></dt>
+            <dd>Discussion about the development of themes and other such artwork
+                for MythTV.  This is the place for you if you're interested in talking
+                about user interface changes or are interested in helping develop new
+                themes or enhance the existing ones.
+                <a href="http://www.gossamer-threads.com/lists/mythtv/theming/">Go here</a>
+                for a searchable mailing list archive.
                 </dd>
             <dt><a href="http://www.mythtv.org/mailman/listinfo/mythtv-dev/">MythTV-dev</a></dt>
             <dd>General discussion about the development of MythTV.  This list
                 is used by both developers and users, and usually contains
                 discussions that focus on the technical workings and development
                 of MythTV and its plugins.
-                <a href="http://www.gossamer-threads.com/archive/MythTV_C2/Dev_F10/">Go here</a>
+                <a href="http://www.gossamer-threads.com/lists/mythtv/dev/">Go here</a>
                 for a searchable mailing list archive.
                 </dd>
             <dt><a href="http://www.mythtv.org/mailman/listinfo/mythtv-commits/">MythTV-commits</a></dt>
             <dd>For those who like to keep up with the most technical aspects
                 of MythTV development, this read-only lists tracks individual
                 code changes, Trac tickets, and bug reports.
+                <a href="http://www.gossamer-threads.com/lists/mythtv/commits/">Go here</a>
+                for a searchable mailing list archive.
                 </dd>
         </dl>
 
@@ -102,6 +112,10 @@
                 interested in knowing a little more about MythTV before taking
                 the plunge.  You will also find that several of the core MythTV
                 development team hangs out here to help answer questions, too.
+                </dd>
+            <dt><a href="irc://irc.freenode.net/mythtv-theming">#mythtv-theming</a></dt>
+            <dd>This is the MythTV theme developers channel.  Feel free to drop in
+                and talk about themes, artwork, and other user interface elements.
                 </dd>
             <dt><a href="irc://irc.freenode.net/mythtv">#mythtv</a></dt>
             <dd>This is the MythTV developers channel.  Feel free to drop in
