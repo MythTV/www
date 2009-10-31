@@ -8,6 +8,7 @@
     $Authors = array(
         'ijr'  => '<a href="http://www.mythtv.org/">Isaac</a>',
         'xris' => '<a href="http://www.mythtv.org/wiki/User:Xris">xris</a>',
+        'janne' => '<a href="http://www.mythtv.org/">Janne</a>',
         );
 
 // Topics
