@@ -9,7 +9,7 @@
         went into the release-0-22-fixes branch. The branch is now frozen and
         only critical issues will be fixed before the final release.
         Please test the 0.22 Release Candidate 2 tarballs. If no new critical
-        issues are reported 0.22 will be realeased next week.
+        issues are reported 0.22 will be released next week.
         </li>
     <li class="bold">Please make sure to read the
         <a href="http://www.mythtv.org/wiki/Release_Notes_-_0.22">Release Notes</a>
