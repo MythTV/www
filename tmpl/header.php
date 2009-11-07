@@ -14,13 +14,16 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-	<title><?php echo $Meta['title'] ?></title>
+    <title><?php echo $Meta['title'] ?></title>
     <link rel="stylesheet" type="text/css" href="/<?php echo svn_rev ?>/css/site.css">
     <!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/css/ie6.css"><![endif]-->
     <!--[if IE]><link rel="stylesheet" type="text/css" href="/css/ie.css" ><![endif]-->
     <link rel="stylesheet" type="text/css" href="/<?php echo svn_rev ?>/css/print.css" media="print">
+    <link rel="alternate" type="application/atom+xml" title="MythTV News" href="http://feeds.feedburner.com/MythTVorg" >
+<?php /*
     <link rel="alternate" type="application/atom+xml" title="MythTV News - Atom" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/feed" >
     <link rel="alternate" type="application/rss+xml" title="MythTV News - RSS" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/feed?rss" >
+     */ ?>
     <link rel="icon"          href="/<?php echo svn_rev ?>/img/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/<?php echo svn_rev ?>/img/favicon.ico" type="image/x-icon">
 <?php
