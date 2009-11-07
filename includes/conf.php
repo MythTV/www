@@ -10,6 +10,7 @@
         'xris' => '<a href="http://www.mythtv.org/wiki/User:Xris">xris</a>',
         'janne' => '<a href="http://www.mythtv.org/">Janne</a>',
         'danielk' => '<a href="http://www.mythtv.org/">Daniel</a>',
+        'robertm' => '<a href="http://www.fecitfacta.com/">Robert</a>',
         );
 
 // Topics
