@@ -1,16 +1,27 @@
-<html>
-<head>
-<title>MythTV Theming and UI Patch Contest</title>
+<?php
+/**
+ * Overview of MythTV Support.
+ *
+ * @url         $URL: svn+ssh://svn.mythtv.org/var/lib/svn-www/www.mythtv.org/pages/support.php $
+ * @date        $Date: 2009-10-31 14:37:19 -0700 (Sat, 31 Oct 2009) $
+ * @version     $Revision: 265 $
+ * @author	$Author: xris $
+ * @copyright   MythTV
+ *
+ * @package     mythtv.org
+ *
+/**/
 
-    <link rel="stylesheet" type="text/css" href="http://www.mythtv.org/1257530846/css/site.css">
-    <!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/css/ie6.css"><![endif]-->
-    <!--[if IE]><link rel="stylesheet" type="text/css" href="/css/ie.css" ><![endif]-->
-    <link rel="stylesheet" type="text/css" href="http://www.mythtv.org/1257530846/css/print.css" media="print">
-    <link rel="icon"          href="http://www.mythtv.org/1257530846/img/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="http://www.mythtv.org/1257530846/img/favicon.ico" type="image/x-icon">
-</head>
+// Which section are we in?
+    $Nav = 'about';
 
-<body>
+// Meta Info
+    $Meta['title'] = 'MythTV Theming and UI Patch Contest';
+
+// Load the global page header
+    require_once 'tmpl/header.php';
+?>
+<div id="theming-competition">
 
 <h1>MythTV Theming and UI Patch Contest</h1>
 
@@ -107,5 +118,8 @@ http://www.mythtv.org/mailman/listinfo/mythtv-theming/</a>
 
 <p>With that, get your creative juices flowing and join us on the mailing list or IRC to have your questions answered! Please send us a note on the theming mailing list so that we know you are interested and so that we can associate a project with a person.</p>
 
-</body>
-</html>
+</div>
+<?php
+// Load the global page footer
+    require_once 'tmpl/footer.php';
+
