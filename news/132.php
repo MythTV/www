@@ -37,6 +37,12 @@ href="http://svn.mythtv.org/svn/trunk/checksums/mythplugins-0.22.md5sum">MD5</a>
 href="http://svn.mythtv.org/svn/trunk/checksums/myththemes-0.22.md5sum">MD5</a>)
                 </li>
         </ul></li>
-    <li>Or check the code out from
-        <a href="http://svn.mythtv.org/">subversion</a>.</li>
+    <li>Tarballs of all MythTV releases, past and present, are available
+    <a href="ftp://ftp.osuosl.org/pub/mythtv/">on the FTP server</a>.</li>
+
+    <li>If you prefer a pre-packaged version, you may want to check out the
+    <a href="http://www.mythtv.org/wiki/Packages">wiki packages page</a>
+    to see if your favorite distribution has binaries available for
+    installation or download.</li>
+
 </ul>
