@@ -6,10 +6,11 @@
 // Authors
     global $Authors;
     $Authors = array(
-        'ijr'  => '<a href="http://www.mythtv.org/">Isaac</a>',
-        'xris' => '<a href="http://www.mythtv.org/wiki/User:Xris">xris</a>',
-        'janne' => '<a href="http://www.mythtv.org/">Janne</a>',
-        'danielk' => '<a href="http://www.mythtv.org/">Daniel</a>',
+        'ijr'  => 'Isaac',
+        'xris' => '<a href="http://forevermore.net/">xris</a>',
+        'janne' => 'Janne',
+        'danielk' => 'Daniel',
+        'robertm' => 'Robert M',
         'robertm' => '<a href="http://www.fecitfacta.com/">Robert</a>',
         );
 
