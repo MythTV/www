@@ -88,11 +88,12 @@
     # Turn on Expires headers
         ExpiresActive On
 
-    # These types should be cached for at least 30 days after the client
-    # downloads them because new versions will get different URLs.
-        ExpiresByType text/javascript           A2592000
-        ExpiresByType application/x-javascript  A2592000
-        ExpiresByType text/css                  A2592000
+    # These types should be cached for at least 36 days after the client
+    # downloads them because new versions will get different URLs (36 days
+    # to keep yslow happy in months with 31 days)
+        ExpiresByType text/javascript           A3110400
+        ExpiresByType application/x-javascript  A3110400
+        ExpiresByType text/css                  A3110400
 
     # Images should be cached for at least a week
         ExpiresByType image/gif         A604800
