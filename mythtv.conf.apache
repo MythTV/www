@@ -53,7 +53,7 @@
 
 # The following rewrite conditions need to live within a <Directory> tag.  Make
 # sure that it matches the DocumentRoot defined above.
-    <Directory /data/www/www.mythtv.org/>
+    <Directory /data/www/www.mythtv.org/htdocs/>
 
     # Some special instructions for the controller file
      	<Files mythtv.*>
