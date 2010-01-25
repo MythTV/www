@@ -53,7 +53,7 @@
 
 # The following rewrite conditions need to live within a <Directory> tag.  Make
 # sure that it matches the DocumentRoot defined above.
-    <Directory /data/www/www.mythtv.org/htdocs>
+    <Directory /data/www/www.mythtv.org/>
 
     # Some special instructions for the controller file
      	<Files mythtv.*>
@@ -84,22 +84,6 @@
             php_flag output_handler                 "NULL"
 
        	</Files>
-
-    # Turn on Expires headers
-        ExpiresActive On
-
-    # These types should be cached for at least 36 days after the client
-    # downloads them because new versions will get different URLs (36 days
-    # to keep yslow happy in months with 31 days)
-        ExpiresByType text/javascript           A3110400
-        ExpiresByType application/x-javascript  A3110400
-        ExpiresByType text/css                  A3110400
-
-    # Images should be cached for at least a week
-        ExpiresByType image/gif         A604800
-        ExpiresByType image/jpeg        A604800
-        ExpiresByType image/png         A604800
-        ExpiresByType image/x-icon      A604800
 
     # Turn on the rewrite engine
         RewriteEngine  on
@@ -170,27 +154,46 @@
     # Catch anything else that comes through and send it to mythweb.php with no parameters.
         RewriteRule     ^(.*)$                  mythtv.php          [QSA,L]
 
-    # Enable mod_deflate.
-        BrowserMatch ^Mozilla/4 gzip-only-text/html
-        BrowserMatch ^Mozilla/4\.0[678] no-gzip
-        BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
-
-        AddOutputFilterByType DEFLATE text/html
-        AddOutputFilterByType DEFLATE text/css
-        AddOutputFilterByType DEFLATE application/x-javascript
-
-	# This is helpful for mod_deflate -- it prevents proxies from changing
-    # the user agent to/from this server, which can prevent compression from
-    # being enabled.  It is disabled here because many distros seem not to
-    # enable mod_headers by default, but I recommend that you enable it.
-        Header append Vary User-Agent env=!dont-vary
-
     </Directory>
+
+# Disable ETags:  http://developer.yahoo.com/performance/rules.html#etags
+    FileETag None
+
+# Turn on Expires headers
+    ExpiresActive On
+
+# These types should be cached for at least 36 days after the client
+# downloads them because new versions will get different URLs (36 days
+# to keep yslow happy in months with 31 days)
+    ExpiresByType text/javascript           A3110400
+    ExpiresByType application/x-javascript  A3110400
+    ExpiresByType text/css                  A3110400
+
+# Images should be cached for at least a week
+    ExpiresByType image/gif         A604800
+    ExpiresByType image/jpeg        A604800
+    ExpiresByType image/png         A604800
+    ExpiresByType image/x-icon      A604800
 
 # Specify the MIME type for favicon.ico in case the server configuration
 # doesn't or in case the server configuration uses the IANA-approved MIME type
 # (image/vnd.microsoft.icon)--which most browsers won't recognize.
     AddType image/x-icon        .ico
+
+# Enable mod_deflate.
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/x-javascript
+
+# This is helpful for mod_deflate -- it prevents proxies from changing
+# the user agent to/from this server, which can prevent compression from
+# being enabled.  It is disabled here because many distros seem not to
+# enable mod_headers by default, but I recommend that you enable it.
+    Header append Vary User-Agent env=!dont-vary
 
 </VirtualHost>
 
