@@ -176,16 +176,13 @@
                         duration: 0,
                         beforeZoomIn: function() {$('div.zooimage').zoomimageClear(); $('select').hide();},
                         onZoomOut: function() {$('select').show();},
-                        Opacity: .9
+                        Opacity: .9,
+                        preload: 'load'
                       };
         $('a.LCARS').zoomimage(options);
         $('a.TransBlue').zoomimage(options);
         $('a.Childish').zoomimage(options);
         $('body').click(function() {$('div.zooimage').zoomimageClear();});
-        imageObjL1 = new Image();
-        imageObjL1.src = '/img/screenshots/themes/LCARS-1-resized.png';
-        <?php for ($i=1; $i <= 11; $i++) echo "imageObjTB$i = new Image(); imageObjTB$i.src = '/img/screenshots/themes/TransBlue-$i-resized.png';\n"; ?>
-        <?php for ($i=1; $i <= 20; $i++) echo "imageObjC$i = new Image(); imageObjC$i.src = '/img/screenshots/themes/Childish-$i-resized.png';\n"; ?>
     });
 </script>
 <?php } else { ?>
