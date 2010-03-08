@@ -146,7 +146,7 @@
 
     # Skip out early if we've already been through rewrites,
     # or if this is a /css/, /js/ or /cache/ directory request.
-        RewriteRule     ^(css|img|cache|js|robots.txt|[a-z_]+\.(php))(/|$)  -   [L]
+        RewriteRule     ^(css|img|cache|js|themes|robots.txt|[a-z_]+\.(php))(/|$)  -   [L]
 
     # Redirect most of the remaining URL requests to the main mythweb script.
     # It will then handle any requests given to it.
