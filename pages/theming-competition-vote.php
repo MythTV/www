@@ -33,9 +33,9 @@
 
 <h2>Voting!</h2>
 <?php
- if (!file_exists('vote.db')) {
-    touch('vote.db');
-    $vdb = new PDO('sqlite:vote.db');
+ if (!file_exists($_SERVER['vote_db_file'])) {
+    touch($_SERVER['vote_db_file']);
+    $vdb = new PDO('sqlite:'.$_SERVER['vote_db_file']);
     $vdb->query('CREATE TABLE votes (
                 ip UNSIGNED INTEGER NOT NULL PRIMARY KEY DEFAULT 0,
 
@@ -59,7 +59,7 @@
                 );');
  }
  else
-  $vdb = new PDO('sqlite:vote.db');
+  $vdb = new PDO('sqlite:'.$_SERVER['vote_db_file']);
 
  $targetInt = ip2long($_SERVER['REMOTE_ADDR'])+34345;
 

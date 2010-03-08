@@ -58,6 +58,7 @@
     # Some special instructions for the controller file
      	<Files mythtv.*>
             setenv db_file          "/data/www/web-db/mythtv.sqlite"
+			setenv vote_db_file     "/data/www/web-db/mythtv.sqlite"
         </Files>
 
     # PHP Configuration
@@ -196,4 +197,3 @@
     Header append Vary User-Agent env=!dont-vary
 
 </VirtualHost>
-
