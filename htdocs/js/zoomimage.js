@@ -2,12 +2,12 @@
  *
  * Zoomimage
  * Author: Stefan Petre www.eyecon.ro
- * 
+ *
  */
 
 (function($){
 	EYE.extend({
-		
+
 		zoomimage: {
 			libs: {},
 			types: /\.jpg|\.jpeg|\.png|\.gif|\.bmp/g,
@@ -16,7 +16,7 @@
 			pointer: {x:0,y:0},
 			diff: {x:0, y:0},
 			trackKey: false,
-			
+
 			//default options (many options are controled via CSS)
 			defaults: {
 				opacity: 0.3, //caption opacity
@@ -39,7 +39,7 @@
 				easing: 'linear',
 				preload: 'click'
 			},
-			
+
 			// the template for the image's box
 			template: [
 				'<div class="zoomimage">',
@@ -69,7 +69,7 @@
 					'<div class="zoomimage_loading"></div>',
 				'</div>'
 			],
-			
+
 			// handle click on the trigger
 			click: function(e) {
 				var el = this;
@@ -87,7 +87,7 @@
 				}
 				return false;
 			},
-			
+
 			// zoom in the image
 			zoomIn: function(el) {
 				//if the image was not loaded yet then wait
@@ -105,17 +105,17 @@
 					return;
 				}
 				el.zoomimageCfg.beforeZoomIn.apply(el,[el.zoomimageCfg.box]);
-				
+
 				var elPos = EYE.getPosition(el, true);
 				var elHeight = el.offsetHeight;
 				var elWidth = el.offsetWidth;
 				var pos = EYE.getScroll();
 				var borderAndShadow = el.zoomimageCfg.border + el.zoomimageCfg.shadow;
-				var width = el.zoomimageCfg.width + borderAndShadow * 2; 
+				var width = el.zoomimageCfg.width + borderAndShadow * 2;
 				var height = el.zoomimageCfg.height + borderAndShadow * 2;
 				var screenRatio = pos.iw/pos.ih;
 				var imageRatio = el.zoomimageCfg.width/el.zoomimageCfg.height;
-				
+
 				// if the image is bigger then the viewport then resize the image to fit
 				if (screenRatio > imageRatio) {
 					if (height > pos.ih) {
@@ -127,33 +127,33 @@
 					height = parseInt(width / imageRatio, 10);
 				}
 				//if the image should be centered then do that, else center to trigger's position but do not leave the viewport
-				var top = el.zoomimageCfg.centered ? 
+				var top = el.zoomimageCfg.centered ?
 							pos.t + parseInt((pos.ih - height)/2, 10)
-							: 
+							:
 							Math.min(
 								Math.max(
-									pos.t, 
+									pos.t,
 									elPos.y + (elHeight - height)/2 - borderAndShadow
-								), 
+								),
 								pos.t + pos.ih - height
 							);
-				var left = el.zoomimageCfg.centered ? 
+				var left = el.zoomimageCfg.centered ?
 							pos.l + parseInt((pos.iw - width)/2, 10)
 							:
 							Math.min(
 								Math.max(
-									pos.l, 
-									elPos.x + (elWidth - width)/2 - borderAndShadow 
-								), 
+									pos.l,
+									elPos.x + (elWidth - width)/2 - borderAndShadow
+								),
 								pos.l + pos.iw - width
 							);
 				var imgWidth = width - borderAndShadow * 2;
 				var imgHeight = height - borderAndShadow * 2;
-				
+
 				if(el.zoomimageCfg.hideSource === true) {
 					el.style.visibility = 'hidden';
 				}
-				
+
 				//move the image's box and animated it
 				$('#' + el.zoomimageCfg.box)
 					.css({
@@ -181,9 +181,9 @@
 							height: imgHeight,
 							top: top + borderAndShadow,
 							left: left + borderAndShadow
-						}, 
+						},
 						el.zoomimageCfg.duration,
-						el.zoomimageCfg.easing, 
+						el.zoomimageCfg.easing,
 						function(){
 							$(this)
 								.css({
@@ -211,7 +211,7 @@
 								el.zoomimageCfg.onZoomIn.apply(el,[el.zoomimageCfg.box]);
 						});
 			},
-			
+
 			//focus image and show gallery controls if it is part of a gallery
 			showControls: function(el) {
 				if(el == undefined)
@@ -269,7 +269,7 @@
 					}
 				}
 			},
-			
+
 			//zoom out the image and go to the next/previous if any
 			zoomOut: function(el, goToNext) {
 				var boxEl, elPos, borderAndShadow, elSize;
@@ -280,7 +280,7 @@
 					}
 					el.zoomimageCfg.beforeZoomOut.apply(el,[el.zoomimageCfg.box]);
 					boxEl = document.getElementById(el.zoomimageCfg.box);
-					
+
 				// else try to find a link that has the same href as the image src
 				} else {
 					boxEl = el;
@@ -332,7 +332,7 @@
 							left: elPos.x + 'px',
 							width: elSize.width + 'px',
 							height: elSize.height + 'px'
-						}, 
+						},
 						// if the trigger was not found the use the default duration
 						el ? el.zoomimageCfg.duration : EYE.zoomimage.defaults.duration,
 						el.zoomimageCfg.easing,
@@ -356,7 +356,7 @@
 						}
 					);
 			},
-			
+
 			mouseOver: function(e) {
 				var triggerEl = document.getElementById($(this).attr('zoomimage'));
 				if (triggerEl.zoomimageCfg.zoomed === true && this.zoomimageControls == false) {
@@ -364,7 +364,7 @@
 				}
 				return false;
 			},
-			
+
 			mouseOut: function(e) {
 				if ( !EYE.isChildOf(this, e.relatedTarget, this) ) {
 					$(this)
@@ -375,7 +375,7 @@
 				}
 				return false;
 			},
-			
+
 			// prepare for possible drag
 			mouseDown: function(e) {
 				// find the trigger
@@ -404,7 +404,7 @@
 				}
 				return false;
 			},
-			
+
 			//do the drag if prevent distance was overtake
 			mouseMove: function(e) {
 				var diffX = Math.abs(EYE.zoomimage.pointer.x - e.pageX);
@@ -425,7 +425,7 @@
 				}
 				return false;
 			},
-			
+
 			//the drag stops
 			mouseUp: function (e) {
 				$(EYE.zoomimage.current).removeClass('zoomimage_move');
@@ -435,7 +435,7 @@
 					.unbind('mouseup', EYE.zoomimage.mouseUp);
 				return false;
 			},
-			
+
 			// click on image
 			imageClick: function(e) {
 				$(document)
@@ -464,13 +464,14 @@
 				}
 				return false;
 			},
-			
+
 			//zoom out any opened image and clear orphan images
 			clear: function() {
 				var subject = this;
 				if (subject.size() == 0) {
 					subject = $('div.zoomimage');
 				}
+				$('select').show();
 				return subject.each(function(){
 					var triggerEl = document.getElementById($(this).attr('zoomimage'));
 					if (triggerEl) {
@@ -480,7 +481,7 @@
 					}
 				});
 			},
-			
+
 			// zoom the next image in gallery
 			zoomNext: function(el, dir) {
 				if(el.zoomimageCfg.zoomed === false) {
@@ -497,7 +498,7 @@
 				}
 				EYE.zoomimage.zoomIn($('a[zoomimage="' + lib + '"]').get(nextImg));
 			},
-			
+
 			//hande any key pressed
 			keyPressed: function(e) {
 				var el = $('div.zoomimage_focused');
@@ -566,8 +567,8 @@
 					}
 				}
 			},
-			
-			
+
+
 			// focus on image
 			focus: function(el) {
 				if(el == undefined)
@@ -579,7 +580,7 @@
 				}
 				// if another image is focused then remove focus
 				EYE.zoomimage.blur(el);
-						
+
 				$('#' + el.zoomimageCfg.box)
 					.not('.zoomimage_focused')
 					.addClass('zoomimage_focused');
@@ -588,7 +589,7 @@
 					EYE.zoomimage.showControls(el);
 				}
 			},
-			
+
 			//blur image
 			blur: function(el) {
 				$('div.zoomimage_focused')
@@ -601,7 +602,7 @@
 						.stop()
 						.hide();
 			},
-			
+
 			preload: function(el) {
 				// place the loading aimation on top
 				var boxEl = $('#' + el.zoomimageCfg.box).show();
@@ -630,7 +631,7 @@
 					};
 				}
 			},
-			
+
 			markPreloaded: function(preld, el) {
 				//mark image as loaded and remember the size and source
 				$.extend(el.zoomimageCfg,{
@@ -650,7 +651,7 @@
 				}
 				el.zoomimageCfg.onLoad.apply(el,[el.zoomimageCfg.box]);
 			},
-			
+
 			//constructor
 			init: function(opt) {
 				//generate a library key
@@ -722,9 +723,9 @@
 			}
 		}
 	});
-	
+
 	$.fn.extend({
-	
+
 		/**
 		 * Open all images found in 'href' attribute from each element specified in the selection. The images are grouped in galleries. The images are preloaded before any user interation.
 		 * @name zoomimage
@@ -750,7 +751,7 @@
 		 * @option	function	onFocus			Callback function triggered when the image is focused
 		 */
 		zoomimage: EYE.zoomimage.init,
-		
+
 		/**
 		 * Zooms out all opened images and removes orphans (when the trigger was not found)
 		 * To clear specific images use for slector 'div.zooimage[whatever]', else all the images are processed

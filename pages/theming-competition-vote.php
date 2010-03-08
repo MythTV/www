@@ -175,7 +175,7 @@
         var options = { centered: true,
                         duration: 0,
                         beforeZoomIn: function() {$('div.zooimage').zoomimageClear(); $('select').hide();},
-                        onZoomOut: function() {$('select').show();},
+                        onZoomOut: function() {},
                         Opacity: .9,
                         preload: 'load'
                       };
