@@ -32,6 +32,9 @@
 <h1>MythTV Theming and UI Patch Contest</h1>
 
 <h2>Voting!</h2>
+
+<p>Rank each category from 1 (worst) to 5 (best).  Be sure to judge all three themes.</p>
+
 <?php
  if (!file_exists($_SERVER['vote_db_file'])) {
     touch($_SERVER['vote_db_file']);
