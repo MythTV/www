@@ -6,7 +6,7 @@
 ?>
 <ul>
     <li>Only a few weeks late on our new, improved short release schedule,
-        the first Release Candidate for MythTV 0.23 is now available..
+        the first Release Candidate for MythTV 0.23 is now available.
         </li>
     <li class="bold">Please make sure to read the
         <a href="http://www.mythtv.org/wiki/Release_Notes_-_0.23">Release Notes</a>
