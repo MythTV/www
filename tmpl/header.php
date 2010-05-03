@@ -17,7 +17,7 @@
     <title><?php echo $Meta['title'] ?></title>
     <link rel="stylesheet" type="text/css" href="/<?php echo svn_rev ?>/css/site.css">
     <!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/css/ie6.css"><![endif]-->
-    <!--[if IE]><link rel="stylesheet" type="text/css" href="/css/ie.css" ><![endif]-->
+    <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/css/ie.css" ><![endif]-->
     <link rel="stylesheet" type="text/css" href="/<?php echo svn_rev ?>/css/print.css" media="print">
     <link rel="alternate" type="application/atom+xml" title="MythTV News" href="http://feeds.feedburner.com/MythTVorg" >
 <?php /*
