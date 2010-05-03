@@ -18,7 +18,7 @@
 
     <p>
     <div style="float: right; margin-left: 2em">
-    <?php tv_thumb('video_gallery.jpg', 'tv_black', 'l', 'a', '#e6e6f0', 'title="MythVideo, Blue Theme"') ?>
+    <?php tv_thumb('video_gallery.png', 'tv_black', 'l', 'a', '#e6e6f0', 'title="MythVideo, Arclight Theme"') ?>
     </div>
     A place to store, organise and play all those random video clips.
     Supports the MythTV internal player as well as several different

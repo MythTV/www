@@ -18,7 +18,7 @@
 
     <p>
     <div style="float: right; margin-left: 2em">
-    <?php tv_thumb('tv_mainscreen.jpg', 'tv_black', 'l', 'a', '#e6e6f0', 'title="MythTV, Blue Theme"') ?>
+    <?php tv_thumb('tv_mainscreen.png', 'tv_black', 'l', 'a', '#e6e6f0', 'title="MythTV, Terra Theme"') ?>
     </div>
     We like to think of MythTV as the ultimate Digital Video Recorder and
     home media center hub.  Think of it as a Free and Open Source alternative
@@ -36,8 +36,8 @@
     <h3>MythTV Features</h3>
 
     <div style="float: left; margin-right: 2em">
-    <?php tv_thumb('tv_epg.png', 'tv_black', 'r', 'a', '#e6e6f0', 'title="MythTV, Blue Theme"') ?><br>
-    <?php tv_thumb('tv_paused.png', 'tv_black', 'r', 'a', '#e6e6f0', 'title="MythTV, Blue Theme"') ?><br>
+    <?php tv_thumb('tv_epg.png', 'tv_black', 'r', 'a', '#e6e6f0', 'title="MythTV, Arclight Theme"') ?><br>
+    <?php tv_thumb('tv_paused.png', 'tv_black', 'r', 'a', '#e6e6f0', 'title="MythTV, BlackCurves OSD Theme"') ?><br>
     </div>
 
     <ul>
@@ -59,7 +59,7 @@
 
     <p style="clear: both">
     <div style="float: right; margin-left: 2em">
-    <?php tv_thumb('tv_editmode.jpg', 'tv_black', 'l', 'a', '#e6e6f0', 'title="MythTV, Blue Theme"') ?>
+    <?php tv_thumb('tv_editmode.png', 'tv_black', 'l', 'a', '#e6e6f0', 'title="MythTV, BlackCurves OSD Theme"') ?>
     </div>
     Though MythTV was initially written to run only on the Linux operating
     system, BSD and MacOS X are also well supported, and it has recently become
@@ -72,7 +72,7 @@
 
     <p>
     <div style="float: right; margin-left: 2em">
-    <?php tv_thumb('tv_record.png', 'tv_black', 'l', 'a', '#e6e6f0', 'title="MythTV, Blue Theme"') ?>
+    <?php tv_thumb('tv_record.png', 'tv_black', 'l', 'a', '#e6e6f0', 'title="MythTV, Arclight Theme"') ?>
     </div>
     The backend server application runs the core "behind the scenes"
     functionality for MythTV.  The bulk of this is taken up by scheduling and
@@ -95,8 +95,8 @@
 
     <p>
     <div style="float: right; margin-left: 2em">
-    <?php tv_thumb('tv_resolveconflict.png', 'tv_black', 'r', 'a', '#e6e6f0', 'title="MythTV, Blue Theme"') ?>
-    <?php tv_thumb('tv_pip.jpg', 'tv_black', 'l', 'a', '#e6e6f0', 'title="MythTV, Blue Theme"') ?>
+    <?php tv_thumb('tv_resolveconflict.png', 'tv_black', 'r', 'a', '#e6e6f0', 'title="MythTV, Terra Theme"') ?>
+    <?php tv_thumb('tv_pip.png', 'tv_black', 'l', 'a', '#e6e6f0', 'title="MythTV, BlackCurves OSD Theme"') ?>
     </div>
     The frontend client is the human interface to MythTV.  This is where you
     watch TV, listen to music, etc.  Each frontend communicates with one or
