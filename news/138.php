@@ -11,7 +11,7 @@
         MythTV 0.23 is now available.  MythTV 0.23 brings a new event system,
         brand new python bindings, the beta MythNetvision internet video
         plugin, new audio code and surround sound upmixer, several new themes
-        (Arclight and Childish), a greatly improved H.264 decoder, and fixes
+        (Arclight and Childish), newly resynced ffmpeg libraries, and fixes
         for analog scanning, among many others.
         </li>
     <li>Work towards MythTV 0.24 is in full swing, and has be progressing very well
