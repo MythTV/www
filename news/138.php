@@ -25,13 +25,13 @@
         </li>
     <li>You can <a href="/download">download the tarballs</a> now:
         <ul>
-            <li><a href="ftp://ftp.osuosl.org/pub/mythtv/mythtv-0.23.tar.bz2">MythTV</a>
+            <li><a href="/download/mythtv/<?php echo $Version['tv'] ?>" onclick="pageTracker._trackPageview('/download/mythtv/<?php echo $Version['tv'] ?>');">MythTV</a>
                 (<a href="http://svn.mythtv.org/svn/trunk/checksums/mythtv-0.23.md5sum">MD5</a>)
                 </li>
-            <li><a href="ftp://ftp.osuosl.org/pub/mythtv/mythplugins-0.23.tar.bz2">MythPlugins</a>
+            <li><a href="/download/plugins/<?php echo $Version['plugins'] ?>" onclick="pageTracker._trackPageview('/download/plugins/<?php echo $Version['plugins'] ?>');">MythPlugins</a>
                 (<a href="http://svn.mythtv.org/svn/trunk/checksums/mythplugins-0.23.md5sum">MD5</a>)
                 </li>
-            <li><a href="ftp://ftp.osuosl.org/pub/mythtv/myththemes-0.23.tar.bz2">MythThemes</a>
+            <li><a href="/download/themes/<?php echo $Version['themes'] ?>" onclick="pageTracker._trackPageview('/download/themes/<?php echo $Version['themes'] ?>');">MythThemes</a>
                 (<a href="http://svn.mythtv.org/svn/trunk/checksums/myththemes-0.23.md5sum">MD5</a>)
                 </li>
         </ul></li>
