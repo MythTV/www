@@ -24,7 +24,7 @@
         added to trunk.  .24 promises to be a great step forward and we are still on
         track to bring it to you in the early fall.
         </li>
-    <li>Congratulations to John and we will wee you all again soon as we solicit
+    <li>Congratulations to John and we will see you all again soon as we solicit
         testers after the .24 feature freeze.
         </li>
 </ul>
