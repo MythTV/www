@@ -106,7 +106,10 @@ class FeedWriter
    */
    public function generateFeed()
    {
-       header("Content-type: text/xml");
+       if ($this->version == ATOM )
+            header("Content-type: application/atom+xml");
+        else
+            header("Content-type: application/rss+xml"); 
 
        $this->printHead();
        $this->printChannels();
