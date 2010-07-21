@@ -31,8 +31,8 @@
 /**/
     function load_news($id, $load_content=true) {
         global $NewsDir;
-    // Make sure the file exists
-        if (!file_exists("$NewsDir/$id.php")) {
+    // Make sure the file validates and exists
+        if (!preg_match('/^\d+$/', $id) || !file_exists("$NewsDir/$id.php")) {
             return null;
         }
     // Define some variables to keep the error logs quiet, in case they are not
