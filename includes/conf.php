@@ -10,8 +10,8 @@
         'xris' => '<a href="http://forevermore.net/">xris</a>',
         'janne' => 'Janne',
         'danielk' => 'Daniel',
-        'robertm' => 'Robert M',
         'robertm' => '<a href="http://www.fecitfacta.com/">Robert</a>',
+        'stuartm' => 'Stuart M',
         );
 
 // Topics
