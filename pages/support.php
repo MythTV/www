@@ -78,6 +78,12 @@
                 <a href="http://www.gossamer-threads.com/lists/mythtv/theming/">Go here</a>
                 for a searchable mailing list archive.
                 </dd>
+            <dt><a href="http://www.mythtv.org/mailman/listinfo/mythtv-translators/">MythTV-translators</a></dt>
+            <dd>Discussion about MythTV localization, translation, and development questions
+                arising from using Myth in non-english languages.
+                <a href="http://www.gossamer-threads.com/lists/mythtv/translators/">Go here</a>
+                for a searchable mailing list archive.
+                </dd>
             <dt><a href="http://www.mythtv.org/mailman/listinfo/mythtv-dev/">MythTV-dev</a></dt>
             <dd>General discussion about the development of MythTV.  This list
                 is used by both developers and users, and usually contains
