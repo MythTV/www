@@ -2,7 +2,7 @@
     $topic  = 'announcement';
     $title  = 'MythTV .24 Release Candidate 2 Now Available!';
     $author = 'robertm';
-    $date   = strtotime('2010-10-18 23:54:35 UTC');
+    $date   = strtotime('2010-11-01 23:54:35 UTC');
 ?>
 <ul>
     <li>The release of MythTV 0.24 is drawing near, and a new Release Candidate is available.
