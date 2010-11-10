@@ -17,7 +17,7 @@
         but you can rest assured that when released, MythTV 0.25 will bring with
         it the host of new features, bugfixes, and stability improvements that users
         have come to expect in MythTV releases.  We continue to be committed to
-        improving MythTV's users experience, and hope to drastically lower some
+        improving MythTV's user experience, and hope to drastically lower some
         of the existing barriers to entry with MythTV in our next release.
         </li>
     <li>For a more complete list of changes and new features, read the
