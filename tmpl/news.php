@@ -23,7 +23,7 @@
     $htag = $post['solo'] ? 'h1' : 'h3';
 
 ?>
-<div class="news-post inset <?php echo str_replace('_', '-', $post['topic']) ?>">
+<div class="inset news-post <?php echo str_replace('_', '-', $post['topic']) ?>">
     <div class="left">
         <div class="top"></div>
         <div class="middle">

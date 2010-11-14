@@ -1,5 +1,5 @@
 <?php
-    $topic  = 'accouncement';
+    $topic  = 'announcement';
     $title  = 'MythTV 0.24 Available';
     $author = 'robertm';
     $date   = strtotime('2010-11-10  17:46:07 UTC');
