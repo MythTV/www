@@ -119,9 +119,9 @@
         link on that page.
         </p>
         <p>
-        If you would like to grab the latest development version or just want to keep up
-        with the latest fixes to the stable branch, you will find subversion checkout
-        instructions at <a href="http://svn.mythtv.org/trac/">http://svn.mythtv.org/</a>
+        If you would like to grab the current development version or just want to keep up
+        with the latest fixes to the stable branch, you will find git checkout
+        instructions at <a href="https://github.com/MythTV">https://github.com/MythTV</a>
         </p>
     </div>
 </div>
