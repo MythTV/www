@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 #
-# Publish www.mythtv.org code to /data/www
+# Publish www.mythtv.org code to /opt/www
 #
 # @url       $URL$
 # @date      $Date$
@@ -12,7 +12,7 @@
 #
 
 # Target directory
-    my $target = '/data/www/www.mythtv.org';
+    my $target = '/opt/www/www.mythtv.org';
 
 # Current db schema version
     my $cur_schema = 1;
