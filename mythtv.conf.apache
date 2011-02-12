@@ -5,6 +5,8 @@
 <VirtualHost *>
 
     ServerName www.mythtv.org
+    ServerAlias new.mythtv.org
+    #ServerAlias mythtv.schedulesdirect.org
     ServerAlias mythtv.org
     ServerAlias wiki.mythtv.org
     ServerAlias mythtv.com   www.mythtv.com
@@ -17,7 +19,7 @@
 ## Enable these for the live site
     DocumentRoot /opt/www/www.mythtv.org/htdocs
     ErrorLog /opt/www/www.mythtv.org/logs/error.log
-    CustomLog /opt/www/www.mythtv.org/logs/access.log full
+    CustomLog /opt/www/www.mythtv.org/logs/access.log combined
 
 #
 # Aliases and links to other programs that live on the site, too
@@ -93,18 +95,14 @@
         RewriteCond %{HTTP_HOST}    ^wiki\.mythtv\.org$             [NC]
         RewriteRule (.*)            http://www.mythtv.org/wiki$1    [R=permanent,L,QSA,NC]
 
-        RewriteCond %{HTTP_HOST}    ^mythtv\.(com|org)$             [NC]
-        RewriteRule (.*)            http://www.mythtv.org/$1        [R=permanent,L,QSA,NC]
-
-        RewriteCond %{HTTP_HOST}    ^([^.]+)\.mythtv\.com$          [NC]
-        RewriteRule (.*)            http://www.mythtv.org/$1        [R=permanent,L,QSA,NC]
-
         RewriteCond %{HTTP_HOST}    ^([^.]+\.)?mythtv\.info$        [NC]
         RewriteRule (.*)            http://www.mythtv.org/wiki$1    [R=permanent,L,QSA,NC]
 
-    # Make sure we have www.name.tld instead of just name.tld
-        RewriteCond %{HTTP_HOST}    ^([^\.]+\.[^\.]+)$
-        RewriteRule (.*)            http://www.%1$1                 [R=permanent,L,QSA,NC]
+    # One hostname to rule them all
+        #RewriteCond %{HTTP_HOST}    !^new\.mythtv\.org$             [NC]
+        #RewriteRule (.*)            http://new.mythtv.org/$1        [R=permanent,L,QSA,NC]
+        RewriteCond %{HTTP_HOST}    !^www\.mythtv\.org$             [NC]
+        RewriteRule (.*)            http://www.mythtv.org/$1        [R=permanent,L,QSA,NC]
 
     # Redirect some old pages so we don't lose SEO
         RewriteCond %{REQUEST_URI}      ^/index\.php
