@@ -33,7 +33,7 @@
 
 # One hostname to rule them all
     RewriteCond %{HTTP_HOST}    !^www\.mythtv\.org$
-    RewriteRule (.*)            http://www.mythtv.org/$1        [R=permanent,L,QSA,NC]
+    RewriteRule /?(.*)          http://www.mythtv.org/$1        [R=permanent,L,QSA,NC]
 
 #
 # Aliases and links to other programs that live on the site, too
