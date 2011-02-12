@@ -98,7 +98,7 @@
     close DATA;
 
 # Copy
-    my $cmd = 'rsync -alvHS --cvs-exclude --delete'
+    my $cmd = 'rsync -alvHS --exclude=.git --cvs-exclude --delete'
            # Files we don't want to copy
            .' --exclude publish.pl'
            .' --exclude mythtv.conf.apache'
@@ -114,15 +114,15 @@
     system($cmd);
 
 # Make sure the apache config gets updated, too
-    copy('mythtv.conf.apache', '/etc/apache2/sites-available/mythtv')
-        or die "Can't install mythtv.conf.apache\n";
+    copy('mythtv.conf.apache', '/etc/httpd/conf.d/mythtv.conf')
+        or die "Can't install mythtv.conf.apache:  $!\n";
 
 # Fix CSS links, etc. for better image cache behavior in browsers
-    system("sed -i -e 's,/img,/$svn_rev/img,g' $safe_target/htdocs/css/*css");
-    system("sed -i -e \"s/define('svn_rev', \+time());/define('svn_rev', '$svn_rev');/g\" $safe_target/htdocs/mythtv.php");
+    #system("sed -i -e 's,/img,/$svn_rev/img,g' $safe_target/htdocs/css/*css");
+    #system("sed -i -e \"s/define('svn_rev', \+time());/define('svn_rev', '$svn_rev');/g\" $safe_target/htdocs/mythtv.php");
 
 # Make sure the files are all owned properly
-    system('chown -R www-data\:www '.shell_escape($target));
+    system('chown -R apache\:apache '.shell_escape($target));
 
 # Does the db schema need to be updated?
     if ($db_schema < $cur_schema) {
