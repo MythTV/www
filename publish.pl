@@ -65,15 +65,17 @@
         $db_schema ||= 0;
     }
 
+# Eventually, do this for git.  For now, it's not actually used in the code anyway.
+#
 # Get the current svn revision
-    my $svn_info = `svn info $safe_src 2>/dev/null`;
-    my ($svn_rev) = $svn_info =~ /^Revision:\s*(\d+)/m;
-    if ($svn_rev) {
-        print "Publishing SVN revision $svn_rev\n";
-    }
-    else {
-        die "Can't determine SVN revision for $src\n";
-    }
+#    my $svn_info = `svn info $safe_src 2>/dev/null`;
+#    my ($svn_rev) = $svn_info =~ /^Revision:\s*(\d+)/m;
+#    if ($svn_rev) {
+#        print "Publishing SVN revision $svn_rev\n";
+#    }
+#    else {
+#        die "Can't determine SVN revision for $src\n";
+#    }
 
 # Cleanup, since trailing slashes change rsync behavior
     $target =~ s/\/+$//s;
