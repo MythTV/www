@@ -15,16 +15,16 @@
     ServerAdmin webmaster@mythtv.org
 
 ## Enable these for the live site
-    DocumentRoot /data/www/www.mythtv.org/htdocs
-    ErrorLog /data/www/www.mythtv.org/logs/error.log
-    CustomLog /data/www/www.mythtv.org/logs/access.log full
+    DocumentRoot /opt/www/www.mythtv.org/htdocs
+    ErrorLog /opt/www/www.mythtv.org/logs/error.log
+    CustomLog /opt/www/www.mythtv.org/logs/access.log full
 
 #
 # Aliases and links to other programs that live on the site, too
 #
 
 # Random files
-    Alias /misc  /data/www/misc-files
+    Alias /misc  /opt/www/misc-files
 
 # Mailman
     ScriptAlias /cgi-bin   /usr/lib/cgi-bin
@@ -40,9 +40,9 @@
     Alias /pipermail       /var/lib/mailman/archives/public
 
 # Mediawiki
-    Alias /w               /data/www/wiki.mythtv.org
-    Alias /wiki            /data/www/wiki.mythtv.org/index.php
-    <Directory /data/www/wiki.mythtv.org/images/>
+    Alias /w               /opt/www/wiki.mythtv.org
+    Alias /wiki            /opt/www/wiki.mythtv.org/index.php
+    <Directory /opt/www/wiki.mythtv.org/images/>
         AllowOverride None
         php_admin_flag engine off
         AddType text/plain .html .htm .shtml
@@ -53,12 +53,12 @@
 
 # The following rewrite conditions need to live within a <Directory> tag.  Make
 # sure that it matches the DocumentRoot defined above.
-    <Directory /data/www/www.mythtv.org/htdocs/>
+    <Directory /opt/www/www.mythtv.org/htdocs/>
 
     # Some special instructions for the controller file
      	<Files mythtv.*>
-            setenv db_file          "/data/www/web-db/mythtv.sqlite"
-            setenv vote_db_file     "/data/www/web-db/themevotes.sqlite"
+            setenv db_file          "/opt/www/web-db/mythtv.sqlite"
+            setenv vote_db_file     "/opt/www/web-db/themevotes.sqlite"
         </Files>
 
     # PHP Configuration
