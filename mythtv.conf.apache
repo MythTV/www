@@ -42,8 +42,12 @@
 #    Alias /pipermail       /var/lib/mailman/archives/public
 
 # Mediawiki
-    Alias /w               /opt/www/wiki.mythtv.org
     Alias /wiki            /opt/www/wiki.mythtv.org/index.php
+    <Directory /opt/www/wiki.mythtv.org/>
+        RewriteEngine  on
+        RewriteCond %{HTTP_HOST}    !^www\.mythtv\.org$
+        RewriteRule (.*)            http://www.mythtv.org/$1        [R=permanent,L,QSA,NC]
+    </Directory>
     <Directory /opt/www/wiki.mythtv.org/images/>
         AllowOverride None
         php_admin_flag engine off
@@ -101,7 +105,7 @@
     # One hostname to rule them all
         #RewriteCond %{HTTP_HOST}    !^new\.mythtv\.org$             [NC]
         #RewriteRule (.*)            http://new.mythtv.org/$1        [R=permanent,L,QSA,NC]
-        RewriteCond %{HTTP_HOST}    !^www\.mythtv\.org$             [NC]
+        RewriteCond %{HTTP_HOST}    !^www\.mythtv\.org$
         RewriteRule (.*)            http://www.mythtv.org/$1        [R=permanent,L,QSA,NC]
 
     # Redirect some old pages so we don't lose SEO
