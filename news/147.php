@@ -1,6 +1,6 @@
 <?php
     $topic  = 'news';
-    $title  = 'New mailing list server';
+    $title  = 'New server';
     $author = 'xris';
     $date   = strtotime('2011-02-12  8:31:10 UTC');
 ?>
