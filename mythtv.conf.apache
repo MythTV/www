@@ -29,17 +29,17 @@
     Alias /misc  /opt/www/misc-files
 
 # Mailman
-    ScriptAlias /cgi-bin   /usr/lib/cgi-bin
-    ScriptAlias /mailman   /usr/lib/cgi-bin/mailman
-    <Directory "/usr/lib/cgi-bin">
-        AllowOverride None
-        Options ExecCGI -MultiViews +SymLinksIfOwnerMatch
-        Order allow,deny
-        Allow from all
-    </Directory>
+#    ScriptAlias /cgi-bin   /usr/lib/cgi-bin
+#    ScriptAlias /mailman   /usr/lib/cgi-bin/mailman
+#    <Directory "/usr/lib/cgi-bin">
+#        AllowOverride None
+#        Options ExecCGI -MultiViews +SymLinksIfOwnerMatch
+#        Order allow,deny
+#        Allow from all
+#    </Directory>
 
 # Pipermail Mailman Archives
-    Alias /pipermail       /var/lib/mailman/archives/public
+#    Alias /pipermail       /var/lib/mailman/archives/public
 
 # Mediawiki
     Alias /w               /opt/www/wiki.mythtv.org
