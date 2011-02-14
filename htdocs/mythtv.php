@@ -23,7 +23,7 @@
 
 // Hide errors from the live server, show ALL on dev machines.
     if ($_SERVER['HTTP_HOST'] == 'www.mythtv.org') {
-        error_reporting(E_NONE);
+        error_reporting(0);
     }
     else {
         error_reporting(E_ALL);
