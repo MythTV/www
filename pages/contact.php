@@ -57,6 +57,11 @@
         </p>
 
         <p>
+        Commercial and contract work inquiries should be directed to the
+        <a href="http://groups.google.com/group/mythtv-contractors" title="MythTV Contractors">MythTV Contractors forum</a>.
+        </p>
+
+        <p>
         <strong>Do</strong> use this form to contact the MythTV
         developers about topics listed below which cannot be answered
         through normal <a href="/support">community support channels</a>.
