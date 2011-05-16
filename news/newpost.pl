@@ -38,8 +38,8 @@
 
 # Which userid should we be using for the author?
     my $author;
-    my $svn_info = `svn info $safe_path`;
-    if ($svn_info =~ m#URL: svn+ssh://(\w+)\@#) {
+    my $git_info = `git remote show origin $safe_path`;
+    if ($git_info =~ m#URL: ssh://(\w+)\@#) {
         $author = $1;
     }
     else {
