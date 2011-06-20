@@ -36,18 +36,18 @@
     $Contact = array(
         'General Inquiry' => array(
             #'email' => 'developers@mythtv.org',
-            'email' => 'xris@forevermore.net',
+            'email' => 'cpetersen@mythtv.org',
             'pre'   => 'MYTHTV -> ',
             'info'  => ''
             ),
         'Corporate Sponsorship' => array(
-            'email' => 'xris@forevermore.net',
+            'email' => 'cpetersen@mythtv.org',
             'pre'   => 'MYTHTV SPONSOR -> ',
             'info'  => ''
             ),
         'Contract Coding' => array(
             #'email' => 'developers@mythtv.org',
-            'email' => 'xris@forevermore.net',
+            'email' => 'cpetersen@mythtv.org',
             'pre'   => 'MYTHTV CODE -> ',
             'info'  => ''
             ),
