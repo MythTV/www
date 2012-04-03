@@ -12,6 +12,7 @@
         'danielk' => 'Daniel',
         'robertm' => '<a href="http://www.fecitfacta.com/">Robert</a>',
         'stuartm' => 'Stuart M',
+	'gjhurlbu' => 'Gavin',
         );
 
 // Topics
