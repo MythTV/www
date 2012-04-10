@@ -51,14 +51,14 @@ You can <a href="http://www.mythtv.org/download">download the tarballs</a> now:
 
 <p>
 Tarballs of all MythTV releases, past and present, are available
-<a href=” ftp://ftp.osuosl.org/pub/mythtv/”>on the FTP server</a>,
+<a href="ftp://ftp.osuosl.org/pub/mythtv/">on the FTP server</a>,
 or you can check the code out from
-<a href=” https://github.com/MythTV/mythtv/tree/fixes/0.25”>git</a>.
+<a href="https://github.com/MythTV/mythtv/tree/fixes/0.25">git</a>.
 </p>
 
 <p>
 If you prefer a pre-packaged version, you may want to check out the
-<a href=” http://www.mythtv.org/wiki/Packages”>wiki packages page</a>
+<a href="http://www.mythtv.org/wiki/Packages">wiki packages page</a>
 to see if your favorite distribution has binaries available for installation or
 download.
 </p>
