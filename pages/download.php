@@ -72,8 +72,8 @@
                 MythTV <?php echo $Version['tv'] ?></a>
             <li><a href="/download/plugins/<?php echo $Version['plugins'] ?>" onclick="pageTracker._trackPageview('/download/plugins/<?php echo $Version['plugins'] ?>');">
                 MythTV Plugins <?php echo $Version['plugins'] ?></a>
-            <li><a href="/download/themes/<?php echo $Version['themes'] ?>" onclick="pageTracker._trackPageview('/download/themes/<?php echo $Version['themes'] ?>');">
-                MythTV Themes <?php echo $Version['themes'] ?></a>
+            <!-- <li><a href="/download/themes/<?php echo $Version['themes'] ?>" onclick="pageTracker._trackPageview('/download/themes/<?php echo $Version['themes'] ?>');">
+                MythTV Themes <?php echo $Version['themes'] ?></a>-->
         </ul>
         <p>
         If you are looking for older versions, you can find them in the
