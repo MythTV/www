@@ -2,7 +2,7 @@
     $topic  = 'announcement';
     $title  = '0.25 Finally Released!';
     $author = 'gjhurlbu';
-    $date   = strtotime('2012-04-10 08:29:R41UTC');
+    $date   = strtotime('2012-04-10 08:29:41 UTC');
 ?>
 <p>
 Although we may not be known for using a witty naming scheme, and the version
@@ -37,12 +37,12 @@ frontend theme chooser.
 <p>
 To see a full list of the "user-impacting" additions, changes, and bug-fixes
 that make up this release, please take a look at the
-<a href=”http://www.mythtv.org/wiki/Release_Notes_-_0.25”>release notes</a>
+<a href="http://www.mythtv.org/wiki/Release_Notes_-_0.25">release notes</a>
 on the wiki. 
 </p>
 
 <p>
-You can <a href=”http://www.mythtv.org/download”>download the tarballs</a> now:
+You can <a href="http://www.mythtv.org/download">download the tarballs</a> now:
 <ul>
 <li>MythTV (MD5SUM e49c81de40e279c83dcb1b2aa9a45748)</li>
 <li>MythPlugins (MD5SUM b3f2768372a38e92ca94841519daa05e)</li>
