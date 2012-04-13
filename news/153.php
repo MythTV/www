@@ -44,7 +44,7 @@ on the wiki.
 <p>
 You can <a href="http://www.mythtv.org/download">download the tarballs</a> now:
 <ul>
-<li>MythTV (MD5SUM e49c81de40e279c83dcb1b2aa9a45748)</li>
+<li>MythTV (MD5SUM e2ea13fca51f4f9009d5e21e8ebd4544)</li>
 <li>MythPlugins (MD5SUM b3f2768372a38e92ca94841519daa05e)</li>
 </ul>
 </p>
