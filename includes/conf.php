@@ -27,8 +27,8 @@
 // Current version of MythTV
     global $Version;
     $Version = array(
-        'tv'      => '0.25',
-        'plugins' => '0.25',
+        'tv'      => '0.25.1',
+        'plugins' => '0.25.1',
         'themes'  => '0.24',
         );
 
