@@ -9,9 +9,9 @@
 
 <p>The proposed schedule for the v0.27 release cycle is as follows:
 <br />
-<table>
+<table width="100%">
 <tr>
-<td>July 21st - 0.27-alpha</td>
+<td width="40%">July 21st - 0.27-alpha</td>
 <td>Bug fixes only, soft freeze for translatable strings.</td>
 </tr>
 <tr>
@@ -37,3 +37,5 @@
 
 <p>As always these dates are subject to change if the resolution of some 
 critical/blocker bugs needed it.</p>
+
+<p>Release notes can be found <a href="http://www.mythtv.org/wiki/Release_Notes_-_0.27">here</a></p>
