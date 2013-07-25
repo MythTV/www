@@ -11,7 +11,7 @@
 <br />
 <table>
 <tr>
-<td>July 21th - 0.27-alpha</td>
+<td>July 21st - 0.27-alpha</td>
 <td>Bug fixes only, soft freeze for translatable strings.</td>
 </tr>
 <tr>
