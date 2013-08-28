@@ -12,7 +12,7 @@
     ServerAlias mythtv.com   www.mythtv.com
     ServerAlias mythtv.info  www.mythtv.info
     ServerAlias alcor-2.osuosl.org
-    ServerAlias mythtv.snowman.net
+    #ServerAlias mythtv.snowman.net
 
     ServerAdmin webmaster@mythtv.org
 
