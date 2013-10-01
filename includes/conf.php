@@ -28,8 +28,10 @@
 // Current version of MythTV
     global $Version;
     $Version = array(
-        'tv'      => '0.26.1',
-        'plugins' => '0.26.1',
+	// Download does NOT include minor version
+	'download' => '0.27',
+        'tv'      => '0.27',
+        'mythweb' => '0.27',
         'themes'  => '0.24',
         );
 

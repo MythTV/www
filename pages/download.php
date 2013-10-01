@@ -23,13 +23,13 @@
         switch (str_replace('myth', '', strtolower($Path[1]))) {
             case 'tv':
                 log_download('tv', $Path[2]);
-                redirect_browser('ftp://ftp.osuosl.org/pub/mythtv/mythtv-'.$Path[2].'.tar.bz2');
-            case 'plugins':
-                log_download('plugins', $Path[2]);
-                redirect_browser('ftp://ftp.osuosl.org/pub/mythtv/mythplugins-'.$Path[2].'.tar.bz2');
-            case 'themes':
-                log_download('themes', $Path[2]);
-                redirect_browser('ftp://ftp.osuosl.org/pub/mythtv/myththemes-'.$Path[2].'.tar.bz2');
+                redirect_browser('https://github.com/MythTV/mythtv/archive/fixes/'.$Path[2].'.tar.gz');
+            case 'web':
+//                log_download('mythweb', $Path[2]);
+                redirect_browser('https://github.com/MythTV/mythweb/archive/fixes/'.$Path[2].'.tar.gz');
+//            case 'themes':
+//                log_download('themes', $Path[2]);
+//                redirect_browser('ftp://ftp.osuosl.org/pub/mythtv/myththemes-'.$Path[2].'.tar.bz2');
         }
     // Unknown file type; redirect to the download overview page
         redirect_browser('/download');
@@ -68,16 +68,18 @@
         you may download the latest versions here:
         </p>
         <ul>
-            <li><a href="/download/mythtv/<?php echo $Version['tv'] ?>" onclick="pageTracker._trackPageview('/download/mythtv/<?php echo $Version['tv'] ?>');">
+            <li><a href="/download/mythtv/<?php echo $Version['download'] ?>" onclick="pageTracker._trackPageview('/download/mythtv/<?php echo $Version['download'] ?>');">
                 MythTV <?php echo $Version['tv'] ?></a>
-            <li><a href="/download/plugins/<?php echo $Version['plugins'] ?>" onclick="pageTracker._trackPageview('/download/plugins/<?php echo $Version['plugins'] ?>');">
-                MythTV Plugins <?php echo $Version['plugins'] ?></a>
+            <li><a href="/download/mythweb/<?php echo $Version['download'] ?>" onclick="pageTracker._trackPageview('/download/mythweb/<?php echo $Version['download'] ?>');">
+                Mythweb <?php echo $Version['mythweb'] ?></a>
             <!-- <li><a href="/download/themes/<?php echo $Version['themes'] ?>" onclick="pageTracker._trackPageview('/download/themes/<?php echo $Version['themes'] ?>');">
                 MythTV Themes <?php echo $Version['themes'] ?></a>-->
         </ul>
         <p>
-        If you are looking for older versions, you can find them in the
-        <a href="ftp://ftp.osuosl.org/pub/mythtv/">OSU OSL archives</a>.
+        If you are looking for older versions, you can find them here:<br />
+	<a href="https://github.com/MythTV/mythtv/releases">MythTV Releases</a>.<br />
+	<a href="https://github.com/MythTV/mythweb/releases">MythWeb Releases</a>.<br />
+        <a href="ftp://ftp.osuosl.org/pub/mythtv/">OSU OSL archive (no longer updated)</a>.
         </p>
     </div>
 </div>
