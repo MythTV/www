@@ -39,7 +39,7 @@
     RewriteRule ^/ftp/(.*)$     ftp://ftp.osuosl.org/pub/mythtv/$1   [R,NC,L]
 
 # Documentation redirect
-    RewriteRule ^/docs/(.*)$	http://www.mythtv.org/wiki/User_Manual:Index	[R,NC,L]
+    RewriteRule ^/docs/(.*)$	http://www.mythtv.org/wiki/MythTV-HOWTO	[R,NC,L]
 
 #
 # Aliases and links to other programs that live on the site, too
