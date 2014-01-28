@@ -527,6 +527,22 @@
         margin:             .5em auto;
     }
 
+/* license.php */
+
+    #license div.inset {
+        margin-bottom:  1em;
+    }
+    #license div.inset .content {
+        padding:        .25em 1em;
+    }
+    #license-summary .left .middle .title {
+        background-image:   url("/img/titles/summary.png");
+    }
+    #license-detail .left .middle .title {
+        background-image:   url("/img/titles/detail.png");
+    }
+
+
 /* download.php */
 
     #download div.inset {
