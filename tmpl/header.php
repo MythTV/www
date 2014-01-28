@@ -47,6 +47,7 @@
                 <div>
                 <ul>
                     <li class="first"><a href="/detail/mythtv">MythTV In Detail</a></li>
+                    <li><a href="/license">Licensing</a></li>
                     <li><a href="http://www.mythtv.org/wiki/Frequently_Asked_Questions">FAQ</a></li>
                     <li class="last"><a href="/contact">Contact Us</a></li>
                 </ul>
