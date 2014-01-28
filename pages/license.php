@@ -12,6 +12,18 @@
  *
 /**/
 
+// Which section are we in?
+    $Nav = 'about';
+
+// Meta Info
+    $Meta['title'] = 'MythTV License';
+    $Meta['description']
+        = 'Details of the licenses used by MythTV';
+
+// Load the global page header
+    require_once 'tmpl/header.php';
+?>
+
 <div id="license">
 
 <div id="license-summary" class="inset">
