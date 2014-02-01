@@ -45,7 +45,7 @@
                 digg_skin = 'icon'; // or:  compact, or comment out completely for standard
                 digg_window = 'new';
                 </script>
-                <script src="http://digg.com/tools/diggthis.js" type="text/javascript"></script>
+                <script src="https://digg.com/tools/diggthis.js" type="text/javascript"></script>
             </div>
         </div>
         <div class="author">
