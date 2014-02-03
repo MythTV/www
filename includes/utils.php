@@ -160,7 +160,7 @@
         }
     // Return
         echo '<a href="', _or($href, '/'.$img), '">',
-               '<img src="/', svn_rev, '/', $thumb, '"',
+               '<img src="', $thumb, '"',
                ' height="',   $height, '"',
                ' width="',    $width,  '"',
                ' border="0" ', $params, ' ></a>';

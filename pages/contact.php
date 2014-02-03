@@ -85,7 +85,7 @@
                 ?>></td>
             <td nowrap rowspan="4">
                 <input type="reset" value="Clear" class="submit" >
-                <img src="/<?php echo svn_rev ?>/img/spacer.gif" width="35" height="1" >
+                <img src="/img/spacer.gif" width="35" height="1" >
                 <input type="submit" disabled name="send" value="Send" class="submit" style="display: none" >
                 <input type="submit" name="realsend" value="Send" class="submit" >
                 </td>

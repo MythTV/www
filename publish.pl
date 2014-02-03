@@ -117,10 +117,6 @@
     copy('mythtv.conf.apache', '/etc/httpd/conf.d/mythtv.conf')
         or die "Can't install mythtv.conf.apache:  $!\n";
 
-# Fix CSS links, etc. for better image cache behavior in browsers
-    #system("sed -i -e 's,/img,/$svn_rev/img,g' $safe_target/htdocs/css/*css");
-    #system("sed -i -e \"s/define('svn_rev', \+time());/define('svn_rev', '$svn_rev');/g\" $safe_target/htdocs/mythtv.php");
-
 # Make sure the files are all owned properly
     system('chown -R apache\:apache '.shell_escape($target));
 
