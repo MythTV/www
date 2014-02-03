@@ -11,7 +11,7 @@
     <li>We will keep the existing subversion repository around for archival
         purposes, but it will no longer receive updates.
         </li>
-    <li>We will continue to trac bugs in <a href="http://svn.mythtv.org/">Trac</a>
+    <li>We will continue to trac bugs in <a href="https://code.mythtv.org/">Trac</a>
         (though we are considering other options for the future).</li>
     <li>This will only affect those of you who compile MythTV from source via
         our subversion repository &mdash; the rest shouldn't notice anything from

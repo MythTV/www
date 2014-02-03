@@ -28,18 +28,18 @@
     <li>You can <a href="/download">download the tarballs</a> now:
         <ul>
             <li><a href="/download/mythtv/<?php echo $Version['tv'] ?>" onclick="pageTracker._trackPageview('/download/mythtv/<?php echo $Version['tv'] ?>');">MythTV</a>
-                (<a href="http://svn.mythtv.org/svn/trunk/checksums/mythtv-0.24.md5sum">MD5</a>)
+                (<a href="https://code.mythtv.org/svn/trunk/checksums/mythtv-0.24.md5sum">MD5</a>)
                 </li>
             <li><a href="/download/plugins/<?php echo $Version['plugins'] ?>" onclick="pageTracker._trackPageview('/download/plugins/<?php echo $Version['plugins'] ?>');">MythPlugins</a>
-                (<a href="http://svn.mythtv.org/svn/trunk/checksums/mythplugins-0.24.md5sum">MD5</a>)
+                (<a href="https://code.mythtv.org/svn/trunk/checksums/mythplugins-0.24.md5sum">MD5</a>)
                 </li>
             <li><a href="/download/themes/<?php echo $Version['themes'] ?>" onclick="pageTracker._trackPageview('/download/themes/<?php echo $Version['themes'] ?>');">MythThemes</a>
-                (<a href="http://svn.mythtv.org/svn/trunk/checksums/myththemes-0.24.md5sum">MD5</a>)
+                (<a href="https://code.mythtv.org/svn/trunk/checksums/myththemes-0.24.md5sum">MD5</a>)
                 </li>
         </ul></li>
     <li>Tarballs of all MythTV releases, past and present, are available
         <a href="ftp://ftp.osuosl.org/pub/mythtv/">on the FTP server</a>,
-        or you can check the code out from <a href="http://svn.mythtv.org/">subversion</a>.
+        or you can check the code out from <a href="https://code.mythtv.org/">subversion</a>.
         </li>
     <li>If you prefer a pre-packaged version, you may want to check out the
         <a href="http://www.mythtv.org/wiki/Packages">wiki packages page</a>

@@ -73,10 +73,10 @@
         <h3>Quick Links:</h3>
         <ul>
             <li class="bug">
-                <a href="http://svn.mythtv.org/trac/wiki/TicketHowTo">Report a Bug</a>
+                <a href="http://code.mythtv.org/trac/wiki/TicketHowTo">Report a Bug</a>
                 </li>
             <li class="wiki">
-                <a href="http://wiki.mythtv.org/">MythTV Wiki</a>
+                <a href="http://www.mythtv.org/wiki">MythTV Wiki</a>
                 </li>
             <li class="support">
                 <a href="/support/">Mailing Lists</a>

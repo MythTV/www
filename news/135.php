@@ -24,16 +24,16 @@
     <li>You can <a href="ftp://ftp.osuosl.org/pub/mythtv/">download the tarballs</a> now:
         <ul>
             <li><a href="ftp://ftp.osuosl.org/pub/mythtv/mythtv-0.23-rc2.tar.bz2">MythTV</a>
-                (<a href="http://svn.mythtv.org/svn/trunk/checksums/mythtv-0.23-rc2.md5sum">MD5</a>)
+                (<a href="https://code.mythtv.org/svn/trunk/checksums/mythtv-0.23-rc2.md5sum">MD5</a>)
                 </li>
             <li><a href="ftp://ftp.osuosl.org/pub/mythtv/mythplugins-0.23-rc2.tar.bz2">MythPlugins</a>
-                (<a href="http://svn.mythtv.org/svn/trunk/checksums/mythplugins-0.23-rc2.md5sum">MD5</a>)
+                (<a href="https://code.mythtv.org/svn/trunk/checksums/mythplugins-0.23-rc2.md5sum">MD5</a>)
                 </li>
             <li><a href="ftp://ftp.osuosl.org/pub/mythtv/myththemes-0.23-rc2.tar.bz2">MythThemes</a>
-                (<a href="http://svn.mythtv.org/svn/trunk/checksums/myththemes-0.23-rc2.md5sum">MD5</a>)
+                (<a href="https://code.mythtv.org/svn/trunk/checksums/myththemes-0.23-rc2.md5sum">MD5</a>)
                 </li>
         </ul></li>
     <li>Or check the code out from
-        <a href="http://svn.mythtv.org/">subversion</a>.</li>
+        <a href="https://code.mythtv.org/">subversion</a>.</li>
 </ul>
 

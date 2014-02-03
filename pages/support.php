@@ -197,12 +197,12 @@
         <h2>How to report Bugs</h2>
         <p>
         If you think you've found a bug in MythTV, you can use our
-        <a href="http://svn.mythtv.org/trac/newticket">bug tracking system</a>
+        <a href="https://code.mythtv.org/trac/newticket">bug tracking system</a>
         to submit a bug report and let the developers know.
         </p>
         <p>
         Please follow
-        <a href="http://svn.mythtv.org/trac/wiki/TicketHowTo">the instructions</a>
+        <a href="https://code.mythtv.org/trac/wiki/TicketHowTo">the instructions</a>
         we have provided for how to provide a detailed and helpful bug report
         </p>
         <p>

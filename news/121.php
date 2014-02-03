@@ -10,7 +10,7 @@
 A few months ago, Isaac mentioned to some of the other devs that the
 server hosting mythtv.org (and the <a
 href="/support">mailing lists</a>, <a
-href="http://svn.mythtv.org/trac/">svn</a>, etc.) was reaching its
+href="https://code.mythtv.org/trac/">svn</a>, etc.) was reaching its
 limit. After a fruitless search for a new inexpensive host, Isaac
 contacted the <a href="http://www.osuosl.org/">OSU Open Source Lab</a>
 to see if they would host MythTV's services and I brought it up as a
