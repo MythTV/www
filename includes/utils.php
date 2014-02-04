@@ -124,7 +124,7 @@
         }
     // Build the thumbnail cache path
         $clean_color = preg_replace('/\W+/', '', $color);
-        $thumb = '/cache/tv_'.preg_replace('/[\/\.]+/', '_', $img)."_{$tv}_{$side}_{$size}_$clean_color.jpg";
+        $thumb = 'cache/tv_'.preg_replace('/[\/\.]+/', '_', $img)."_{$tv}_{$side}_{$size}_$clean_color.jpg";
     // Make sure the path includes the img directory
         $tv = "img/tv/{$tv}_$side.png";
     // Ignore images that don't exist
@@ -160,7 +160,7 @@
         }
     // Return
         echo '<a href="', _or($href, '/'.$img), '">',
-               '<img src="', $thumb, '"',
+               '<img src="/', $thumb, '"',
                ' height="',   $height, '"',
                ' width="',    $width,  '"',
                ' border="0" ', $params, ' ></a>';
@@ -190,7 +190,7 @@
             return "<!-- image $img does not exist -->";
         }
     // Build the thumbnail cache path
-        $thumb = '/cache/'.preg_replace('/\/+/', '_', $img)."_{$width}x$height.jpg";
+        $thumb = 'cache/'.preg_replace('/\/+/', '_', $img)."_{$width}x$height.jpg";
     // Create the thumbnail if necessary
         if (!file_exists($thumb) || filemtime($thumb) < filemtime($img)) {
             system("convert -quality 75 -geometry {$width}x$height ".escapeshellarg($img).' '.escapeshellarg($thumb));
