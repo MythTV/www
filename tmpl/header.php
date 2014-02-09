@@ -58,6 +58,7 @@
                 <ul>
                     <li class="first"><a href="/support">Overview</a></li>
                     <li><a href="/docs/">Documentation</a></li>
+                    <li><a href="https://forum.mythtv.org/">Forums</a></li>
                     <li><a href="http://wiki.mythtv.org/">Wiki</a></li>
                     <li><a href="https://code.mythtv.org/trac/wiki/TicketHowTo">Bugs</a></li>
                     <li class="last"><a href="https://code.mythtv.org/trac/">Development</a></li>

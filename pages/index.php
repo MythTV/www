@@ -79,8 +79,11 @@
                 <a href="http://www.mythtv.org/wiki">MythTV Wiki</a>
                 </li>
             <li class="support">
+                <a href="https://forum.mythtv.org/">Forums</a>
+            </li>
+<!--            <li class="support">
                 <a href="/support/">Mailing Lists</a>
-                </li>
+                </li>-->
             <li class="news">
                 <a href="/news/">News Archive</a>
                 </li>
