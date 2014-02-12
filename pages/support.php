@@ -51,13 +51,24 @@
         <p>
         The first place to look for answers to basic questions should be to
         check our list of
-        <a href="http://www.mythtv.org/wiki/Frequently_Asked_Questions">frequently asked questions</a>.
+        <a href="http://wiki.mythtv.org/Frequently_Asked_Questions">frequently asked questions</a>.
         </p>
 
+        <h3>Forums</h3>
+        <p>
+        One of the best ways to get help with installing, configuring and
+        using MythTV is through one of our official forums.
+        </p>
+        
+        <p>
+        <a href="https://forum.mythtv.org/">MythTV Forums</a>.
+        </p>
+        
         <h3>Mailing Lists</h3>
         <p>
-        One of the best ways to get help is through one of our official mailing
-        lists.
+        Because not everyone likes forums we also provide mailing lists.
+        These have been around longer and are preferred by developers, so if your
+        are seeking development related help you may want to use these instead.
         </p>
         <dl>
             <dt><a href="http://www.mythtv.org/mailman/listinfo/mythtv-users/">MythTV-users</a></dt>
@@ -131,14 +142,6 @@
                 </dd>
         </dl>
 
-        <h3>Forums</h3>
-        <p>
-        Because the MythTV developers have chosen to focus on mailing lists
-        instead of forums, there are no official web-based forums to discuss
-        MythTV.  However, the  <a href="http://www.mythtvtalk.com/">MythTV Talk</a>
-        forums are generally considered to be one of the better forums for
-        discussions about MythTV.
-        </p>
     </div>
 </div>
 
@@ -165,7 +168,7 @@
                 to detailed explanations about of rare configurations set up by
                 some of our more adventurous users.
                 </dd>
-            <dt><a href="/docs/">Official User Documentation</a></dt>
+            <dt><a href="//www.mythtv.org/docs/">Official User Documentation</a></dt>
             <dd>We do our best to maintain a detailed document that attempts to
                 describe the installation process for MythTV from source code.
                 If you are experiencing difficulty during your installation
@@ -173,7 +176,7 @@
                 for information about common roadblocks and installation
                 hangups.
                 </dd>
-            <dt><a href="http://www.cuymedia.com/mythtv-trunk/">Developer Documentation</a></dt>
+            <dt><a href="https://code.mythtv.org/doxygen/">Developer Documentation</a></dt>
             <dd>For the technically inclined, we have started to build
                 developer documentation to explain the complex structure of
                 MythTV's code base.  If you think that you would like to help
@@ -232,7 +235,7 @@
         installations, but we acknowledge that there may be times when people
         and corporations wish to contact us with questions or inquiries that
         require our specific insight about the MythTV code or community.  To
-        that end, we have provided a <a href="/contact">contact form</a> that
+        that end, we have provided a <a href="//www.mythtv.org/contact">contact form</a> that
         you can use to get in touch with those who are best equipped to respond
         your inquiry.
         </p>
