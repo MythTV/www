@@ -2,7 +2,7 @@
 # Apache config for mythtv.org
 #
 
-<VirtualHost *>
+<VirtualHost *:80>
 
     ServerName www.mythtv.org
     ServerAlias new.mythtv.org
