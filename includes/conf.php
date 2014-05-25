@@ -12,8 +12,9 @@
         'danielk' => 'Daniel',
         'robertm' => '<a href="http://www.fecitfacta.com/">Robert</a>',
         'stuartm' => 'Stuart M',
-	'gjhurlbu' => 'Gavin',
-	'knightr' => 'Nicolas',
+	    'gjhurlbu' => 'Gavin',
+	    'knightr' => 'Nicolas',
+        'jyavenard' => 'Jean Yves',
         );
 
 // Topics
