@@ -4,6 +4,9 @@ Disallow: /wiki/
 User-agent: Fasterfox
 Disallow: /
 
+User-agent: FlipboardProxy
+Disallow: /
+
 User-agent: WebStripper
 Disallow: /
 
