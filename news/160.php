@@ -11,4 +11,4 @@
 
 <p>A big thank you to everyone who made this possible: the devs and all our users who have contributed more than ever via bug reports, bug fixes and testing.
 
-<p>Check the <s href="http://www.mythtv.org/wiki/Release_Notes_-_0.27.1">Release Notes</a> for more details, and how to upgrade your existing system.
+<p>Check the <a href="http://www.mythtv.org/wiki/Release_Notes_-_0.27.1">Release Notes</a> for more details, and how to upgrade your existing system.
