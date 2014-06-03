@@ -14,7 +14,7 @@
         'stuartm' => 'Stuart M',
 	    'gjhurlbu' => 'Gavin',
 	    'knightr' => 'Nicolas',
-        'jyavenard' => 'Jean Yves',
+        'jyavenard' => 'Jean-Yves',
         );
 
 // Topics
