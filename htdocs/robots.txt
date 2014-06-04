@@ -4,10 +4,19 @@ Disallow: /wiki/
 User-agent: Fasterfox
 Disallow: /
 
+User-agent: WebStripper
+Disallow: /
+
 User-agent: FlipboardProxy
 Disallow: /
 
-User-agent: WebStripper
+User-agent: Flipboard
+Disallow: /
+
+User-agent: Mail.RU_Bot
+Disallow: /
+
+User-agent: AhrefsBot
 Disallow: /
 
 User-agent: *
