@@ -163,6 +163,17 @@
         padding-top: 6em;
     }
 
+    /* Third party stuff, phpbb, irc logs etc */
+    #wrap { 
+        background-color: #E6E6F0;
+        border-left: 1px solid #868C97;
+        border-radius: 10px;
+        border-top: 1px solid #868C97;
+        margin: 0px 15px;
+        min-width: 650px;
+        padding: 0px 10px;
+    }
+
     #footer-start {
         background-image:       url("/img/blue_fade_bottom.png");
         background-repeat:      repeat-x;
