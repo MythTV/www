@@ -114,8 +114,8 @@
     system($cmd);
 
 # Make sure the apache config gets updated, too
-    copy('mythtv.conf.apache', '/etc/httpd/conf.d/mythtv.conf')
-        or die "Can't install mythtv.conf.apache:  $!\n";
+#    copy('mythtv.conf.apache', '/etc/httpd/conf.d/mythtv.conf')
+#        or die "Can't install mythtv.conf.apache:  $!\n";
 
 # Make sure the files are all owned properly
     system('chown -R apache\:apache '.shell_escape($target));
