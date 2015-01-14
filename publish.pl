@@ -41,7 +41,7 @@
 
 # Make sure that we can understand the apache db config parameters
     my ($db_file);
-    open DATA, 'mythtv.conf.apache'
+    open DATA, $safe_src . '/mythtv.conf.apache'
         or die "Can't read mythtv.conf.apache:  $!\n";
     while (<DATA>) {
         next unless (/setenv\s+db_file\s+"([^"]+)/);
