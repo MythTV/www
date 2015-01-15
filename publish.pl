@@ -79,7 +79,7 @@
 
 # Take down the site, in case there is an error (in case rsync doesn't copy this
 # file over fast enough).
-    print "Disabling website for updates\n";
+#    print "Disabling website for updates\n";
     open DATA, ">$target/site_is_disabled"
         or die "Can't create $target/htdocs/site_is_disabled: $!\n";
     print DATA time();
@@ -103,6 +103,8 @@
 
 # Make sure the files are all owned properly
     system('chown -R apache\:apache '.shell_escape($target));
+# Make sure the files have the correct selinux context
+    system('restorecon -r '.shell_escape($target));
 
 # Does the db schema need to be updated?
     if ($db_schema < $cur_schema) {
