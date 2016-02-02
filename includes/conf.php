@@ -11,6 +11,7 @@
         'janne' => 'Janne',
         'danielk' => 'Daniel',
         'robertm' => '<a href="http://www.fecitfacta.com/">Robert</a>',
+        'stuarta' => 'Stuart A',
         'stuartm' => 'Stuart M',
 	    'gjhurlbu' => 'Gavin',
 	    'knightr' => 'Nicolas',
