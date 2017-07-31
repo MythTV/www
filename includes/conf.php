@@ -31,9 +31,9 @@
     global $Version;
     $Version = array(
 	// Download does NOT include minor version
-	'download' => '0.28',
-        'tv'      => '0.28.1',
-        'mythweb' => '0.28.1',
+	'download' => '29',
+        'tv'      => '29.0',
+        'mythweb' => '29.0',
         'themes'  => '0.24',
         );
 
