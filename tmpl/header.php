@@ -15,6 +15,15 @@
 <html>
 <head>
     <title><?php echo $Meta['title'] ?></title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-6891668-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-6891668-1');
+    </script>
     <link rel="stylesheet" type="text/css" href="/css/site.css">
     <!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/css/ie6.css"><![endif]-->
     <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/css/ie.css" ><![endif]-->
