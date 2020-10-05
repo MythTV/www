@@ -48,7 +48,7 @@
 
         <p>
         <strong>Do not</strong> use this form for
-        <a href="https://code.mythtv.org/trac/newticket">bug reports</a>,
+        <a href="https://github.com/MythTV/mythtv/issues/new/choose">bug reports</a>,
         <a href="http://www.mythtv.org/wiki/Feature_Wishlist">feature requests</a>,
         <a href="/support">support inquiries</a>, or other similar queries that
         are easily answered by using the

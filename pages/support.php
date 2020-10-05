@@ -200,7 +200,7 @@
         <h2>How to report Bugs</h2>
         <p>
         If you think you've found a bug in MythTV, you can use our
-        <a href="https://code.mythtv.org/trac/newticket">bug tracking system</a>
+        <a href="https://github.com/MythTV/mythtv/issues/new/choose">bug tracking system</a>
         to submit a bug report and let the developers know.
         </p>
         <p>
