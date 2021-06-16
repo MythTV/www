@@ -120,7 +120,7 @@
         user community on the <a href="http://freenode.net/">freenode network</a>.
         </p>
         <dl>
-            <dt><a href="irc://irc.freenode.net/mythtv-users">#mythtv-users</a></dt>
+            <dt><a href="irc://irc.libera.chat/mythtv-users">#mythtv-users</a></dt>
             <dd>This user support channel should be your first stop in IRC.
                 There are usually over 150 people who frequent this channel,
                 including dozens of experienced MythTV users who are happy to
@@ -130,11 +130,7 @@
                 the plunge.  You will also find that several of the core MythTV
                 development team hangs out here to help answer questions, too.
                 </dd>
-            <dt><a href="irc://irc.freenode.net/mythtv-theming">#mythtv-theming</a></dt>
-            <dd>This is the MythTV theme developers channel.  Feel free to drop in
-                and talk about themes, artwork, and other user interface elements.
-                </dd>
-            <dt><a href="irc://irc.freenode.net/mythtv">#mythtv</a></dt>
+            <dt><a href="irc://irc.libera.chat/mythtv">#mythtv</a></dt>
             <dd>This is the MythTV developers channel.  Feel free to drop in
                 here to listen to or take part in discussions about the
                 development of MythTV, but please do not confuse it with the
