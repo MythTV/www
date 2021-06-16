@@ -110,7 +110,7 @@ http://www.mythtv.org/wiki/MythUI_Theme_Development</a>
 <a href="http://www.mythtv.org/wiki/MythUI_Demo_Theme">
 http://www.mythtv.org/wiki/MythUI_Demo_Theme</a>
 
-<p>Probably most importantly, you should sign up for the mythtv-theming mailing list and join us in IRC at irc.freenode.net in the channel #mythtv-theming. There, you can get one on one support from experienced themers and discuss how best to achieve your goals. You can join the theming mailing list here:</p>
+<p>Probably most importantly, you should sign up for the mythtv-theming mailing list and join us in IRC at irc.libera.chat in the channel #mythtv-theming. There, you can get one on one support from experienced themers and discuss how best to achieve your goals. You can join the theming mailing list here:</p>
 
 <a href="http://www.mythtv.org/mailman/listinfo/mythtv-theming/">
 http://www.mythtv.org/mailman/listinfo/mythtv-theming/</a>

@@ -117,7 +117,7 @@
         <a href="http://en.wikipedia.org/wiki/Irc">Internet Relay Chat</a>
         is one of the oldest forms of communication on the internet, and still
         thrives today.  Like many open source projects, MythTV has an active
-        user community on the <a href="http://freenode.net/">freenode network</a>.
+        user community on the <a href="https://libera.chat/">libera network</a>.
         </p>
         <dl>
             <dt><a href="irc://irc.libera.chat/mythtv-users">#mythtv-users</a></dt>
