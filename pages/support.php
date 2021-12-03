@@ -200,10 +200,6 @@
         to submit a bug report and let the developers know.
         </p>
         <p>
-        Please follow
-        <a href="https://code.mythtv.org/trac/wiki/TicketHowTo">the instructions</a>
-        we have provided for how to provide a detailed and helpful bug report
-        </p>
         <p>
         However, please be aware that though the developers strive to keep
         MythTV as free from bugs as possible, it may take us awhile before we
