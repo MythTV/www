@@ -13,9 +13,10 @@
         'robertm' => '<a href="http://www.fecitfacta.com/">Robert</a>',
         'stuarta' => 'Stuart A',
         'stuartm' => 'Stuart M',
-	    'gjhurlbu' => 'Gavin',
-	    'knightr' => 'Nicolas',
+        'gjhurlbu' => 'Gavin',
+        'knightr' => 'Nicolas',
         'jyavenard' => 'Jean-Yves',
+        'dhampton' => 'David H',
         );
 
 // Topics
@@ -31,9 +32,9 @@
     global $Version;
     $Version = array(
 	// Download does NOT include minor version
-	'download' => '31',
-        'tv'      => '31.0',
-        'mythweb' => '31.0',
+        'download' => '32',
+        'tv'      => '32.0',
+        'mythweb' => '32.0',
         'themes'  => '0.24',
         );
 

@@ -77,8 +77,8 @@
         </ul>
         <p>
         If you are looking for older versions, you can find them here:<br />
-	<a href="https://github.com/MythTV/mythtv/releases">MythTV Releases</a>.<br />
-	<a href="https://github.com/MythTV/mythweb/releases">MythWeb Releases</a>.<br />
+        <a href="https://github.com/MythTV/mythtv/releases">MythTV Releases</a>.<br />
+        <a href="https://github.com/MythTV/mythweb/releases">MythWeb Releases</a>.<br />
         <a href="ftp://ftp.osuosl.org/pub/mythtv/">OSU OSL archive (no longer updated)</a>.
         </p>
     </div>
