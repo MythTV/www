@@ -16,13 +16,13 @@
 <head>
     <title><?php echo $Meta['title'] ?></title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-6891668-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-152H1V678Z"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'UA-6891668-1');
+      gtag('config', 'G-152H1V678Z');
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/css/site.css">
