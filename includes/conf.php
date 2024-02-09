@@ -32,10 +32,10 @@
     global $Version;
     $Version = array(
 	// Download does NOT include minor version
-        'download' => '33',
-        'tv'      => '33.1',
-        'mythweb' => '33.1',
-        'themes'  => '0.24',
+        'download' => '34',
+        'tv'      => '34.0',
+        'mythweb' => '34.0',
+        'themes'  => '34.0',
         );
 
 // Contact Recipients
