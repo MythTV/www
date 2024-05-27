@@ -35,20 +35,15 @@
  * @name    $Path
 /**/
     global $Path;
+    if ( array_key_exists('PATH_INFO', $_SERVER) )
+        $Path = $_SERVER['PATH_INFO'];
+    if ( array_key_exists('PATH_INFO', $_ENV) )
+        $Path = $_ENV['PATH_INFO'];
+    if ( array_key_exists('PATH_INFO', $_GET) )
+        $Path = $_GET['PATH_INFO'];
     $Path = explode('/', preg_replace('/^\/+/',    '',   // Remove leading slashes
                          preg_replace('/[\s]+/',   ' ',  // Convert extra whitespace
-                        // Grab the path info from various different places.
-                             (array_key_exists('PATH_INFO', $_SERVER)
-                              && $_SERVER['PATH_INFO'])
-                                ? $_SERVER['PATH_INFO']
-                                : ((array_key_exists('PATH_INFO', $_ENV)
-                                    && $_ENV['PATH_INFO'])
-                                    ? $_ENV['PATH_INFO']
-                                    : (array_key_exists('PATH_INFO', $_GET)
-                                       ? $_GET['PATH_INFO']
-                                       : null
-                                      )
-                                  )
+                         $Path
                          ))
                    );
 
