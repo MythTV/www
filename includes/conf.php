@@ -16,6 +16,7 @@
         'gjhurlbu' => 'Gavin',
         'knightr' => 'Nicolas',
         'jyavenard' => 'Jean-Yves',
+        'david' => 'David H',
         'dhampton' => 'David H',
         );
 

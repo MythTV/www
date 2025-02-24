@@ -37,14 +37,7 @@
     my %topics = eval("($1)");
 
 # Which userid should we be using for the author?
-    my $author;
-    my $git_info = `git remote show origin $safe_path`;
-    if ($git_info =~ m#URL: ssh://(\w+)\@#) {
-        $author = $1;
-    }
-    else {
-        $author = $ENV{USER};
-    }
+    my $author = $ENV{USER};
     unless ($authors{$author}) {
         print "Unrecognized author userid:  $author\n",
               "Please see includes/conf.php for valid post authors.\n";
