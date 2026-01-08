@@ -32,8 +32,6 @@
 // Current version of MythTV
     global $Version;
     $Version = array(
-	// Download does NOT include minor version
-        'download' => '35',
         'tv'      => '35.0',
         'mythweb' => '34.0',
         'themes'  => '34.0',

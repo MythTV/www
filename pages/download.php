@@ -68,18 +68,14 @@
         you may download the latest versions here:
         </p>
         <ul>
-            <li><a href="/download/mythtv/<?php echo $Version['download'] ?>" onclick="pageTracker._trackPageview('/download/mythtv/<?php echo $Version['download'] ?>');">
+            <li><a href="https://github.com/MythTV/mythtv/tags/<?php echo $Version['tv'] ?>" onclick="pageTracker._trackPageview('/download/mythtv/<?php echo $Version['tv'] ?>');">
                 MythTV <?php echo $Version['tv'] ?></a>
-            <!-- <li><a href="/download/mythweb/<?php echo $Version['download'] ?>" onclick="pageTracker._trackPageview('/download/mythweb/<?php echo $Version['download'] ?>');">
-                Mythweb <?php echo $Version['mythweb'] ?></a> -->
-            <!-- <li><a href="/download/themes/<?php echo $Version['themes'] ?>" onclick="pageTracker._trackPageview('/download/themes/<?php echo $Version['themes'] ?>');">
-                MythTV Themes <?php echo $Version['themes'] ?></a>-->
         </ul>
         <p>
         If you are looking for older versions, you can find them here:<br />
-        <a href="https://github.com/MythTV/mythtv/releases">MythTV Releases</a>.<br />
-        <a href="https://github.com/MythTV/mythweb/releases">MythWeb Releases</a>.<br />
-        <a href="ftp://ftp.osuosl.org/pub/mythtv/">OSU OSL archive (no longer updated)</a>.
+        <a href="https://github.com/MythTV/mythtv/tags">MythTV Releases</a>.<br />
+        <a href="https://github.com/MythTV/mythweb/tags">MythWeb Releases</a><br />
+        <a href="https://ftp2.osuosl.org/pub/mythtv/">OSU OSL archive (no longer updated)</a>.
         </p>
     </div>
 </div>
