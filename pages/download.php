@@ -68,7 +68,7 @@
         you may download the latest versions here:
         </p>
         <ul>
-            <li><a href="https://github.com/MythTV/mythtv/tags/<?php echo $Version['tv'] ?>" onclick="pageTracker._trackPageview('/download/mythtv/<?php echo $Version['tv'] ?>');">
+            <li><a href="https://github.com/MythTV/mythtv/tags/v<?php echo $Version['tv'] ?>" onclick="pageTracker._trackPageview('/download/mythtv/<?php echo $Version['tv'] ?>');">
                 MythTV <?php echo $Version['tv'] ?></a>
         </ul>
         <p>
