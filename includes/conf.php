@@ -32,7 +32,7 @@
 // Current version of MythTV
     global $Version;
     $Version = array(
-        'tv'      => '35.0',
+        'tv'      => '36.0',
         'mythweb' => '34.0',
         'themes'  => '34.0',
         );
